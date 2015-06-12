@@ -1,0 +1,155 @@
+/* RadioButton
+ * 
+ * Styling RadioButton mainly includes:
+ * 
+ * 1. Containers
+ * 		.dijitRadio|.dijitRadioIcon
+ * 
+ * 2. RadioButton within ToggleButton
+ * 		.dijitToggleButton|.dijitToggleButtonChecked
+ * 
+ * 3. Checked state
+ * 		.dijitRadioChecked
+ * 		.dijitToggleButtonChecked
+ * 
+ * 4. Hover state
+ * 		.dijitRadioHover|.dijitRadioCheckedHover
+ * 
+ * 5. Disabled state
+ * 		.dijitRadioDisabled|.dijitRadioCheckedDisabled
+ */
+.flat .dijitRadio,
+.flat .dijitRadioIcon {
+/* inside a toggle button */
+  width: 16px;
+  height: 16px;
+  background: none;
+  border: 1px solid #007ac2;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+  overflow: visible;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.flat .dijitRadio:after,
+.flat .dijitRadioIcon:after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  background-color: #007ac2;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  margin: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+.flat .dijitRadioHover {
+  border-color: #12a7ff;
+}
+.flat .dijitRadioChecked:after,
+.flat .dijitChecked .dijitRadioIcon:after {
+  width: 8px;
+  height: 8px;
+  margin: 3px;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+.flat .btn-primary .dijitRadioIcon {
+  border-color: #fff;
+}
+.flat .btn-primary .dijitRadioIcon:after {
+  background-color: #fff;
+}
+.flat .btn-success .dijitRadioIcon {
+  border-color: #fff;
+}
+.flat .btn-success .dijitRadioIcon:after {
+  background-color: #fff;
+}
+.flat .btn-info .dijitRadioIcon {
+  border-color: #fff;
+}
+.flat .btn-info .dijitRadioIcon:after {
+  background-color: #fff;
+}
+.flat .btn-warning .dijitRadioIcon {
+  border-color: #fff;
+}
+.flat .btn-warning .dijitRadioIcon:after {
+  background-color: #fff;
+}
+.flat .btn-danger .dijitRadioIcon {
+  border-color: #fff;
+}
+.flat .btn-danger .dijitRadioIcon:after {
+  background-color: #fff;
+}
+.flat .btn-inverse .dijitRadioIcon {
+  border-color: #fff;
+}
+.flat .btn-inverse .dijitRadioIcon:after {
+  background-color: #fff;
+}
+.flat .dijitRadioDisabled {
+  opacity: 0.65;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+  filter: alpha(opacity=65);
+}
+.flat .dijitRadioMenuItem .dijitCheckedMenuItemIcon {
+  width: 16px;
+  height: 16px;
+  background: none;
+  border: 1px solid #d0d0d0;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+  overflow: visible;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.flat .dijitRadioMenuItem .dijitCheckedMenuItemIcon:after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  background-color: #007ac2;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  margin: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+.flat .dijitRadioMenuItemChecked .dijitCheckedMenuItemIcon {
+  border-color: $radio-checked-border-color;
+}
+.flat .dijitRadioMenuItemChecked .dijitCheckedMenuItemIcon:after {
+  width: 8px;
+  height: 8px;
+  margin: 3px;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}

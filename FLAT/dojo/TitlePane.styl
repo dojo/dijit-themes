@@ -1,0 +1,101 @@
+//
+// Copyright 2014 Esri
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//    http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+
+/* TitlePane 
+ * 
+ * Styling TitlePane means styling the TitlePane title and its content container  (dijitTitlePane)
+ * 
+ * TitlePane title:
+ * 1. TitlePane title (default styling): 
+ * 		.dijitTitlePaneTitle - TitlePane's title div style: background-color, border
+ *
+ * 2. hovered TitlePane title (ie, mouse hover on a title bar)
+ * 		.dijitTitlePaneTitleHover - styles when mouse hover on the title div
+ * 
+ * 3. active TitlePane title (ie, mouse down on a title bar)
+ * 		.dijitTitlePaneTitleActive - styles when mouse down on the title div
+ * 
+ * 
+ * TitlePane Content Container:
+ * 1. outer/inner container: 
+ * 		.dijitTitlePaneContentOuter / dijitTitlePaneContentInner - styles for the content outer div
+ */
+
+@import "../variables";
+
+.dijitTitlePaneTitle {
+	button-style();
+	if($titlepane-has-border-radius) {
+		border-radius: $titlepane-border-radius $titlepane-border-radius 0 0;
+	} else {
+		border-radius: 0;
+	}
+}
+
+.dijitTitlePaneTitleHover {
+	button-hover-style();
+	box-shadow: none;
+}
+
+.dijitTitlePaneTitleActive {
+	button-active-style();
+}
+
+//.dijitTitlePaneTitleFocus {
+//}
+
+.dijitTitlePane {
+	.dijitArrowNode {
+		_icon-core-style();
+		text-align: center;
+		&:before {
+			content:"\f078";
+			font-size: 12px;
+		}
+	}
+
+	.dijitClosed {
+		if($titlepane-has-border-radius) {
+			border-radius: $titlepane-border-radius;
+		} else {
+			border-radius: 0;
+		}
+		.dijitArrowNode:before {
+			content: "\f077";
+		}
+	}
+}
+
+.dijitTitlePaneContentOuter {
+	background: $titlepane-content-background;
+	border: $titlepane-content-border;
+	border-top: none;
+	if($titlepane-has-border-radius) {
+		border-radius: 0 0 $titlepane-border-radius $titlepane-border-radius;
+	} else {
+		border-radius: 0;
+	}
+}
+
+.dijitTitlePaneContentInner {
+	padding: $titlepane-content-padding;
+}
+
+.dijitTitlePaneTextNode {
+	margin-left: $padding*2;
+	margin-right: $padding*2;
+	vertical-align:text-top;
+}

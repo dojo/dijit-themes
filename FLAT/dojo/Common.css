@@ -1,0 +1,76 @@
+.dijitPopup {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+/* ----- rag and Drop ----- */
+.dojoDndItem {
+  border: $dnd-item-border;
+  cursor: pointer;
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  -ms-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -webkit-transition-property: background-color, border-color, opacity;
+  -moz-transition-property: background-color, border-color, opacity;
+  -o-transition-property: background-color, border-color, opacity;
+  -ms-transition-property: background-color, border-color, opacity;
+  transition-property: background-color, border-color, opacity;
+}
+.dojoDndItemOver {
+  background: $dnd-hover-background;
+}
+.dojoDndItemAnchor {
+  background: $dnd-anchor-background;
+  border: $dnd-anchor-border;
+}
+.dojoDndItemBefore {
+  background: transparent;
+  padding-top: 2px;
+  border-top: 1px solid $dnd-avatar-item-insert-indicator-color;
+}
+.dojoDndItemAfter {
+  background: transparent;
+  padding-bottom: 2px;
+  border-bottom: 1px solid $dnd-avatar-item-insert-indicator-color;
+}
+/* Avatar */
+table.dojoDndAvatar {
+  display: block;
+}
+.dojoDndAvatarHeader td {
+  display: none;
+}
+.dojoDndAvatarHeader:before {
+  font-family: "dojo-flat-icon";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-decoration: inherit;
+  vertical-align: bottom;
+  display: table-cell;
+}
+.dojoDndMove .dojoDndAvatarHeader:before {
+  color: $red-color;
+  content: "\f05e";
+}
+.dojoDndCopy .dojoDndAvatarHeader:before {
+  color: $red-color;
+  content: "\f05e";
+}
+.dojoDndMove .dojoDndAvatarCanDrop .dojoDndAvatarHeader:before {
+  color: $green-color;
+  content: "\f060";
+}
+.dojoDndCopy .dojoDndAvatarCanDrop .dojoDndAvatarHeader:before {
+  color: $green-color;
+  content: "\f060";
+}
+.dojoDndAvatarItem td {
+  padding: $dnd-avatar-item-padding;
+}
+.dojoDndAvatarItem td > * {
+  background: $dnd-avatar-item-background;
+  -webkit-box-shadow: $dnd-avatar-item-box-shadow;
+  box-shadow: $dnd-avatar-item-box-shadow;
+}
