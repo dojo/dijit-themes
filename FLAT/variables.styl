@@ -94,7 +94,7 @@ $input-focused-border-color =					$blue;
 
 ///// disabled
 
-$input-disabled-background =					$gray-lighter;
+$input-disabled-background-color =				$gray-lighter;
 
 ///// error
 
@@ -150,21 +150,20 @@ $checkbox-icon-padding =						0;
  * Radio (and Radio Icon)	the styles are using pure CSS
  ****************************************************************************************/
 
-
-$radio-height									=						16px;
-$radio-width									=						16px;
-$radio-icon-size								=						16px;
+$radio-height = 								16px;
+$radio-width = 									16px;
+$radio-icon-size = 								16px;
 
 ////  normal
-$radio-background-color							=						transparent;						
-$radio-border-color								=						$blue;
-$radio-border-radius							=						50%;
+$radio-background-color = 						transparent;						
+$radio-border-color = 							$blue;
+$radio-border-radius = 							50%;
 
 //// checked
-$radio-checked-color							=						$blue;
+$radio-checked-color = 							$blue;
 
 //// hover
-$radio-hover-border-color						=						lighten($radio-checked-color, 25%);
+$radio-hover-border-color = 					lighten($radio-checked-color, 25%);
 
 /****************************************************************************************
  * Select (only for the button part, the styles for the "dropdown" are defined in the 
@@ -265,171 +264,165 @@ $numberspinner-arrow-padding =							$padding;
 // number spinner button's normal, active and disabled status styles are the same as "form/Button"
 // and the styles of the text input field are the same as "form/TextBox", which is defined in "form/Common.styl"
 
-// /****************************************************************************************
-//  ************************************** Layout ******************************************
-//  ****************************************************************************************/
+/****************************************************************************************
+ ************************************** Layout ******************************************
+ ****************************************************************************************/
 
-// /****************************************************************************************
-//  * BorderContainer
-//  ****************************************************************************************/
+/****************************************************************************************
+ * BorderContainer
+ ****************************************************************************************/
 
-// //BorderContainer
+//BorderContainer
 
-// $bordercontainer-padding						=						$padding;
-// $bordercontainer-border							=						1px solid $border-color;
+$bordercontainer-padding = 								$padding;
+$bordercontainer-border-color = 						$border-color;
 
-// //// splitter
+//// splitter
 
-// $splitter-size									=						isEven($bordercontainer-padding) ? $bordercontainer-padding + 1 : $bordercontainer-padding;			// the width of the splitter, will always be an odd number since the splitter bar's width is always 1px 
-// $splitter-color									=						$border-color;																						// color of the splitter thumb (the 1px wide bar)
-// $splitter-hovered-color							=						darken($primary-color, 25%);												
-// $splitter-dragged-color							=						$splitter-hovered-color;												
-// $splitter-background							=						none;																								// Color of splitter
-// $splitter-hovered-background					=						$primary-color;																						// Color of splitter when user hovers it, before mouse down
-// $splitter-dragged-background					=						$splitter-hovered-background;																			// Color of splitter while it's being dragged
+$splitter-size = 										isEven($bordercontainer-padding) ? $bordercontainer-padding + 1 : $bordercontainer-padding;			// the width of the splitter, will always be an odd number since the splitter bar's width is always 1px 
+$splitter-color = 										$border-color;																						// color of the splitter thumb (the 1px wide bar)
+$splitter-hovered-color = 								darken($splitter-color, 25%);												
+$splitter-dragged-color = 								$splitter-hovered-color;												
+$splitter-background-color = 							none;
+$splitter-hovered-background-color = 					darken(#fff, 5%);
+$splitter-dragged-background-color =					darken(#fff, 5%);
+ 
+/****************************************************************************************
+ * ContentPane
+ ****************************************************************************************/
 
-// /****************************************************************************************
-//  * ContentPane
-//  ****************************************************************************************/
+$contentpane-padding = 									0;
+$contentpane-background-color = 						transparent;
 
-// $contentpane-padding							=						0;
-// $contentpane-background							=						$container-background-color;
+//// contentpane in other layout widgets (accordion and tab container)
+$contentpane-nested-padding = 							$padding;
+$contentpane-nested-background-color = 					transparent;
 
-// //// contentpane in other layout widgets (accordion, and tab container)
-// //// only 2 properties are exposed
+/****************************************************************************************
+ * TabContainer
+ ****************************************************************************************/
 
-// $contentpane-nested-padding						=						$padding;
-// $contentpane-nested-background					=						$contentpane-background;
+$tab-highlight-color = 									$blue;
+$tab-padding = 											$padding;
+$tab-checked-has-highlight-border = 					true;														// whether to have a highlight bar on the edge of the tab
 
-// /****************************************************************************************
-//  * TabContainer
-//  ****************************************************************************************/
+// TabContainer: wrapper
+// (the outer container)
 
-// // since tab container widget is more complex than others, so we have some basic 
-// // variables defined only for this widget
+$tab-wrapper-background-color = 						#fff;
+$tab-wrapper-border-color = 							$border-color;
+$tab-wrapper-border-radius = 							$border-radius;
 
-// $tab-highlight-color							=						$highlight-color;
-// $tab-padding									=						$padding;
-// $tab-gutter-size								=						$tab-padding;
-// $tab-close-button-image							=						"layout/images/tabClose.png";					// [x] icon to close a tab
+// tabs
 
-// $tab-has-gutter									=						false;											// whether to have spacing between the tab and content panel
-// $tab-checked-has-highlight-border				=						true;											// whether to have a highlight bar on the edge of the tab
+$tab-background-color = 								$tab-wrapper-background-color;
+$tab-border-color = 									transparent;
+$tab-spacing = 											0;											// space between tabs
 
-// // TabContainer: Wrapper
-// // (the outer container)
+//// hover
 
-// $tab-wrapper-background							=						$container-background-color;
-// $tab-wrapper-border								=						1px solid $border-color;
-// $tab-wrapper-border-radius						=						$border-radius;
+$tab-hover-background-color = 							darken(#fff, 5%);
 
-// // Tabs
+//// active
 
-// $tab-background									=						$tab-wrapper-background;
-// $tab-border-radius								=						none;
-// $tab-border										=						1px solid $border-color;
-// $tab-spacing									=						-1px;											// space between tabs
+$tab-active-background-color = 							darken(#fff, 10%);
 
-// //// hover
+//// checked
 
-// $tab-hover-background							=						$primary-color;
+$tab-checked-border-color = 							$tab-wrapper-border-color;
+$tab-checked-background-color = 						$tab-wrapper-background-color;
+$tab-checked-text-color = 								$gray-dark;
 
-// //// active
+//// close button
 
-// $tab-active-background							=						darken($primary-color, 3%);
+$tab-close-button-opacity = 							.35;
 
-// //// checked
+////// hover
 
-// $tab-checked-border								=						$tab-wrapper-border;
-// $tab-checked-background							=						$tab-wrapper-background;
-// $tab-checked-text-color							=						$text-color;
+$tab-close-button-hover-opacity = 						.75;
 
-// //// disabled
-// //// no property is exposed, the disabled tab will have an opacity of 0.65 set to it
+////// active
 
-// //// close button
-// //// only these properties are exposed: height, width, border-radius
+$tab-close-button-active-opacity = 						1;
 
-// $tab-close-button-background					=						transparent;
-// $tab-close-button-height						=						14px;
-// $tab-close-button-width							=						14px;
-// $tab-close-button-border-radius					=						2px;
+//// tab dtrip button
 
-// ////// hover
-// $tab-close-button-hover-opacity					=						.75;
+$tab-strip-button-background-color = 					$tab-background-color;
+$tab-strip-button-border-color = 						$tab-border-color;
 
-// ////// active
-// $tab-close-button-active-opacity				=						1;
-// $tab-close-button-active-background				=						$darken($tab-highlight-color, 15%);
+////// hover
 
-// //// Tab Strip Slide Arrow
-// $tab-arrow-color								=						$tab-highlight-color;
+$tab-strip-button-hover-background-color = 				$tab-hover-background-color;
 
-// // Tabs: Top
+////// active
 
-// $tab-top-padding								=						$tab-padding $tab-padding * 4;
+$tab-strip-button-active-background-color = 			$tab-active-background-color;
 
-// // Tabs: Bottom
+////// arrow
+$tab-strip-button-arrow-color = 						$blue;
 
-// $tab-bottom-padding								=						$tab-top-padding;
+// tabs: top
 
-// // Tabs: Left
+$tab-top-padding = 										$tab-padding $tab-padding * 4;
 
-// $tab-left-padding								=						$tab-padding * 2 $tab-padding * 3;
+// tabs: bottom
 
-// // Tabs: Right
+$tab-bottom-padding = 									$tab-top-padding;
 
-// $tab-right-padding								=						$tab-left-padding;
+// tabs: left
 
-// // Nested Tab Container
+$tab-left-padding = 									$tab-padding * 2 $tab-padding * 3;
 
-// $nestedtab-spacing								=						$padding;
-// $nestedtab-padding								=						$tab-padding $tab-padding * 2;
-// $nestedtab-border								=						0 none;
-// $nestedtab-border-radius						=						4px;
+// tabs: right
 
-// //// normal
+$tab-right-padding = 									$tab-left-padding;
 
-// $nestedtab-text-color							=						$tab-highlight-color;
+// nested tab container
 
-// //// hover
+$nestedtab-spacing = 									$padding;
+$nestedtab-padding = 									$tab-padding $tab-padding * 2;
+$nestedtab-border-color = 								transparent;
+$nestedtab-border-radius = 								$border-radius;
 
-// $nestedtab-hover-background						=						$nestedtab-background;
+//// normal
 
-// //// active
+$nestedtab-text-color = 								$blue;
 
-// $nestedtab-active-background					=						$nestedtab-background;
-// $nestedtab-active-text-color					=						$nestedtab-text-color;
+//// hover
 
-// //// checked
+$nestedtab-hover-background-color = 					$tab-hover-background-color;
 
-// $nestedtab-checked-background					=						$tab-highlight-color;
-// $nestedtab-checked-text-color					=						$inverse-text-color;
+//// active
 
-// /****************************************************************************************
-//  * AccordionContainer
-//  ****************************************************************************************/
+$nestedtab-active-background-color = 					$tab-active-background-color;
 
-// $accordion-highlight-color						=						$highlight-color;
-// $accordion-spacing								=						0px;												// space between accordion panes; minimum value is 0
-// $accordion-border								=						1px solid $border-color;
-// $accordion-border-radius						=						$border-radius;										
-// $accordion-background							=						transparent;
+//// checked
 
-// // accordion title bar (only title bar has different status styles; normal, hover and active status styles are inherited from "form/Button")
+$nestedtab-checked-background-color = 					$blue;
+$nestedtab-checked-text-color = 						#fff;
 
-// // checked
+/****************************************************************************************
+ * AccordionContainer
+ ****************************************************************************************/
 
-// $accordion-title-bar-checked-background			=						$accordion-highlight-color;
-// $accordion-title-bar-checked-text-color			=						$inverse-text-color;
-// $accordion-title-bar-checked-text-shadow		=						$inverse-text-shadow;
-// $accordion-title-bar-checked-box-shadow			=						0 1px 3px -2px rgba(0, 0, 0, 0.3);
+$accordion-spacing = 									0;												// space between accordion panes; minimum value is 0
+$accordion-border-color = 								$border-color;
+$accordion-border-radius = 								$border-radius;										
+$accordion-background-color = 							transparent;
 
-// // content pane
+// accordion title bar 
 
-// $accordion-content-border						=						$accordion-border;
-// $accordion-content-background					=						$container-background-color;
+// normal, hover and active status styles are inherited from "form/Button"
 
+// checked
+
+$accordion-title-bar-checked-background-color = 		$blue;
+$accordion-title-bar-checked-text-color	= 				#fff;
+
+// content pane
+
+$accordion-content-border-color = 						$accordion-border-color;
+$accordion-content-background-color = 					#fff;
 
 /****************************************************************************************
  ************************************ Common Dijits *************************************
@@ -505,7 +498,7 @@ $menu-border-radius =									$border-radius;
 
 //// Menu item
 
-$menu-item-padding =									$padding;
+$menu-item-padding =									$padding*2;
 
 ////// hover
 
@@ -551,7 +544,7 @@ $menubar-item-selected-background-color =				darken(#fff, 10%);
 
 //// Menubar dropdown (Popup)
 
-$menubar-popup-item-padding	=							$padding*2;
+$menubar-popup-item-padding	=							$menu-item-padding;
 
 /****************************************************************************************
  * Calendar
@@ -592,242 +585,233 @@ $calendar-date-cell-selected-text-color =				#fff;
 
 //// year
 
-$calendar-year-cell-padding						=						$padding;
-$calendar-year-font-size						=						1.15em;
-$calendar-year-prev-next-year-font-size			=						.9em;
-$calendar-year-prev-current-year-text-color		=						$blue;
-$calendar-year-prev-next-year-text-color		=						$calendar-year-prev-current-year-text-color;
+$calendar-year-cell-padding = 							$padding;
+$calendar-year-font-size = 								1.15em;
+$calendar-year-prev-next-year-font-size	= 				.9em;
+$calendar-year-prev-current-year-text-color = 			$blue;
+$calendar-year-prev-next-year-text-color = 				$calendar-year-prev-current-year-text-color;
 
 //// month dropdown
 
-$calendar-month-dropdown-menu-padding			=						$padding*2;
-$calendar-month-dropdown-menu-item-padding		=						$padding;
+$calendar-month-dropdown-menu-padding = 				$padding*2;
+$calendar-month-dropdown-menu-item-padding = 			$padding;
 
 ////// hover
-////// The following styles are inherited from "menu";
-////// This dropdown control only has a "hover" state
 
-$calendar-month-dropdown-menu-item-hovered-text-color	=				$menu-item-hovered-text-color;
-$calendar-month-dropdown-menu-item-hovered-background	=				$menu-item-hovered-background;
+$calendar-month-dropdown-menu-item-hovered-text-color = 		$menu-item-hovered-text-color;
+$calendar-month-dropdown-menu-item-hovered-background-color = 	$menu-item-hovered-background-color;
 
-// /****************************************************************************************
-//  * Color Palette
-//  ****************************************************************************************/
+/****************************************************************************************
+ * Color Palette
+ ****************************************************************************************/
 
-// $colorpalette-background						=						$container-background-color;
-// $colorpalette-padding							=						$padding;
-// $colorpalette-border							=						1px solid $border-color;
-// $colorpalette-border-radius						=						$border-radius;
+$colorpalette-background-color = 						#fff;
+$colorpalette-padding =									$padding;
+$colorpalette-border-color = 							$border-color;
+$colorpalette-border-radius = 							$border-radius;
 
-// // Swatch
-// $colorpalette-swatch-width						=						15px;
-// $colorpalette-swatch-height						=						15px;
-// $colorpalette-swatch-border						=						1px solid transparent;
-// $colorpalette-swatch-radius						=						2px;
+// Swatch
+$colorpalette-swatch-width = 							15px;
+$colorpalette-swatch-height = 							15px;
+$colorpalette-swatch-border-color = 					transparent;
+$colorpalette-swatch-radius = 							2px;
 
-// //// Hover
-// $colorpalette-swatch-hover-border				=						1px solid $border-color;
-// $colorpalette-swatch-hover-box-shadow			=						0 1px 1px rgba(0,0,0,0.25);
+//// Hover
+$colorpalette-swatch-hover-border-color = 				$border-color;
+$colorpalette-swatch-hover-box-shadow = 				none;
 
-// //// Active, Selected
-// $colorpalette-swatch-selected-border			=						1px solid $highlight-color;
-// $colorpalette-swatch-selected-box-shadow		=						0 3px 3px rgba(0,0,0,0.25);
+//// Active, Selected
+$colorpalette-swatch-selected-border-color = 			$blue;
+$colorpalette-swatch-selected-box-shadow = 				$shadow-depth1;
 
-// /****************************************************************************************
-//  * Editor
-//  ****************************************************************************************/
+/*********************** *****************************************************************
+ * Editor
+ ****************************************************************************************/
 
-// $editor-border									=						1px solid $border-color;
-// $editor-padding									=						$padding;
-// $editor-border-radius							=						$border-radius;
+$editor-background-color = 								#fff;
+$editor-border-color = 									$border-color;
+$editor-border-radius =									$border-radius;
 
-// // Iframe container
-// $editor-iframe-background						=						$container-background-color;
-// $editor-iframe-padding							=						$padding $padding*2;
-// $editor-iframe-border							=						1px solid transparent;
-// $editor-iframe-box-shadow						=						$input-shadow;
+// Iframe container
+$editor-iframe-padding = 								$padding $padding*2;
+$editor-iframe-border-color = 							transparent;
 
-// //// Hover
-// $editor-iframe-hover-border						=						1px solid $highlight-color;
+//// Hover
+$editor-iframe-hover-border-color = 					$blue;
 
-// //// Focused
-// $editor-iframe-focused-border					=						1px solid $highlight-color;
-// $editor-iframe-focused-box-shadow				=						$input-highlight-shadow;
+//// Focused
+$editor-iframe-focused-border-color = 					$blue;
 
-// //// Disabled
-// $editor-disabled-border							=						1px solid $disabled-border-color;
-// $editor-disabled-text-color						=						$disabled-text-color;
-// $editor-iframe-disabled-border					=						1px solid transparent;
-// $editor-iframe-disabled-background				=						$disabled-color;
-// $editor-iframe-disabled-shadow					=						none;
+//// Disabled
+$editor-disabled-border-color =							$border-color;
+$editor-iframe-disabled-border-color = 					transparent;
+$editor-iframe-disabled-background-color = 				$input-disabled-background-color;
 
-// /****************************************************************************************
-//  * Progress Bar
-//  ****************************************************************************************/
-// // Colors
-// $progress-bar-color								=						$dark-blue-color;
-// $progress-bar-alternative-colors				=						{progress-bar-success: $green-color, progress-bar-info: $light-blue-color, progress-bar-warning: $yellow-color, progress-bar-danger: $red-color };
+/****************************************************************************************
+ * Progress Bar
+ ****************************************************************************************/
+// Colors
+$progress-bar-color = 									$blue;
+$progress-bar-alternative-colors =						{
+ 															progress-bar-success: $green,
+ 															progress-bar-info: $blue-light, 
+ 															progress-bar-warning: $yellow, 
+ 															progress-bar-danger: $red
+ 														};
 
-// $progress-bar-empty-color						=						$gray-color;
-// $progress-bar-empty-box-shadow					=						inset 0 1px 2px rgba(0,0,0,.1);
+$progress-bar-empty-color = 							$gray-light;
+$progress-bar-border-radius = 							$border-radius;
+$progress-bar-strips-image-url = 						"images/progressBarStrips.png";
 
-// $progress-bar-border							=						0 none;
-// $progress-bar-border-radius						=						$border-radius;
-// $progress-bar-strips-image-url					=						"images/progressBarStrips.png";
+// Label
+$progress-bar-text-color = 								#fff;
+$progress-bar-font-size = 								smaller;
 
-// // Label
-// $progress-bar-text-color						=						$inverse-text-color;
-// $progress-bar-text-shadow						=						$inverse-text-shadow;
+/****************************************************************************************
+ * Toolbar
+ ****************************************************************************************/
 
-// /****************************************************************************************
-//  * Toolbar
-//  ****************************************************************************************/
+$toolbar-background-color = 							$gray-lighter;
+$toolbar-padding = 										$padding;
 
-// $toolbar-background								=						$primary-color;
-// $toolbar-border									=						1px solid $border-color;
-// $toolbar-padding								=						$padding;
-// $toolbar-border-radius							=						$border-radius;
+// Button (Override default djitButton styles)
+$toolbar-button-border-color = 							transparent;
+$toolbar-button-padding = 								$padding;
+$toolbar-button-background-color =						transparent;
+$toolbar-button-border-radius = 						$border-radius;
+$toolbar-button-spacing = 								$padding;
 
-// // Button (Override default djitButton styles)
-// $toolbar-button-border							=						1px solid transparent;0
-// $toolbar-button-padding							=						$padding;
-// $toolbar-button-background						=						transparent;
-// $toolbar-button-border-radius					=						$border-radius;
-// $toolbar-button-box-shadow						=						none;
-// $toolbar-button-spacing							=						$padding;
-// // Label
-// $toolbar-label-padding							=						$padding*2;
+// Label
+$toolbar-label-padding = 								$padding*2;
 
-// // Separator
-// $toolbar-separator-width						=						1px;
-// $toolbar-separator-height						=						20px;
-// $toolbar-separator-color						=						$border-color;
-// $toolbar-separator-margin						=						0 $padding;
+// Separator
+$toolbar-separator-width = 								1px;
+$toolbar-separator-height = 							20px;
+$toolbar-separator-color = 								$border-color;
+$toolbar-separator-margin = 							0 $margin;
 
-// //// Hover
-// $toolbar-hover-border							=						1px solid $border-color;
+//// Hover
+$toolbar-hover-border-color =							$border-color;
 
-// //// Active
-// $toolbar-active-border							=						1px solid $border-color;
+//// Active
+$toolbar-active-border-color = 							$border-color;
 
-// //// Disabled
-// $toolbar-disabled-background					=						$disabled-background-color;
-// $toolbar-disabled-border-bottom					=						1px solid $disabled-border-color;
+//// Disabled
+$toolbar-disabled-background-color = 					$toolbar-background-color;
+$toolbar-disabled-border-bottom-color = 				$border-color;
 
-// /****************************************************************************************
-//  * Tree
-//  ****************************************************************************************/
+/****************************************************************************************
+ * Tree
+ ****************************************************************************************/
 
-// $tree-background								=						transparent;
+$tree-background-color = 								transparent;
 
-// // Tree row
-// //// Normal
-// $tree-row-padding								=						$padding*2 0;
-// $tree-row-border								=						0 none;
-// $tree-row-line-height							=						$line-height;
+// Tree row
+//// Normal
+$tree-row-padding = 									$padding*2 0;
+$tree-row-border-color = 								transparent;
+$tree-row-line-height = 								$line-height;
 
-// //// Hover
-// $tree-row-hover-background						=						$super-light-gray-color;
-// $tree-row-hover-border							=						$tree-row-border;
+//// Hover
+$tree-row-hover-background-color = 						darken(#fff, 5%);
+$tree-row-hover-border-color = 							$tree-row-border-color;
 
-// //// Active
-// $tree-row-active-padding						=						$tree-row-padding;
-// $tree-row-active-background						=						$super-light-gray-color;
-// $tree-row-active-border							=						$tree-row-border;
+//// Active
+$tree-row-active-padding = 								$tree-row-padding;
+$tree-row-active-background-color =						darken(#fff, 5%);
+$tree-row-active-border-color = 						$tree-row-border-color;
 
-// //// Selected
-// $tree-row-selected-background					=						$highlight-color;
-// $tree-row-selected-border						=						$tree-row-border;
-// $tree-row-selected-color						=						$white-color;
+//// Selected
+$tree-row-selected-background-color = 					$blue;
+$tree-row-selected-border-color = 						$tree-row-border-color;
+$tree-row-selected-text-color = 						#fff;
 
-// //Expando
-// $tree-expando-icon-width						=						16px;
-// $tree-expando-icon-height						=						16px;
-// $tree-expando-margin							=						$padding;
+//Expando
+$tree-expando-icon-width = 								$icon-size;
+$tree-expando-icon-height = 							$icon-size;
+$tree-expando-icon-color = 								$blue;
+$tree-expando-margin = 									$margin;
 
-// /****************************************************************************************
-//  * Time Picker
-//  ****************************************************************************************/
+//// Selected
+$tree-expando-icon-selected-color = 					#fff;
 
-// //// Normal
-// $timepicker-background							=						$container-background-color;
-// $timepicker-padding								=						$padding 0;
-// $timepicker-border								=						1px solid $border-color;
-// $timepicker-border-radius						=						$border-radius;
-// $timepicker-box-shadow							=						$container-shadow;
-// $timepicker-item-padding						=						$padding * 2;
+/****************************************************************************************
+ * Time Picker
+ ****************************************************************************************/
 
-// //// Tick (minor values)
-// $timepicker-tick-text-color						=						$gray-color;
-// $timepicker-tick-border							=						0;
+//// Normal
+$timepicker-background-color = 							#fff;
+$timepicker-padding = 									$padding 0;
+$timepicker-border-color = 								$border-color;
+$timepicker-border-radius = 							$border-radius;
+$timepicker-box-shadow = 								$shadow-depth2;
+$timepicker-item-padding = 								$padding * 2;
 
-// //// Marker (major values)
-// $timepicker-marker-background					=						$super-light-gray-color;
-// $timepicker-marker-border						=						0;
+//// Tick (minor values)
+$timepicker-tick-text-color = 							$gray;
 
-// ////// Hover
+//// Marker (major values)
+$timepicker-marker-background-color = 					transparent;
 
-// $timepicker-item-hovered-text-color				=						$selected-text-color;
-// $timepicker-item-hovered-background				=						$highlight-background;
+////// Hover
 
-// ////// Selected
+$timepicker-item-hovered-text-color = 					$gray-dark;
+$timepicker-item-hovered-background-color = 			darken(#fff, 5%);
 
-// $timepicker-item-selected-text-color			=						$selected-text-color;
-// $timepicker-item-selected-background			=						$highlight-background;
+////// Selected
+$timepicker-item-selected-text-color = 					$gray-dark;
+$timepicker-item-selected-background-color = 			darken(#fff, 5%);
 
+/****************************************************************************************
+ * Title Pane
+ ****************************************************************************************/
 
-// /****************************************************************************************
-//  * Title Pane
-//  ****************************************************************************************/
+$titlepane-highlight-color = 							$blue;
+$titlepane-has-border-radius =							true;
+$titlepane-border-radius = 								$border-radius;
 
-// //title pane's styles are similar to the styles of the accordion dijit
+// Content Pane
+$titlepane-content-background-color = 					#fff;
+$titlepane-content-border-color = 						$border-color;
+$titlepane-content-padding = 							$padding*2;
 
-// $titlepane-highlight-color						=						$highlight-color;
-// $titlepane-has-border-radius					=						true;
-// $titlepane-border-radius						=						$border-radius;
+/****************************************************************************************
+ * Inline Edit Box
+ ****************************************************************************************/
 
-// // content pane
-// $titlepane-content-background					=						$container-background-color;
-// $titlepane-content-border						=						1px solid $border-color;
-// $titlepane-content-padding						=						$padding*2;
+$inlineeditbox-border-color = 							transparent;
+$inlineeditbox-padding = 								$padding $padding + 2px;
+$inlineeditbox-border-radius =							$input-border-radius;
 
-// /****************************************************************************************
-//  * Inline Edit Box
-//  ****************************************************************************************/
+//// Hover
+$inlineeditbox-hover-background-color = 				transparent;
+$inlineeditbox-hover-border-color = 					$blue;
 
-// $inlineeditbox-border							=						1px dashed transparent;
-// $inlineeditbox-padding							=						$padding $padding*2;
-// $inlineeditbox-border-radius					=						$border-radius;
+/****************************************************************************************
+ * DND
+ ****************************************************************************************/
 
-// //// Hover
-// $inlineeditbox-hover-background					=						transparent;
-// $inlineeditbox-hover-border						=						1px dashed $highlight-color;
+$dnd-item-border-color = 								transparent;
 
-// /****************************************************************************************
-//  * DND
-//  ****************************************************************************************/
+//// Hover
+$dnd-hover-background-color = 							$gray-lighter;
+$dnd-hover-border-radius = 								$border-radius;
 
-// $dnd-item-border								=						1px solid transparent;
+//// Anchor
+$dnd-anchor-background-color = 							transparent;
+$dnd-anchor-border-color = 								$blue;
+$dnd-anchor-border-radius = 							$border-radius;
 
-// //// Hover
-// $dnd-hover-background							=						$super-light-gray-color;
-// $dnd-hover-border-radius						=						$border-radius;
+////// Insert Indicator color
+$dnd-avatar-item-insert-indicator-color = 				$blue;
 
-// //// Anchor
-// $dnd-anchor-background							=						transparent;
-// $dnd-anchor-border								=						1px dashed $highlight-color;
-// $dnd-anchor-border-radius						=						$border-radius;
+//// Avatar
 
-// ////// Insert Indicator color
-// $dnd-avatar-item-insert-indicator-color			=						$highlight-color;
-
-// //// Avatar
-
-// ////// Item
-// $dnd-avatar-item-background						=						#fff;
-// $dnd-avatar-item-padding						=						$padding $padding*2;
-// $dnd-avatar-item-border-radius					=						$border-radius;
-// $dnd-avatar-item-box-shadow						=						0 3px 3px rgba(0, 0, 0, 0.25);
+////// Item
+$dnd-avatar-item-background-color = 					#fff;
+$dnd-avatar-item-padding = 								$padding $padding*2;
+$dnd-avatar-item-border-radius = 						$border-radius;
+$dnd-avatar-item-box-shadow = 							$shadow-depth2;
 
 // /****************************************************************************************
 //  ************************************** DGrid *******************************************

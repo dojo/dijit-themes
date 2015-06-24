@@ -1,19 +1,3 @@
-//
-// Copyright 2014 Esri
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//    http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-//
-
 /* TitlePane 
  * 
  * Styling TitlePane means styling the TitlePane title and its content container  (dijitTitlePane)
@@ -36,66 +20,64 @@
 
 @import "../variables";
 
-.dijitTitlePaneTitle {
-	button-style();
-	if($titlepane-has-border-radius) {
-		border-radius: $titlepane-border-radius $titlepane-border-radius 0 0;
-	} else {
-		border-radius: 0;
-	}
-}
+.{$theme-name} {
 
-.dijitTitlePaneTitleHover {
-	button-hover-style();
-	box-shadow: none;
-}
-
-.dijitTitlePaneTitleActive {
-	button-active-style();
-}
-
-//.dijitTitlePaneTitleFocus {
-//}
-
-.dijitTitlePane {
-	.dijitArrowNode {
-		_icon-core-style();
-		text-align: center;
-		&:before {
-			content:"\f078";
-			font-size: 12px;
+	.dijitTitlePaneTitle {
+		button-style();
+		if($titlepane-border-radius && $titlepane-border-radius >= 0) {
+			border-radius: $titlepane-border-radius $titlepane-border-radius 0 0;
 		}
 	}
 
-	.dijitClosed {
-		if($titlepane-has-border-radius) {
-			border-radius: $titlepane-border-radius;
-		} else {
-			border-radius: 0;
+	.dijitTitlePaneTitleHover {
+		button-hover-style();
+	}
+
+	.dijitTitlePaneTitleActive {
+		button-active-style();
+	}
+
+	//.dijitTitlePaneTitleFocus {
+	//}
+
+	.dijitTitlePane {
+		.dijitArrowNode {
+			_icon-core-style();
+			text-align: center;
+			&:before {
+				content:"\e60d";
+			}
 		}
-		.dijitArrowNode:before {
-			content: "\f077";
+
+		.dijitClosed {
+			if($titlepane-has-border-radius) {
+				border-radius: $titlepane-border-radius;
+			} else {
+				border-radius: 0;
+			}
+			.dijitArrowNode:before {
+				content: "\e60a";
+			}
 		}
 	}
-}
 
-.dijitTitlePaneContentOuter {
-	background: $titlepane-content-background;
-	border: $titlepane-content-border;
-	border-top: none;
-	if($titlepane-has-border-radius) {
-		border-radius: 0 0 $titlepane-border-radius $titlepane-border-radius;
-	} else {
-		border-radius: 0;
+	.dijitTitlePaneContentOuter {
+		background-color: $titlepane-content-background-color;
+		border: 1px solid $titlepane-content-border-color;
+		border-top: none;
+		if($titlepane-border-radius && $titlepane-border-radius >= 0) {
+			border-radius: 0 0 $titlepane-border-radius $titlepane-border-radius;
+		}
 	}
-}
 
-.dijitTitlePaneContentInner {
-	padding: $titlepane-content-padding;
-}
+	.dijitTitlePaneContentInner {
+		padding: $titlepane-content-padding;
+	}
 
-.dijitTitlePaneTextNode {
-	margin-left: $padding*2;
-	margin-right: $padding*2;
-	vertical-align:text-top;
+	.dijitTitlePaneTextNode {
+		margin-left: $padding*2;
+		margin-right: $padding*2;
+		vertical-align:text-top;
+	}
+	
 }

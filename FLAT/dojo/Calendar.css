@@ -55,15 +55,17 @@
   font-size: 16px;
   text-decoration: inherit;
   vertical-align: bottom;
+  border: 1px solid transparent;
+  padding: 4px;
 }
 .flat .dijitCalendarDecrease:before {
-  content: "\f0d9";
+  content: "\e60b";
 }
 .flat .dijitCalendarIncrease:before {
-  content: "\f0da";
+  content: "\e60a";
 }
-.flat .dijitCalendarArrowHover,
-.flat .dijitCalendarArrow:hover,
+.flat .dijitCalendarArrowHover .dijitCalendarIncrementControl,
+.flat .dijitCalendarArrow:hover .dijitCalendarIncrementControl,
 .flat .dijitCalendarNextYearHover,
 .flat .dijitCalendarNextYear:hover,
 .flat .dijitCalendarPreviousYearHover,
@@ -84,8 +86,8 @@
   background: #fff;
   padding: 4px;
 }
-.flat .dijitCalendarArrowActive,
-.flat .dijitCalendarArrow:active,
+.flat .dijitCalendarArrowActive .dijitCalendarIncrementControl,
+.flat .dijitCalendarArrow:active .dijitCalendarIncrementControl,
 .flat .dijitCalendarNextYearActive,
 .flat .dijitCalendarNextYear:active,
 .flat .dijitCalendarPreviousYearActive,
@@ -192,5 +194,5 @@
 }
 .flat .dijitCalendarMonthMenu .dijitCalendarMonthLabelHover {
   color: #333;
-  background: $menu-item-hovered-background;
+  background-color: #f2f2f2;
 }

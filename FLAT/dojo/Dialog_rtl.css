@@ -1,7 +1,8 @@
-.dijitDialogRtl .dijitDialogCloseIcon {
+.flat .dijitDialogRtl .dijitDialogCloseIcon {
   right: auto;
   left: 12px;
 }
-.dijitDialogRtl .dijitDialogPaneActionBar {
+.flat .dijitDialogRtl .dijitDialogPaneActionBar,
+.flat .dijitTooltipDialogRtl .dijitDialogPaneActionBar {
   text-align: left;
 }

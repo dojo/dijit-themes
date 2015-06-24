@@ -2,9 +2,9 @@
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
-/* ----- rag and Drop ----- */
+/* ----- Drag and Drop ----- */
 .dojoDndItem {
-  border: $dnd-item-border;
+  border: 1px solid transparent;
   cursor: pointer;
   -webkit-transition-duration: 0.25s;
   -moz-transition-duration: 0.25s;
@@ -17,22 +17,28 @@
   -ms-transition-property: background-color, border-color, opacity;
   transition-property: background-color, border-color, opacity;
 }
+/* hover */
 .dojoDndItemOver {
-  background: $dnd-hover-background;
+  background-color: #f5f5f5;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
 }
 .dojoDndItemAnchor {
-  background: $dnd-anchor-background;
-  border: $dnd-anchor-border;
+  background-color: transparent;
+  border: 1px dashed #007ac2;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
 }
+/* selected */
 .dojoDndItemBefore {
   background: transparent;
   padding-top: 2px;
-  border-top: 1px solid $dnd-avatar-item-insert-indicator-color;
+  border-top: 1px solid #007ac2;
 }
 .dojoDndItemAfter {
   background: transparent;
   padding-bottom: 2px;
-  border-bottom: 1px solid $dnd-avatar-item-insert-indicator-color;
+  border-bottom: 1px solid #007ac2;
 }
 /* Avatar */
 table.dojoDndAvatar {
@@ -50,27 +56,32 @@ table.dojoDndAvatar {
   vertical-align: bottom;
   display: table-cell;
 }
+/* cannot drop */
 .dojoDndMove .dojoDndAvatarHeader:before {
-  color: $red-color;
-  content: "\f05e";
+  color: #da4d1e;
+  content: "\e610";
 }
 .dojoDndCopy .dojoDndAvatarHeader:before {
-  color: $red-color;
-  content: "\f05e";
+  color: #da4d1e;
+  content: "\e610";
 }
+/* can drop */
 .dojoDndMove .dojoDndAvatarCanDrop .dojoDndAvatarHeader:before {
-  color: $green-color;
-  content: "\f060";
+  color: #35ac46;
+  content: "\e60f";
 }
 .dojoDndCopy .dojoDndAvatarCanDrop .dojoDndAvatarHeader:before {
-  color: $green-color;
-  content: "\f060";
+  color: #35ac46;
+  content: "\e60f";
 }
-.dojoDndAvatarItem td {
-  padding: $dnd-avatar-item-padding;
+.dojoDndAvatarItem {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
 }
 .dojoDndAvatarItem td > * {
-  background: $dnd-avatar-item-background;
-  -webkit-box-shadow: $dnd-avatar-item-box-shadow;
-  box-shadow: $dnd-avatar-item-box-shadow;
+  padding: 4px 8px;
+  list-style-type: none;
+  background-color: #fff;
+  -webkit-box-shadow: 0 7px 3px -4px rgba(0,0,0,0.3), 0 8px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 7px 3px -4px rgba(0,0,0,0.3), 0 8px 8px rgba(0,0,0,0.2);
 }

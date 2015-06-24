@@ -57,30 +57,32 @@
 
 	.dijitCalendarIncrementControl {
 		_icon-core-style();
+		border: 1px solid transparent;
+		padding: $padding;
 	}
 
 	.dijitCalendarDecrease {
 		&:before {
-			content: "\f0d9";
+			content: "\e60b";
 		}
 	}
 
 	.dijitCalendarIncrease {
 		&:before {
-			content: "\f0da";
+			content: "\e60a";
 		}
 	}
 
-	.dijitCalendarArrowHover,
-	.dijitCalendarArrow:hover,
+	.dijitCalendarArrowHover .dijitCalendarIncrementControl,
+	.dijitCalendarArrow:hover .dijitCalendarIncrementControl,
 	.dijitCalendarNextYearHover, .dijitCalendarNextYear:hover,
 	.dijitCalendarPreviousYearHover, .dijitCalendarPreviousYear:hover  {
 		button-style();
 		padding: $padding;
 	}
 
-	.dijitCalendarArrowActive,
-	.dijitCalendarArrow:active,
+	.dijitCalendarArrowActive .dijitCalendarIncrementControl,
+	.dijitCalendarArrow:active .dijitCalendarIncrementControl,
 	.dijitCalendarNextYearActive, .dijitCalendarNextYear:active
 	.dijitCalendarPreviousYearActive, .dijitCalendarPreviousYear:active  {
 		button-active-style();
@@ -224,7 +226,7 @@
 
 		.dijitCalendarMonthLabelHover {
 			color: $calendar-month-dropdown-menu-item-hovered-text-color;
-			background: $calendar-month-dropdown-menu-item-hovered-background;
+			background-color: $calendar-month-dropdown-menu-item-hovered-background-color;
 		}
 	}
 	

@@ -14,41 +14,41 @@
  * 3. disabled Editor iframe container 
  * 		.dijitEditorDisabled - editor's inner iframe container disable status styles: background, border
  */
-.dijitEditor {
-  background: #fff;
+.flat .dijitEditor {
+  background-color: #fff;
   border: 1px solid #d0d0d0;
+  -webkit-border-radius: 2px;
   border-radius: 2px;
 }
-.dijitEditor .dijitEditorIFrameContainer {
+.flat .dijitEditor .dijitEditorIFrameContainer {
   border: 1px solid transparent;
   border-top: 1px solid #d0d0d0;
   padding: 4px 8px;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.1) inset;
-  transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+  -webkit-transition: border 0.2s linear 0s;
+  -moz-transition: border 0.2s linear 0s;
+  -o-transition: border 0.2s linear 0s;
+  -ms-transition: border 0.2s linear 0s;
+  transition: border 0.2s linear 0s;
 }
-/* Hover */
-.dijitEditorHover .dijitEditorIFrameContainer,
-.dijitEditorHover .dijitEditorIFrameContainer .dijitEditorIFrame {
+.flat .dijitEditorHover .dijitEditorIFrameContainer,
+.flat .dijitEditorHover .dijitEditorIFrameContainer .dijitEditorIFrame {
   border: 1px solid #007ac2;
 }
-/* Focused */
-.dijitEditorFocused .dijitEditorIFrameContainer {
-  border: 1px solid #007ac2;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.15) inset;
-}
-.dijitEditorFocused .dijitEditorIFrameContainer .dijitEditorIFrame {
+.flat .dijitEditorFocused .dijitEditorIFrameContainer {
   border: 1px solid #007ac2;
 }
-/* Disabled */
-.dijitEditorDisabled {
+.flat .dijitEditorFocused .dijitEditorIFrameContainer .dijitEditorIFrame {
+  border: 1px solid #007ac2;
+}
+.flat .dijitEditorDisabled {
   border: 1px solid #d0d0d0;
-  color: #9a9b9f;
   opacity: 0.65;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+  filter: alpha(opacity=65);
 }
-.dijitEditorDisabled .dijitEditorIFrame,
-.dijitEditorDisabled .dijitEditorIFrameContainer,
-.dijitEditorDisabled .dijitEditorIFrameContainer .dijitEditorIFrame {
-  background: #f5f5f5;
+.flat .dijitEditorDisabled .dijitEditorIFrame,
+.flat .dijitEditorDisabled .dijitEditorIFrameContainer,
+.flat .dijitEditorDisabled .dijitEditorIFrameContainer .dijitEditorIFrame {
+  background-color: #f5f5f5;
   border: 1px solid transparent;
-  box-shadow: none;
 }

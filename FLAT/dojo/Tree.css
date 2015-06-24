@@ -19,74 +19,87 @@
  * Tree Expando:
  * 	    dijitTreeExpando - the expando at the left of the text of each tree row
  * 
- * Drag and Drop on TreeNodes: (insert line on dijitTreeContent node so it'll aligned w/ target element)
- * 		.dijitTreeNode .dojoDndItemBefore/.dojoDndItemAfter - use border style simulate a separate line
  */
-.dijitTreeIsRoot {
-  background: transparent;
+.flat .dijitTreeIsRoot {
+  background-color: transparent;
 }
-.dijitTreeRow,
-.dijitTreeNode .dojoDndItemBefore,
-.dijitTreeNode .dojoDndItemAfter {
+.flat .dijitTreeRow,
+.flat .dijitTreeNode .dojoDndItemBefore,
+.flat .dijitTreeNode .dojoDndItemAfter {
   padding: 8px 0;
-  border: 0 none;
+  border: 0 transparent;
   line-height: 20px;
-  transition-property: background-color, border-color;
+  -webkit-transition-property: background-color;
+  -moz-transition-property: background-color;
+  -o-transition-property: background-color;
+  -ms-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.15s;
+  -moz-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  -ms-transition-duration: 0.15s;
   transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-/* Hover */
-.dijitTreeRowHover {
-  background: #f5f5f5;
-  border: 0 none;
+.flat .dijitTreeRowHover {
+  background-color: #f2f2f2;
+  border-color: transparent;
+  -webkit-transition-duration: 0.15s;
+  -moz-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  -ms-transition-duration: 0.15s;
   transition-duration: 0.15s;
 }
-/* Active */
-.dijitTreeRowActive {
-  background: #f5f5f5;
-  border: 0 none;
+.flat .dijitTreeRowActive {
+  background-color: #f2f2f2;
+  border-color: transparent;
 }
-/* Selected */
-.dijitTreeRowSelected,
-.dijitTreeRowHover.dijitTreeRowSelected,
-.dijitTreeRowActive.dijitTreeRowSelected {
+.flat .dijitTreeRowSelected,
+.flat .dijitTreeRowHover.dijitTreeRowSelected,
+.flat .dijitTreeRowActive.dijitTreeRowSelected {
   color: #fff;
-  background: #007ac2;
-  border: 0 none;
+  background-color: #007ac2;
+  border-color: transparent;
 }
-/* Focused */
-/*
-.dijitTreeRowFocused {
+.flat .dijitTreeRowSelected .dijitTreeExpando,
+.flat .dijitTreeRowHover.dijitTreeRowSelected .dijitTreeExpando,
+.flat .dijitTreeRowActive.dijitTreeRowSelected .dijitTreeExpando {
+  color: #fff;
 }
-*/
-/* expando (open/closed) icon */
-.dijitTreeExpando {
-  font-family: FontAwesome;
+.flat .dijitTreeExpando {
+  font-family: "dojo-flat-icon";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-decoration: inherit;
+  vertical-align: bottom;
   width: 16px;
   height: 16px;
   line-height: 16px;
-  font-size: 12px;
   text-align: center;
   margin-left: 4px;
   margin-right: 4px;
+  color: #007ac2;
+  vertical-align: middle;
 }
-.dijitTreeExpandoOpened:before {
-  content: "\f078";
+.flat .dijitTreeExpandoOpened:before {
+  content: "\e60d";
   cursor: pointer;
 }
-.dijitTreeExpandoClosed:before {
-  content: "\f054";
+.flat .dijitTreeExpandoClosed:before {
+  content: "\e60a";
   cursor: pointer;
 }
-/*
-.dijitTreeRowHover .dijitTreeExpandoOpened {
-}
-
-.dijitTreeRowHover .dijitTreeExpandoClosed {
-}
-*/
-.dijitTreeExpandoLoading:before {
-  content: "\f021";
+.flat .dijitTreeExpandoLoading:before {
+  content: "\e60e";
+  -webkit-animation: spinning 2s linear infinite;
+  -moz-animation: spinning 2s linear infinite;
+  -o-animation: spinning 2s linear infinite;
+  -ms-animation: spinning 2s linear infinite;
   animation: spinning 2s linear infinite;
 }
 .dj_ie8 .dijitTreeExpandoLoading,
@@ -97,62 +110,67 @@
 .dj_ie9 .dijitTreeExpandoLoading:before {
   content: "";
 }
-/* DnD */
-/* No Nodes with class name "dojoDndItemBefore" or "dojoDndItemAfter"
-   found when dragging a tree node?! 
-*/
-/*
-.dijitTreeNode {
-	.dojoDndItemBefore .dijitTreeContent {
-		border-top: 2px solid $dnd-avatar-item-insert-indicator-color;
-	}
-	.dojoDndItemAfter .dijitTreeContent {
-		border-bottom: 2px solid $dnd-avatar-item-insert-indicator-color;
-	}
-}
-*/
 @-moz-keyframes spinning {
-  0% {
+  from {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
     transform: rotate(0);
   }
-
-  100% {
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
 @-webkit-keyframes spinning {
-  0% {
+  from {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
     transform: rotate(0);
   }
-
-  100% {
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
 @-o-keyframes spinning {
-  0% {
+  from {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
     transform: rotate(0);
   }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@-ms-keyframes spinning {
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
 @keyframes spinning {
-  0% {
+  from {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
     transform: rotate(0);
   }
-
-  100% {
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }

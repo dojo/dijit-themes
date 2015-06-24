@@ -1,6 +1,6 @@
-.dijitCalendarRtl .dijitCalendarDecrease:before {
-  content: "\f0da";
+.flat .dijitCalendarRtl .dijitCalendarDecrease:before {
+  content: "\e60a";
 }
-.dijitCalendarRtl .dijitCalendarIncrease:before {
-  content: "\f0d9";
+.flat .dijitCalendarRtl .dijitCalendarIncrease:before {
+  content: "\e60b";
 }

@@ -8,15 +8,18 @@
  * 2. Hover state
  * 		.dijitInlineEditBoxDisplayModeHover - for border and background color
  */
-.dijitInlineEditBoxDisplayMode {
+.flat .dijitInlineEditBoxDisplayMode {
   border: 1px dashed transparent;
-  padding: 4px 8px;
+  padding: 4px 6px;
+  -webkit-border-radius: 2px;
   border-radius: 2px;
 }
-.dijitInlineEditBoxDisplayModeHover {
-  background: transparent;
+.flat .dijitInlineEditBoxDisplayModeHover {
+  background-color: transparent;
   border: 1px dashed #007ac2;
 }
-.dijitInlineEditBoxDisplayModeDisabled {
+.flat .dijitInlineEditBoxDisplayModeDisabled {
   opacity: 0.65;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+  filter: alpha(opacity=65);
 }

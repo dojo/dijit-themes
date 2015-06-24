@@ -20,37 +20,51 @@
  *		.dijitColorPalette .dijitPaletteCellSelected .dijitPaletteImg
  *		adds border for active or selected state
  */
-.dijitColorPalette {
+.flat .dijitColorPalette {
   border: 1px solid #d0d0d0;
-  background: #fff;
+  background-color: $colorpalette-background-color;
+  -webkit-border-radius: 2px;
   border-radius: 2px;
 /* swatch */
 }
-.dijitColorPalette .dijitPaletteTable {
+.flat .dijitColorPalette .dijitPaletteTable {
   padding: 4px;
 }
-.dijitColorPalette .dijitColorPaletteSwatch {
+.flat .dijitColorPalette .dijitColorPaletteSwatch {
   height: 15px;
   width: 15px;
+  -webkit-border-radius: 2px;
   border-radius: 2px;
 }
-.dijitColorPalette .dijitPaletteImg {
+.flat .dijitColorPalette .dijitPaletteImg {
 /* transparent (but clickable) <img> node inside of each <td>, overlaying the color swatch.
-		 * displays border around a color swatch
-		 * overrides border color in dijit.css */
+			 * displays border around a color swatch
+			 * overrides border color in dijit.css */
   border: 1px solid transparent;
   line-height: normal;
 }
-.dijitColorPalette .dijitPaletteCell:hover .dijitPaletteImg {
-  border: 1px solid #d0d0d0;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+.flat .dijitColorPalette .dijitPaletteCell:hover .dijitPaletteImg {
+  border-color: #d0d0d0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 2px;
   border-radius: 2px;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
-.dijitColorPalette .dijitPaletteCell:active .dijitPaletteImg,
-.dijitColorPalette .dijitPaletteTable .dijitPaletteCellSelected .dijitPaletteImg {
+.flat .dijitColorPalette .dijitPaletteCell:active .dijitPaletteImg,
+.flat .dijitColorPalette .dijitPaletteTable .dijitPaletteCellSelected .dijitPaletteImg {
   border: 1px solid #007ac2;
-  box-shadow: 0 3px 3px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0 1px 0.5px rgba(0,0,0,0.3), 0 2px 2px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 0.5px rgba(0,0,0,0.3), 0 2px 2px rgba(0,0,0,0.2);
+  -webkit-border-radius: 2px;
   border-radius: 2px;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
   transform: scale(1.2);
 }

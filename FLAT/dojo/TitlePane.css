@@ -17,61 +17,71 @@
  * 1. outer/inner container: 
  * 		.dijitTitlePaneContentOuter / dijitTitlePaneContentInner - styles for the content outer div
  */
-.dijitTitlePaneTitle {
+.flat .dijitTitlePaneTitle {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d0d0d0;
   padding: 4px 12px;
+  -webkit-border-radius: 2px;
   border-radius: 2px;
-  box-shadow: none;
   line-height: 20px;
-  text-shadow: 0 1px 1px rgba(255,255,255,0.75);
   cursor: pointer;
-  border: 1px solid #d0d0d0;
-  background: #f5f5f5;
-  background: linear-gradient(#f5f5f5, #f5f5f5);
+  -webkit-transition: all 0.05s linear;
+  -moz-transition: all 0.05s linear;
+  -o-transition: all 0.05s linear;
+  -ms-transition: all 0.05s linear;
+  transition: all 0.05s linear;
+  background: #fff;
+  -webkit-border-radius: 2px 2px 0 0;
   border-radius: 2px 2px 0 0;
 }
-.dijitTitlePaneTitleHover {
-  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+.flat .dijitTitlePaneTitleHover {
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  -ms-transition: all 0.1s;
   transition: all 0.1s;
-  background: #e1e1e1;
-  background: linear-gradient(#f6f6f6, #e1e1e1);
-  box-shadow: none;
+  background: #f2f2f2;
 }
-.dijitTitlePaneTitleActive {
-  box-shadow: 0 1px 3px rgba(0,0,0,0.25) inset;
+.flat .dijitTitlePaneTitleActive {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
   transition: none;
   outline: none;
-  background: #d0d0d0;
-  background: linear-gradient(#f5f5f5, #f5f5f5);
+  background: #e6e6e6;
 }
-.dijitTitlePane .dijitArrowNode {
-  font-family: FontAwesome;
+.flat .dijitTitlePane .dijitArrowNode {
+  font-family: "dojo-flat-icon";
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   text-decoration: inherit;
   vertical-align: bottom;
   text-align: center;
 }
-.dijitTitlePane .dijitArrowNode:before {
-  content: "\f078";
-  font-size: 12px;
+.flat .dijitTitlePane .dijitArrowNode:before {
+  content: "\e60d";
 }
-.dijitTitlePane .dijitClosed {
+.flat .dijitTitlePane .dijitClosed {
+  -webkit-border-radius: 2px;
   border-radius: 2px;
 }
-.dijitTitlePane .dijitClosed .dijitArrowNode:before {
-  content: "\f077";
+.flat .dijitTitlePane .dijitClosed .dijitArrowNode:before {
+  content: "\e60a";
 }
-.dijitTitlePaneContentOuter {
-  background: #fff;
+.flat .dijitTitlePaneContentOuter {
+  background-color: #fff;
   border: 1px solid #d0d0d0;
   border-top: none;
+  -webkit-border-radius: 0 0 2px 2px;
   border-radius: 0 0 2px 2px;
 }
-.dijitTitlePaneContentInner {
+.flat .dijitTitlePaneContentInner {
   padding: 8px;
 }
-.dijitTitlePaneTextNode {
+.flat .dijitTitlePaneTextNode {
   margin-left: 8px;
   margin-right: 8px;
   vertical-align: text-top;

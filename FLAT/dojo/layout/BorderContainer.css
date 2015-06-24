@@ -29,89 +29,69 @@ Splitters and gutters:
 .dijitSplitterHActive - for background-color of an active horizontal splitter
 .dijitSplitterVActive - for background-color of an active horizontal splitter
 */
-
-@import "../../variables";
-
-.{$theme-name} {
-
-	.dijitBorderContainer {
-		/* matches the width of the splitters between panes */
-		padding: $splitter-size;
-	}
-
-	.dijitSplitContainer-child,
-	.dijitBorderContainer-child {
-		border: 1px solid $bordercontainer-border-color;
-	}
-
-	.dijitBorderContainer-dijitTabContainerTop,
-	.dijitBorderContainer-dijitTabContainerBottom,
-	.dijitBorderContainer-dijitTabContainerLeft,
-	.dijitBorderContainer-dijitTabContainerRight,
-	.dijitBorderContainer-dijitAccordionContainer {
-		/* except that TabContainer defines borders on it's sub-nodes (tablist and dijitTabPaneWrapper),
+.flat .dijitBorderContainer {
+/* matches the width of the splitters between panes */
+  padding: 5px;
+}
+.flat .dijitSplitContainer-child,
+.flat .dijitBorderContainer-child {
+  border: 1px solid #d0d0d0;
+}
+.flat .dijitBorderContainer-dijitTabContainerTop,
+.flat .dijitBorderContainer-dijitTabContainerBottom,
+.flat .dijitBorderContainer-dijitTabContainerLeft,
+.flat .dijitBorderContainer-dijitTabContainerRight,
+.flat .dijitBorderContainer-dijitAccordionContainer {
+/* except that TabContainer defines borders on it's sub-nodes (tablist and dijitTabPaneWrapper),
 		 * so override rule setting border on domNode
 		 */
-		 border: none;
-	}
-
-	.dijitBorderContainer-dijitBorderContainer {
-		border: 0;
-		padding: 0;
-	}
-
-	/* Splitters and gutters */
-
-	.dijitSplitterH,
-	.dijitGutterH {
-		background:none;
-		border:0;
-		height: $splitter-size;
-	}
-
-	.dijitSplitterH .dijitSplitterThumb {
-		background: $splitter-color;
-		height: 1px;
-		top: isEven($splitter-size) ? half($splitter-size) : half($splitter-size - 1);
-		width: 19px;
-	}
-
-	.dijitSplitterV,
-	.dijitGutterV {
-		background:	$splitter-background;
-		border: 0;
-		width:	$splitter-size;
-		margin: 0;
-	}
-
-	.dijitSplitterV .dijitSplitterThumb {
-		background: $splitter-color;
-		height: 19px;
-		left: isEven($splitter-size) ? half($splitter-size) : half($splitter-size - 1);
-		width: 1px;
-		margin: 0;
-	}
-
-	/* hovered */
-	.dijitSplitterHHover,
-	.dijitSplitterVHover {
-		font-size: 1px;
-		background: $splitter-hovered-background;
-
-		.dijitSplitterThumb {
-			background: $splitter-hovered-color;
-		}
-	}
-
-	/* active (dragged) */
-
-	.dijitSplitterHActive,
-	.dijitSplitterVActive {
-		font-size: 1px;
-		background: $splitter-dragged-background;
-		.dijitSplitterThumb {
-			background: $splitter-dragged-color;
-		}
-	}
-	
+  border: none;
+}
+.flat .dijitBorderContainer-dijitBorderContainer {
+  border: 0;
+  padding: 0;
+}
+.flat .dijitSplitterH,
+.flat .dijitGutterH {
+  background: none;
+  border: 0;
+  height: 5px;
+}
+.flat .dijitSplitterH .dijitSplitterThumb {
+  background: #d0d0d0;
+  height: 1px;
+  top: 2px;
+  width: 19px;
+}
+.flat .dijitSplitterV,
+.flat .dijitGutterV {
+  background: $splitter-background;
+  border: 0;
+  width: 5px;
+  margin: 0;
+}
+.flat .dijitSplitterV .dijitSplitterThumb {
+  background: #d0d0d0;
+  height: 19px;
+  left: 2px;
+  width: 1px;
+  margin: 0;
+}
+.flat .dijitSplitterHHover,
+.flat .dijitSplitterVHover {
+  font-size: 1px;
+  background: $splitter-hovered-background;
+}
+.flat .dijitSplitterHHover .dijitSplitterThumb,
+.flat .dijitSplitterVHover .dijitSplitterThumb {
+  background: #9c9c9c;
+}
+.flat .dijitSplitterHActive,
+.flat .dijitSplitterVActive {
+  font-size: 1px;
+  background: $splitter-dragged-background;
+}
+.flat .dijitSplitterHActive .dijitSplitterThumb,
+.flat .dijitSplitterVActive .dijitSplitterThumb {
+  background: #9c9c9c;
 }

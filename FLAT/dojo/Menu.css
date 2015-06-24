@@ -54,7 +54,7 @@ There are three areas of styling for the Menu:
 .flat .dijitMenuItem,
 .flat .dijitMenuItem td {
   line-height: 20px;
-  padding: 4px;
+  padding: 8px;
   white-space: nowrap;
 }
 .flat .dijitMenuItemHover td,

@@ -20,26 +20,17 @@
  * .dijitBorderContainer-dijitContentPane
  *	set background-color and padding of ContentPane nested within a BorderContainer 
  */
-
-@import "../../variables";
-
-.{$theme-name} {
-
-	.dijitContentPane {
-		background-color: $contentpane-background-color;
-		padding: $contentpane-padding;
-	}		
-
-	/* contentpane in other layouts */
-	.dijitTabContainerTop-dijitContentPane,
-	.dijitTabContainerLeft-dijitContentPane,
-	.dijitTabContainerBottom-dijitContentPane,
-	.dijitTabContainerRight-dijitContentPane,
-	.dijitAccordionContainer-dijitContentPane {
-		background-color: $contentpane-nested-background-color;
-		padding: $contentpane-nested-padding;
-	    left: 0 !important;
-	    top: 0 !important;
-	}
-	
+.flat .dijitContentPane {
+  background-color: transparent;
+  padding: 0;
+}
+.flat .dijitTabContainerTop-dijitContentPane,
+.flat .dijitTabContainerLeft-dijitContentPane,
+.flat .dijitTabContainerBottom-dijitContentPane,
+.flat .dijitTabContainerRight-dijitContentPane,
+.flat .dijitAccordionContainer-dijitContentPane {
+  background-color: transparent;
+  padding: 4px;
+  left: 0 !important;
+  top: 0 !important;
 }
