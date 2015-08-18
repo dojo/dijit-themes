@@ -1,0 +1,178 @@
+/*****************
+ * Mixins
+******************/
+
+isEven($value) {
+	// to calculate when the value is an even number or not
+	if ($value % 2 == 0) {
+ 		true;
+	} else { 
+ 		false;
+	}
+}
+
+half($value) {
+	// to take half of the given value
+	$value / 2;
+}
+
+/*****************
+ * Icon
+******************/
+
+_icon-core-style() {
+	
+	font-variant: normal;
+	text-transform: none;
+	
+	font-family: $icon-font-family;
+	font-style: normal;
+	font-weight: normal;
+	font-size: $icon-size;
+	font-variant: normal;
+	text-transform: none;
+	text-decoration: inherit;
+	speak: none;
+	// vertical-align: bottom;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*****************
+ * button
+******************/
+
+_button-bg-color(color) {
+	background: color;
+}
+
+_button-bg-color-hover(color) {
+	background: darken(color, 5%);
+}
+
+_button-bg-color-active(color) {
+	background: darken(color, 10%);
+}
+
+button-style() {
+	// Common button style properties
+	border-style: solid;
+	border-width: 1px;
+	border-color: $button-default-border-color;
+	padding: $button-padding;
+	border-radius: $button-border-radius;
+	line-height: $line-height;
+	cursor: pointer;
+	transition: all 0.05s linear;
+	_button-bg-color($button-default-color);
+}
+
+button-hover-style() {
+	transition: all 0.1s;
+	_button-bg-color-hover($button-default-color);
+}
+
+button-active-style() {
+	transition: none;
+	outline: none;
+	_button-bg-color-active($button-default-color);
+}
+
+button-disabled-style() {
+	cursor: default;
+	opacity:$disabled-opacity;
+}
+
+// Alternative colors
+
+create-alternative-buttons(colors) {
+	colors = arguments if length(arguments) >= 1;
+	
+	for class in colors {
+		.dijitButton.{class} .dijitButtonNode,
+		.dijitDropDownButton.{class} .dijitButtonNode,
+		.dijitComboButton.{class} .dijitButtonNode,
+		.dijitToggleButton.{class} .dijitButtonNode,
+		.dijitComboBox.{class} .dijitButtonNode,
+		.dijitSelect.{class} .dijitButtonContents, 
+		.dijitSelect.{class} .dijitButtonNode,
+		.dijitSpinner.{class} .dijitArrowButton {
+			_button-bg-color(colors[class]);
+			color: $button-alternative-text-color;
+			border-color: transparent;
+		}
+		
+		.dijitComboButton.{class} .dijitStretch {
+			border-right-color: darken(colors[class], 18.5%);
+		}
+		
+		.dijitComboButtonRtl.{class} .dijitStretch {
+			border-left-color: darken(colors[class], 18.5%);;
+		}
+	}
+}
+
+create-alternative-buttons-hover(colors) {
+	colors = arguments if length(arguments) >= 1;
+	for class in colors {
+		.dijitButtonHover.{class} .dijitButtonNode,
+		.dijitDropDownButtonHover.{class} .dijitButtonNode,
+		.dijitComboButton.{class} .dijitButtonNodeHover,
+		.dijitComboButton.{class} .dijitDownArrowButtonHover,
+		.dijitToggleButtonHover.{class} .dijitButtonNode,
+		.dijitComboBoxHover.{class} .dijitButtonNode,
+		.dijitSelectHover.{class} .dijitButtonContents, 
+		.dijitSelectHover.{class} .dijitButtonNode,
+		.dijitSelect.dijitSelectOpened.{class} .dijitButtonContents, 
+		.dijitSelect.dijitSelectOpened.{class} .dijitArrowButton,
+		.dijitSpinner.{class} .dijitUpArrowButtonHover, 
+		.dijitSpinner.{class} .dijitDownArrowButtonHover {
+			_button-bg-color-hover(colors[class]);
+		}
+	}
+}
+
+create-alternative-buttons-active(colors) {
+	colors = arguments if length(arguments) >= 1;
+	for class in colors {
+		.dijitButtonActive.{class} .dijitButtonNode,
+		.dijitDropDownButtonActive.{class} .dijitButtonNode,
+		.dijitComboButton.{class} .dijitButtonNodeActive,
+		.dijitToggleButtonActive.{class} .dijitButtonNode,
+		.dijitComboBoxActive.{class} .dijitButtonNode,
+		.dijitSelectActive.{class} .dijitButtonContents, .dijitSelectActive.{class} .dijitArrowButton,
+		.dijitSelect.dijitSelectOpened.{class} .dijitButtonContents, .dijitSelect.dijitSelectOpened.{class} .dijitArrowButton ,
+		.dijitComboBox.{class} .dijitButtonNode.dijitHasDropDownOpen,
+		.dijitSpinner.{class} .dijitUpArrowButtonActive, .dijitSpinner.{class} .dijitDownArrowButtonActive {
+			_button-bg-color-active(colors[class]);
+		}
+	}
+}
+
+
+/*****************
+ * TextBox
+******************/
+
+// Alternative colors (Textboxes in Select, ComboBox, NumberSpinner, TimeTextBox and DateTextBox)
+
+create-alternative-textboxes(colors) {
+	colors = arguments if length(arguments) >= 1;
+	
+	for class in colors {
+		.dijitSelect.{class},
+		.dijitComboBox.{class},
+		.dijitSpinner.{class} {
+			border-color: colors[class];
+		}
+	}
+}
+
+/*****************
+ * Progress bar 
+ ****************/
+
+_progress-bar-color-properties(color) {
+	background-color: color;
+}

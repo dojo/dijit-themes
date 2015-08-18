@@ -1,0 +1,123 @@
+/* NumberSpinner - namespace "dijitSpinner"
+ * 
+ * Styling NumberSpinner mainly includes:
+ * 
+ * 1. Arrows
+ * 		Outer containers: .dijitSpinnerButtonContainer|.dijitSpinnerButtonInner  - for border, padding and position
+ * 		Arrows: .dijitArrowButton|.dijitUpArrowButton.|dijitDownArrowButton
+ * 		Inner container: .dijitArrowButtonInner - for border, padding, width|height and background image
+ * 
+ * 2. Hover state
+ * 		.dijitUpArrowButtonHover|.dijitDownArrowButtonHover .*  - for background color|image
+ * 
+ * 3. Active state
+ * 		.dijitUpArrowButtonActive|.dijitDownArrowButtonActive .*  - for border, padding, margin and background color|image
+ * 
+ * 4. Focused state
+ * 		.dijitSpinnerFocused .* - for background color|image
+ * 
+ * 5. Disabled state
+ * 		.dijitSpinnerDisabled .* - for background color|image
+ */
+.flat .dijitSpinner .dijitSpinnerButtonContainer {
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  padding: 0;
+  border: 1px solid #d0d0d0;
+}
+.flat .dijitSpinner .dijitSpinnerButtonInner {
+  width: 30px;
+  padding: 4px;
+  margin: 0;
+}
+.flat .dijitSpinner .dijitArrowButton {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d0d0d0;
+  padding: 4px 12px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  line-height: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.05s linear;
+  -moz-transition: all 0.05s linear;
+  -o-transition: all 0.05s linear;
+  -ms-transition: all 0.05s linear;
+  transition: all 0.05s linear;
+  background: #fff;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+  width: auto;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  padding: 0;
+}
+.flat .dijitSpinner .dijitArrowButton:before {
+  content: none;
+}
+.flat .dijitSpinner .dijitUpArrowButton {
+  border-top-right-radius: 2px;
+}
+.flat .dijitSpinner .dijitDownArrowButton {
+  border-bottom-right-radius: 2px;
+}
+.flat .dijitSpinner .dijitUpArrowButtonHover,
+.flat .dijitSpinner .dijitDownArrowButtonHover {
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  -ms-transition: all 0.1s;
+  transition: all 0.1s;
+  background: #f2f2f2;
+}
+.flat .dijitSpinner .dijitDownArrowButtonActive,
+.flat .dijitSpinner .dijitUpArrowButtonActive {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+  outline: none;
+  background: #e6e6e6;
+}
+.flat .dijitSpinner .dijitArrowButtonInner {
+  line-height: 16px;
+  display: block;
+}
+.flat .dijitSpinner .dijitArrowButtonInner .dijitInputField {
+  padding: 0;
+}
+.flat .dijitSpinner .dijitArrowButtonInner:before {
+  content: "\e603";
+}
+.flat .dijitSpinner .dijitDownArrowButton .dijitArrowButtonInner:before {
+  content: "\e600";
+}
+.flat .dijitSpinnerDisabled .dijitDownArrowButton,
+.flat .dijitSpinnerDisabled .dijitUpArrowButton {
+  cursor: default;
+  opacity: 0.65;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+  filter: alpha(opacity=65);
+}
+.flat .btn-primary .dijitSpinnerButtonContainer {
+  border-color: #007ac2;
+}
+.flat .btn-success .dijitSpinnerButtonContainer {
+  border-color: #35ac46;
+}
+.flat .btn-info .dijitSpinnerButtonContainer {
+  border-color: #00b9f2;
+}
+.flat .btn-warning .dijitSpinnerButtonContainer {
+  border-color: #f89927;
+}
+.flat .btn-danger .dijitSpinnerButtonContainer {
+  border-color: #da4d1e;
+}
+.flat .btn-inverse .dijitSpinnerButtonContainer {
+  border-color: #333;
+}
