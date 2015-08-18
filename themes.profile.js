@@ -3,9 +3,9 @@ var profile = (function(){
 
 		copyOnly = function(filename, mid){
 			var list = {
-				"dijit/dijit.profile":1,
-				"dijit/package.json":1,
-				"dijit/themes/claro/compile":1
+				"themes/themes.profile":1,
+				"themes/package.json":1,
+				"dijit/themes/flat/compile":1
 			};
 			return (mid in list) || (/^dijit\/resources\//.test(mid) && !/\.css$/.test(filename)) || /(png|jpg|jpeg|gif|tiff)$/.test(filename);
 		};
@@ -13,7 +13,7 @@ var profile = (function(){
 	return {
 		resourceTags:{
 			test: function(filename, mid){
-				return testResourceRe.test(mid) || mid=="dijit/robot" || mid=="dijit/robotx";
+				return testResourceRe.test(mid);
 			},
 
 			copyOnly: function(filename, mid){
