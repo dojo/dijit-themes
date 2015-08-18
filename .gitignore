@@ -1,6 +1,9 @@
 # Folders to ignore
 dojo
-dijit
+!/dijit
+/dijit/*
+!/dijit/themes/
+/dijit/themes/*
 
 # add themes here
 !dijit/themes/flat
