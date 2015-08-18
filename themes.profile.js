@@ -4,8 +4,7 @@ var profile = (function(){
 		copyOnly = function(filename, mid){
 			var list = {
 				"themes/themes.profile":1,
-				"themes/package.json":1,
-				"dijit/themes/flat/compile":1
+				"themes/package.json":1
 			};
 			return (mid in list) || (/^dijit\/resources\//.test(mid) && !/\.css$/.test(filename)) || /(png|jpg|jpeg|gif|tiff)$/.test(filename);
 		};
@@ -25,7 +24,7 @@ var profile = (function(){
 			},
 
 			miniExclude: function(filename, mid){
-				return /^dijit\/bench\//.test(mid) || /^dijit\/themes\/themeTest/.test(mid);
+				return /\.styl$/.test(filename) || /^dijit\/bench\//.test(mid) || /^dijit\/themes\/themeTest/.test(mid);
 			}
 		}
 	};
