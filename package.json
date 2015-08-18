@@ -16,6 +16,7 @@
 		"type": "git",
 		"url": "https://github.com/dojo/themes.git"
 	},
+	"dojoBuild": "themes.profile.js",
 	"dependencies": {
 		"grunt": "^0.4",
 		"grunt-bower-install-simple": "^1.1",
