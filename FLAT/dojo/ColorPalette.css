@@ -22,7 +22,7 @@
  */
 .flat .dijitColorPalette {
   border: 1px solid #d0d0d0;
-  background-color: $colorpalette-background-color;
+  background-color: #fff;
   -webkit-border-radius: 2px;
   border-radius: 2px;
 /* swatch */

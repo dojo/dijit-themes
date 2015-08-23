@@ -33,8 +33,8 @@
   border: 1px solid #d0d0d0;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  -webkit-box-shadow: 0 7px 3px -4px rgba(0,0,0,0.3), 0 8px 8px rgba(0,0,0,0.2);
-  box-shadow: 0 7px 3px -4px rgba(0,0,0,0.3), 0 8px 8px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 1px 0.5px rgba(0,0,0,0.3), 0 2px 2px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 0.5px rgba(0,0,0,0.3), 0 2px 2px rgba(0,0,0,0.2);
 }
 .flat .dijitDialogPaneContent {
   background-color: #fff;
@@ -79,12 +79,19 @@
   position: absolute;
   top: 8px;
   right: 12px;
+  font-variant: normal;
+  text-transform: none;
   font-family: "dojo-flat-icon";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
+  font-variant: normal;
+  text-transform: none;
   text-decoration: inherit;
-  vertical-align: bottom;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   opacity: 0.65;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
   filter: alpha(opacity=65);
@@ -193,8 +200,8 @@
   border: 1px solid #d0d0d0;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  -webkit-box-shadow: 0 7px 3px -4px rgba(0,0,0,0.3), 0 8px 8px rgba(0,0,0,0.2);
-  box-shadow: 0 7px 3px -4px rgba(0,0,0,0.3), 0 8px 8px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 1px 0.5px rgba(0,0,0,0.3), 0 2px 2px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 0.5px rgba(0,0,0,0.3), 0 2px 2px rgba(0,0,0,0.2);
   opacity: 1;
   -ms-filter: none;
   filter: none;

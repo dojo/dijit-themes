@@ -117,12 +117,19 @@
   border: none;
 }
 .flat .dijitTabCloseButton {
+  font-variant: normal;
+  text-transform: none;
   font-family: "dojo-flat-icon";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
+  font-variant: normal;
+  text-transform: none;
   text-decoration: inherit;
-  vertical-align: bottom;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   line-height: 1;
   vertical-align: middle;
   margin-left: 4px;
@@ -255,12 +262,19 @@
   background-color: #e6e6e6;
 }
 .flat .dijitTabStripIcon {
+  font-variant: normal;
+  text-transform: none;
   font-family: "dojo-flat-icon";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
+  font-variant: normal;
+  text-transform: none;
   text-decoration: inherit;
-  vertical-align: bottom;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   color: #007ac2;
   vertical-align: middle;
 }

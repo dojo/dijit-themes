@@ -39,8 +39,8 @@
   border-collapse: separate;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  -webkit-box-shadow: 0 7px 3px -4px rgba(0,0,0,0.3), 0 8px 8px rgba(0,0,0,0.2);
-  box-shadow: 0 7px 3px -4px rgba(0,0,0,0.3), 0 8px 8px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 1px 0.5px rgba(0,0,0,0.3), 0 2px 2px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 0.5px rgba(0,0,0,0.3), 0 2px 2px rgba(0,0,0,0.2);
 }
 .flat .dijitCalendarMonthContainer th {
   text-align: center;
@@ -49,12 +49,19 @@
   margin: 4px 0;
 }
 .flat .dijitCalendarIncrementControl {
+  font-variant: normal;
+  text-transform: none;
   font-family: "dojo-flat-icon";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
+  font-variant: normal;
+  text-transform: none;
   text-decoration: inherit;
-  vertical-align: bottom;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   border: 1px solid transparent;
   padding: 4px;
 }
