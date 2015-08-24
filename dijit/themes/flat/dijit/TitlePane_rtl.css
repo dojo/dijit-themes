@@ -1,0 +1,7 @@
+/* TitlePane */
+.flat .dijitTitlePaneRtl .dijitTitlePaneTitle {
+  text-align: right;
+}
+.flat .dijitTitlePaneRtl .dijitClosed .dijitArrowNode:before {
+  content: "\e60b";
+}

@@ -50,7 +50,7 @@ module.exports = function (grunt) {
         path: 'http://localhost:3000/dijit/themes/themeTester.html'
       },
       flat: {
-        path: 'http://localhost:3000/dijit/themes/themeTester.html?theme=flat'
+        path: 'http://localhost:3000/dijit/themes/flat/flat_test.html'
       }
     },
 
