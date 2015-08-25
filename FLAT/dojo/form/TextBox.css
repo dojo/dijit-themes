@@ -1,0 +1,122 @@
+/* Text Inputs: [TextBox | DateTextBox | CurrencyTextBox | ValidationTextBox | ...] | TextArea
+ * Mainly includes:
+ * 
+ * 1. Containers
+ * 		.dijitTextBox
+ * 		.dijitInputField - container that wraps "dijitInputInner" or "dijitPlaceHolder"
+ *
+ * 2. Textbox input
+ * 		.dijitInputInner
+ * 		.dijitPlaceHolder
+ *
+ * 3. States - Hover, Focused, Disabled, Error, Error while Focused e.g.
+ * 		.dijitTextBoxHover
+ * 		.dijitTextBoxFocused
+ * 		.dijitTextBoxDisabled
+ *      .dijitTextBoxError
+ *      .dijitTextBoxErrorFocused
+ *
+*/
+.flat .dijitTextBox,
+.flat .dijitInputInner {
+  line-height: 20px;
+}
+.flat .dijitTextBox {
+  background: #fff;
+  border: 1px solid #d0d0d0;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+  -moz-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+  -o-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+  -ms-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+  transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+}
+.flat .dijitTextArea {
+  padding: 4px 6px;
+}
+.flat .dijitTextBox .dijitInputField {
+  padding: 0 4px;
+  margin: 0 2px;
+}
+.flat .dijitSelect.btn-primary,
+.flat .dijitComboBox.btn-primary,
+.flat .dijitSpinner.btn-primary {
+  border-color: #007ac2;
+}
+.flat .dijitSelect.btn-success,
+.flat .dijitComboBox.btn-success,
+.flat .dijitSpinner.btn-success {
+  border-color: #35ac46;
+}
+.flat .dijitSelect.btn-info,
+.flat .dijitComboBox.btn-info,
+.flat .dijitSpinner.btn-info {
+  border-color: #00b9f2;
+}
+.flat .dijitSelect.btn-warning,
+.flat .dijitComboBox.btn-warning,
+.flat .dijitSpinner.btn-warning {
+  border-color: #f89927;
+}
+.flat .dijitSelect.btn-danger,
+.flat .dijitComboBox.btn-danger,
+.flat .dijitSpinner.btn-danger {
+  border-color: #da4d1e;
+}
+.flat .dijitSelect.btn-inverse,
+.flat .dijitComboBox.btn-inverse,
+.flat .dijitSpinner.btn-inverse {
+  border-color: #333;
+}
+.flat .dijitTextBox .dijitInputInner,
+.flat .dijitValidationTextBox .dijitValidationContainer,
+.flat .dijitTextBox .dijitInputField .dijitPlaceHolder {
+  padding: 4px;
+}
+.flat .dijitTextBoxHover {
+  border-color: #007ac2;
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  -ms-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+.flat .dijitTextBoxFocused {
+  border-color: #007ac2;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  -ms-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+.flat .dijitTextBoxDisabled {
+  background-color: #f5f5f5;
+  opacity: 0.65;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+  filter: alpha(opacity=65);
+}
+.flat .dijitTextBoxError,
+.flat .dijitTextBoxError .dijitButtonNode {
+  border-color: #da4d1e;
+}
+.flat .dijitTextBoxErrorFocused,
+.flat .dijitTextBoxErrorFocused .dijitButtonNode {
+  border: 1px solid #b94119;
+}
+.flat .dijitValidationTextBoxError .dijitValidationContainer {
+  color: #da4d1e;
+  width: 16px;
+  font-family: "dojo-flat-icon";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-decoration: inherit;
+  vertical-align: bottom;
+}
+.flat .dijitValidationTextBoxError .dijitValidationContainer:before {
+  content: "\e607";
+}
+.flat .dijitValidationTextBoxError .dijitValidationIcon {
+  display: none;
+}

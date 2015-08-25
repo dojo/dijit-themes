@@ -1,0 +1,121 @@
+/* CheckBox
+ * 
+ * Styling CheckBox mainly includes:
+ * 
+ * 1. Containers
+ * 		.dijitCheckBox
+ * 
+ * 2. CheckBox within ToggleButton
+ * 		.dijitCheckBoxIcon
+ * 
+ * 3. States - Checked, Hover, Disabled.
+ *		.dijitCheckBoxChecked
+ * 		.dijitCheckBoxHover
+ * 		.dijitCheckBoxCheckedHover
+ * 		.dijitCheckBoxDisabled
+ *		.dijitCheckBoxCheckedDisabled
+ */
+.flat .dijitCheckBox {
+  background-color: #fff;
+  border: 1px solid #d0d0d0;
+  width: 16px;
+  height: 16px;
+  line-height: 1;
+  padding: 0;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  text-align: center;
+  position: relative;
+  overflow: visible;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.flat .dijitCheckBox input {
+  position: absolute;
+  top: 0;
+}
+.flat .dijitCheckBoxIcon:before,
+.flat .dijitCheckBoxChecked:before,
+.flat .dijitCheckBoxCheckedDisabled:before {
+  font-family: "dojo-flat-icon";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-decoration: inherit;
+  vertical-align: bottom;
+  content: "\e606";
+  color: #fff;
+}
+.flat .dijitCheckBoxIcon {
+  padding: 0;
+}
+.flat .dijitCheckBoxIcon:before {
+  color: #007ac2;
+}
+.flat .btn-primary .dijitCheckBoxIcon:before {
+  color: #fff;
+}
+.flat .btn-success .dijitCheckBoxIcon:before {
+  color: #fff;
+}
+.flat .btn-info .dijitCheckBoxIcon:before {
+  color: #fff;
+}
+.flat .btn-warning .dijitCheckBoxIcon:before {
+  color: #fff;
+}
+.flat .btn-danger .dijitCheckBoxIcon:before {
+  color: #fff;
+}
+.flat .btn-inverse .dijitCheckBoxIcon:before {
+  color: #fff;
+}
+.flat .dijitCheckBoxChecked {
+  background-color: #007ac2;
+  border-color: #007ac2;
+}
+.flat .dijitCheckBoxHover {
+  background-color: #fff;
+  border: 1px solid #007ac2;
+}
+.flat .dijitCheckBoxCheckedHover {
+  background-color: #0098f1;
+  border: 1px solid #007ac2;
+}
+.flat .dijitCheckBoxDisabled,
+.flat .dijitCheckBoxCheckedDisabled {
+  opacity: 0.65;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+  filter: alpha(opacity=65);
+}
+.flat .dijitCheckedMenuItem .dijitCheckedMenuItemIcon {
+  background-color: #fff;
+  border: 1px solid #d0d0d0;
+  width: 16px;
+  height: 16px;
+  line-height: 1;
+  padding: 0;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  text-align: center;
+  position: relative;
+  overflow: visible;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.flat .dijitCheckedMenuItemChecked .dijitCheckedMenuItemIcon:before {
+  font-family: "dojo-flat-icon";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-decoration: inherit;
+  vertical-align: bottom;
+  content: "\e606";
+  color: #007ac2;
+}

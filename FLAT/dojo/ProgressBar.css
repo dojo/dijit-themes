@@ -1,0 +1,102 @@
+/* ProgressBar
+ * 
+ * Styling of the ProgressBar consists of the following:
+ * 
+ * 1. the base progress bar
+ *		.dijitProgressBar -	sets margins for the progress bar
+ *
+ * 2. the empty bar
+ *		.dijitProgressBarEmpty  - sets background img and color for bar or parts of bar that are not finished yet
+ *		Also sets border color for whole bar
+ *
+ * 3. tile mode
+ * 		.dijitProgressBarTile
+ *		inner container for finished portion when in 'tile' (image) mode 
+ * 	
+ * 4. full bar mode
+ * 		.dijitProgressBarFull
+ *		adds border to right side of the filled portion of bar
+ *
+ * 5. text for label of  bar
+ *		.dijitProgressBarLabel - sets text color, which must contrast with both the "Empty" and "Full" parts. 
+ * 	
+ * 6. indeterminate mode
+ *		.dijitProgressBarIndeterminate .dijitProgressBarTile 
+ * 		sets animated gif for the progress bar in 'indeterminate' mode
+ */
+.flat .dijitProgressBar {
+  background-color: #d0d0d0;
+  border: 0 none;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.flat .dijitProgressBarTile {
+  background: url("images/progressBarStrips.png") repeat-x top;
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+  -moz-animation: progress-bar-stripes 2s linear infinite;
+  -o-animation: progress-bar-stripes 2s linear infinite;
+  -ms-animation: progress-bar-stripes 2s linear infinite;
+  animation: progress-bar-stripes 2s linear infinite;
+}
+.flat .dijitProgressBarFull {
+  background-color: #007ac2;
+  -webkit-transition-property: width;
+  -moz-transition-property: width;
+  -o-transition-property: width;
+  -ms-transition-property: width;
+  transition-property: width;
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  -ms-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+.flat .dijitProgressBar.progress-bar-success .dijitProgressBarFull {
+  background-color: #35ac46;
+}
+.flat .dijitProgressBar.progress-bar-info .dijitProgressBarFull {
+  background-color: #00b9f2;
+}
+.flat .dijitProgressBar.progress-bar-warning .dijitProgressBarFull {
+  background-color: #f89927;
+}
+.flat .dijitProgressBar.progress-bar-danger .dijitProgressBarFull {
+  background-color: #da4d1e;
+}
+.flat .dijitProgressBarLabel {
+  color: #fff;
+  font-size: smaller;
+}
+/* Progress Animation */
+@-moz-keyframes progress-bar-stripes {
+  from {
+    background-position: 75px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 75px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+@-o-keyframes progress-bar-stripes {
+  from {
+    background-position: 75px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 75px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
