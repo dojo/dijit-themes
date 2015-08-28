@@ -43,6 +43,13 @@ module.exports = function (grunt) {
           hostname: '*'
         }
       },
+      flat: {
+        options: {
+          port: 3000,
+          base: './',
+          hostname: '*'
+        }
+      }
     },
 
     open: {
@@ -55,6 +62,10 @@ module.exports = function (grunt) {
     },
 
     watch: {
+      tester: {
+        files: ['*'],
+        tasks: []
+      },
       flat: {
         files: ['dijit/themes/flat/**/*.styl'],
         tasks: ['newer:stylus:flat']
@@ -70,10 +81,18 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-newer');
 
+  // flat theme
   grunt.registerTask('flat', [
     'stylus:flat',
-    'connect:tester',
+    'connect:flat',
     'open:flat',
     'watch:flat'
+  ]);
+
+  // default run dijit theme tester
+  grunt.registerTask('default', [
+    'connect:tester',
+    'open:tester',
+    'watch:tester'
   ]);
 };
