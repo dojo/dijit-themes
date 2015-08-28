@@ -200,6 +200,6 @@
   padding: 4px;
 }
 .flat .dijitCalendarMonthMenu .dijitCalendarMonthLabelHover {
-  color: #333;
-  background-color: #f2f2f2;
+  color: #fff;
+  background-color: #007ac2;
 }

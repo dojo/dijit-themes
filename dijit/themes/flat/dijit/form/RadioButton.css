@@ -111,7 +111,7 @@
 .flat .dijitRadioMenuItem .dijitCheckedMenuItemIcon {
   width: 16px;
   height: 16px;
-  background: none;
+  background: #fff;
   border: 1px solid #d0d0d0;
   -webkit-border-radius: 50%;
   border-radius: 50%;
