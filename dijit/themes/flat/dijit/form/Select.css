@@ -83,7 +83,7 @@
   -o-transition: all 0.1s;
   -ms-transition: all 0.1s;
   transition: all 0.1s;
-  background: #f2f2f2;
+  background: #e6e6e6;
 }
 .flat .dijitSelectActive {
   -webkit-transition: none;
@@ -92,7 +92,7 @@
   -ms-transition: none;
   transition: none;
   outline: none;
-  background: #e6e6e6;
+  background: #ccc;
 }
 .flat .dijitSelectFocused {
   border: 1px solid #d0d0d0;
@@ -128,7 +128,7 @@
   -o-transition: all 0.1s;
   -ms-transition: all 0.1s;
   transition: all 0.1s;
-  background: #f2f2f2;
+  background: #e6e6e6;
   -webkit-box-shadow: none;
   box-shadow: none;
 }

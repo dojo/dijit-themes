@@ -41,7 +41,7 @@
   -o-transition: all 0.1s;
   -ms-transition: all 0.1s;
   transition: all 0.1s;
-  background: #f2f2f2;
+  background: #e6e6e6;
 }
 .flat .dijitTitlePaneTitleActive {
   -webkit-transition: none;
@@ -50,7 +50,7 @@
   -ms-transition: none;
   transition: none;
   outline: none;
-  background: #e6e6e6;
+  background: #ccc;
 }
 .flat .dijitTitlePane .dijitArrowNode {
   font-variant: normal;
