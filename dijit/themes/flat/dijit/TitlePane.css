@@ -20,7 +20,7 @@
 .flat .dijitTitlePaneTitle {
   border-style: solid;
   border-width: 1px;
-  border-color: #d0d0d0;
+  border-color: #bdbdbd;
   padding: 4px 12px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
@@ -31,7 +31,7 @@
   -o-transition: all 0.05s linear;
   -ms-transition: all 0.05s linear;
   transition: all 0.05s linear;
-  background: #fff;
+  background: #fafafa;
   -webkit-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
 }
@@ -41,7 +41,7 @@
   -o-transition: all 0.1s;
   -ms-transition: all 0.1s;
   transition: all 0.1s;
-  background: #f2f2f2;
+  background: #ededed;
 }
 .flat .dijitTitlePaneTitleActive {
   -webkit-transition: none;
@@ -50,7 +50,7 @@
   -ms-transition: none;
   transition: none;
   outline: none;
-  background: #e6e6e6;
+  background: #e1e1e1;
 }
 .flat .dijitTitlePane .dijitArrowNode {
   font-variant: normal;
@@ -79,8 +79,8 @@
   content: "\e60a";
 }
 .flat .dijitTitlePaneContentOuter {
-  background-color: #fff;
-  border: 1px solid #d0d0d0;
+  background-color: #fafafa;
+  border: 1px solid #bdbdbd;
   border-top: none;
   -webkit-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px;

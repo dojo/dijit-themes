@@ -15,14 +15,14 @@
  * 		.dijitEditorDisabled - editor's inner iframe container disable status styles: background, border
  */
 .flat .dijitEditor {
-  background-color: #fff;
-  border: 1px solid #d0d0d0;
+  background-color: #fafafa;
+  border: 1px solid #bdbdbd;
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
 .flat .dijitEditor .dijitEditorIFrameContainer {
   border: 1px solid transparent;
-  border-top: 1px solid #d0d0d0;
+  border-top: 1px solid #bdbdbd;
   padding: 4px 8px;
   -webkit-transition: border 0.2s linear 0s;
   -moz-transition: border 0.2s linear 0s;
@@ -32,16 +32,16 @@
 }
 .flat .dijitEditorHover .dijitEditorIFrameContainer,
 .flat .dijitEditorHover .dijitEditorIFrameContainer .dijitEditorIFrame {
-  border: 1px solid #f00;
+  border: 1px solid #2196f3;
 }
 .flat .dijitEditorFocused .dijitEditorIFrameContainer {
-  border: 1px solid #f00;
+  border: 1px solid #2196f3;
 }
 .flat .dijitEditorFocused .dijitEditorIFrameContainer .dijitEditorIFrame {
-  border: 1px solid #f00;
+  border: 1px solid #2196f3;
 }
 .flat .dijitEditorDisabled {
-  border: 1px solid #d0d0d0;
+  border: 1px solid #bdbdbd;
   opacity: 0.65;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
   filter: alpha(opacity=65);
@@ -49,6 +49,6 @@
 .flat .dijitEditorDisabled .dijitEditorIFrame,
 .flat .dijitEditorDisabled .dijitEditorIFrameContainer,
 .flat .dijitEditorDisabled .dijitEditorIFrameContainer .dijitEditorIFrame {
-  background-color: #f5f5f5;
+  background-color: #fafafa;
   border: 1px solid transparent;
 }

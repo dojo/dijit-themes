@@ -54,7 +54,7 @@
   outline: 1px;
 }
 .flat .dijitRuleLabelsContainer {
-  color: #333;
+  color: #424242;
   font-size: smaller;
 }
 .flat .dijitSliderDisabled {
@@ -85,17 +85,17 @@
 .flat .dijitSlider .dijitSliderProgressBarH,
 .flat .dijitSlider .dijitSliderLeftBumper {
   border: 0 none;
-  background-color: #f00;
+  background-color: #2196f3;
   background-image: none;
 }
 .flat .dijitSlider .dijitSliderRemainingBarH,
 .flat .dijitSlider .dijitSliderRightBumper {
   border: 0 none;
-  background-color: #d0d0d0;
+  background-color: #bdbdbd;
 }
 .flat .dijitSliderHover .dijitSliderProgressBarH,
 .flat .dijitSliderHover .dijitSliderLeftBumper {
-  background-color: #eb0000;
+  background-color: #0d8cf1;
   background-image: none;
 }
 .flat .dijitSliderFocused .dijitSliderProgressBarH,
@@ -131,17 +131,17 @@
 .flat .dijitSlider .dijitSliderProgressBarV,
 .flat .dijitSlider .dijitSliderBottomBumper {
   border: 0 none;
-  background-color: #f00;
+  background-color: #2196f3;
   background-image: none;
 }
 .flat .dijitSlider .dijitSliderRemainingBarV,
 .flat .dijitSlider .dijitSliderTopBumper {
   border: 0 none;
-  background-color: #d0d0d0;
+  background-color: #bdbdbd;
 }
 .flat .dijitSliderHover .dijitSliderProgressBarV,
 .flat .dijitSliderHover .dijitSliderBottomBumper {
-  background-color: #eb0000;
+  background-color: #0d8cf1;
   background-image: none;
 }
 .flat .dijitSliderFocused .dijitSliderProgressBarV,
@@ -155,12 +155,12 @@
   box-shadow: none;
 }
 .flat .dijitSliderImageHandle {
-  background: #fff;
+  background: #fafafa;
   -webkit-box-shadow: 0 1px 0.5px rgba(0,0,0,0.3), 0 2px 2px rgba(0,0,0,0.2);
   box-shadow: 0 1px 0.5px rgba(0,0,0,0.3), 0 2px 2px rgba(0,0,0,0.2);
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  border: 1px solid #f00;
+  border: 1px solid #2196f3;
   width: 16px;
   height: 16px;
   margin-top: -2px;
@@ -172,7 +172,7 @@
 .flat .dijitSliderImageHandle:after {
   content: "";
   display: block;
-  background: #f00;
+  background: #2196f3;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   height: 10px;
@@ -198,7 +198,7 @@
 .flat .dijitSliderIncrementIconV {
   border-style: solid;
   border-width: 1px;
-  border-color: #d0d0d0;
+  border-color: #bdbdbd;
   padding: 4px 12px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
@@ -209,11 +209,11 @@
   -o-transition: all 0.05s linear;
   -ms-transition: all 0.05s linear;
   transition: all 0.05s linear;
-  background: #fff;
+  background: #fafafa;
   height: 20px;
   width: 20px;
   cursor: pointer;
-  color: #f00;
+  color: #2196f3;
   padding: 0;
 }
 .flat .dijitSliderDecrementIconH:hover,
@@ -225,7 +225,7 @@
   -o-transition: all 0.1s;
   -ms-transition: all 0.1s;
   transition: all 0.1s;
-  background: #f2f2f2;
+  background: #ededed;
 }
 .flat .dijitSliderDecrementIconH:active,
 .flat .dijitSliderIncrementIconH:active,
@@ -237,7 +237,7 @@
   -ms-transition: none;
   transition: none;
   outline: none;
-  background: #e6e6e6;
+  background: #e1e1e1;
 }
 .flat .dijitSliderReadOnly .dijitSliderDecrementIconH,
 .flat .dijitSliderDisabled .dijitSliderDecrementIconH,
@@ -291,10 +291,10 @@
   border: 0 none;
 }
 .flat .dijitRuleMarkH {
-  border-right: 1px solid #d0d0d0;
+  border-right: 1px solid #e0e0e0;
 }
 .flat .dijitRuleMarkV {
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #e0e0e0;
 }
 .flat .dijitRuleLabelContainerH {
   margin-top: 2px;

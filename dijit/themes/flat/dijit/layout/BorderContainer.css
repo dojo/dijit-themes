@@ -35,7 +35,7 @@ Splitters and gutters:
 }
 .flat .dijitSplitContainer-child,
 .flat .dijitBorderContainer-child {
-  border: 1px solid #d0d0d0;
+  border: 1px solid #bdbdbd;
 }
 .flat .dijitBorderContainer-dijitTabContainerTop,
 .flat .dijitBorderContainer-dijitTabContainerBottom,
@@ -58,7 +58,7 @@ Splitters and gutters:
   height: 5px;
 }
 .flat .dijitSplitterH .dijitSplitterThumb {
-  background: #d0d0d0;
+  background: #bdbdbd;
   height: 1px;
   top: 2px;
   width: 19px;
@@ -71,7 +71,7 @@ Splitters and gutters:
   margin: 0;
 }
 .flat .dijitSplitterV .dijitSplitterThumb {
-  background: #d0d0d0;
+  background: #bdbdbd;
   height: 19px;
   left: 2px;
   width: 1px;
@@ -84,7 +84,7 @@ Splitters and gutters:
 }
 .flat .dijitSplitterHHover .dijitSplitterThumb,
 .flat .dijitSplitterVHover .dijitSplitterThumb {
-  background: #9c9c9c;
+  background: #8e8e8e;
 }
 .flat .dijitSplitterHActive,
 .flat .dijitSplitterVActive {
@@ -93,5 +93,5 @@ Splitters and gutters:
 }
 .flat .dijitSplitterHActive .dijitSplitterThumb,
 .flat .dijitSplitterVActive .dijitSplitterThumb {
-  background: #9c9c9c;
+  background: #8e8e8e;
 }

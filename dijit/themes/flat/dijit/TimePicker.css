@@ -24,9 +24,9 @@
   height: 200px;
 }
 .dijitTimePicker {
-  background-color: #fff;
+  background-color: #fafafa;
   padding: 4px 0;
-  border: 1px solid #d0d0d0;
+  border: 1px solid #bdbdbd;
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
@@ -35,7 +35,7 @@
 }
 .dijitTimePickerTick {
 /* minor value */
-  color: #999;
+  color: #9e9e9e;
   border: 0 none;
 }
 .dijitTimePickerMarker {
@@ -46,13 +46,13 @@
 }
 .dijitTimePickerTickHover,
 .dijitTimePickerMarkerHover {
-  background: #f2f2f2;
-  color: #333;
+  background: #ededed;
+  color: #424242;
 }
 .dijitTimePickerMarkerSelected,
 .dijitTimePickerTickSelected {
-  background: #f2f2f2;
-  color: #333;
+  background: #ededed;
+  color: #424242;
 }
 .dijitTimePickerTick .dijitTimePickerItemInner,
 .dijitTimePickerMarker .dijitTimePickerItemInner {
