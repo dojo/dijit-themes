@@ -2,18 +2,22 @@
 
 **To Do:**
 
-1. Add editor icons.
-2. Add a grid of icons to demo.
+1. Icons!
+  * Is this is the icon set we want to go with?
+  * Do we want a robust set of icons to come with the theme?
+  * Editor icons are missing.
+  * Add a grid of icons to demo.
+2. Fix any outlying dijits using opacity for disabled.
+3. As this is a "flat" theme, discuss whether calendar and and popups should have a box-shadow.
 
 **Issues:**
 
-1. Disabled dijits use transparency. This is an issue with background colors other than white. http://imgur.com/tWOK7cK
-2. Toggle button doesn't maintain width when unchecked.
-3. Tab padding needs to be applied to top/bottom/left/right tab classes independently to avoid 1px transparent gap in container border between each tab.
-4. Need to switch to a "opened" folder icon for `.dijitIconFolderOpen` and `.dijitFolderOpened`.
-5. For input dijits with alternate color and required/validate, the border should also change via `.dijitTextBoxError` and equivalents. Alternate color styles are overriding.
-6. Hover and selected calendar days look a bit off...
+1. Toggle button doesn't maintain width when unchecked.
+2. For input dijits with alternate color and required/validate, the border should also change via `.dijitTextBoxError` and equivalents. Alternate color styles are overriding.
+3. Hover and selected calendar days with background 50% border radius looks a bit off.
+4. `.dijitValidationTextBoxError .dijitValidationContainer` line-height is being overridden by the default icon line-height causing the icon not to be vertically aligned properly. The line-height of `td.dijitMenuItemIconCell` is causing the icon to be shifted down.
 
 **Improvements**
 
-1. Consider typography, styling for tables, etc; and some components like Bootstrap.
+1. Consider typography, complimentary styling for native elements, helper classes, etc; and some components like Bootstrap.
+2. Alternate colors for text input dijits, checkboxes, radio buttons, sliders, title pane, tooltips.
