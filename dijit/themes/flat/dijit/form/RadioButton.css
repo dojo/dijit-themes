@@ -24,7 +24,7 @@
   width: 16px;
   height: 16px;
   background: #fff;
-  border: 1px solid #007ac2;
+  border: 1px solid #f00;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   position: relative;
@@ -39,7 +39,7 @@
   display: block;
   width: 0;
   height: 0;
-  background-color: #007ac2;
+  background-color: #f00;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   opacity: 0;
@@ -56,7 +56,7 @@
   transition: all 0.15s ease-in-out;
 }
 .flat .dijitRadioHover {
-  border-color: #12a7ff;
+  border-color: #ff4040;
 }
 .flat .dijitRadioChecked:after,
 .flat .dijitChecked .dijitRadioIcon:after {
@@ -104,9 +104,15 @@
   background-color: #fff;
 }
 .flat .dijitRadioDisabled {
-  opacity: 0.65;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
-  filter: alpha(opacity=65);
+  background-color: #f5f5f5;
+  border-color: #d5d5d5;
+}
+.flat .dijitRadioCheckedDisabled {
+  background-color: #f5f5f5;
+  border-color: #ff5959;
+}
+.flat .dijitRadioCheckedDisabled:after {
+  background-color: #ff5959;
 }
 .flat .dijitRadioMenuItem .dijitCheckedMenuItemIcon {
   width: 16px;
@@ -126,7 +132,7 @@
   display: block;
   width: 0;
   height: 0;
-  background-color: #007ac2;
+  background-color: #f00;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   opacity: 0;

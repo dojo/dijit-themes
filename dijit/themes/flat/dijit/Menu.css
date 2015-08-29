@@ -60,17 +60,25 @@ There are three areas of styling for the Menu:
 .flat .dijitMenuItemHover td,
 .flat .dijitMenuItemHover {
   color: #fff;
-  background-color: #007ac2;
+  background-color: #f00;
 }
 .flat .dijitMenuItemActive td,
 .flat .dijitMenuItemActive {
   color: #fff;
-  background-color: #007ac2;
+  background-color: #f00;
 }
 .flat .dijitMenuItemSelected td,
 .flat .dijitMenuItemSelected {
   color: #fff;
-  background-color: #007ac2;
+  background-color: #f00;
+}
+.flat .dijitMenuItemDisabled {
+  color: #999;
+}
+.flat .dijitMenuItemDisabled.dijitMenuItemSelected td,
+.flat .dijitMenuItemDisabled.dijitMenuItemSelected {
+  color: #f2f2f2;
+  background: #ff5959;
 }
 .flat .dijitMenuSeparatorTop {
   height: auto;
@@ -116,9 +124,6 @@ There are three areas of styling for the Menu:
   margin: 0;
   padding: 0;
   background-color: #f5f5f5;
-/* hovered status */
-/* active status */
-/* selected status */
 }
 .flat .dijitMenuBar .dijitMenuItem {
   padding: 8px 12px;
@@ -126,17 +131,21 @@ There are three areas of styling for the Menu:
 }
 .flat .dijitMenuBar .dijitMenuItemHover {
   color: #fff;
-  background-color: #007ac2;
+  background-color: #f00;
 }
 .flat .dijitMenuBar .dijitMenuItemActive {
   color: #fff;
-  background-color: #007ac2;
+  background-color: #f00;
 }
 .flat .dijitMenuBar .dijitMenuItemSelected,
 .flat .dijitMenuBar .dijitMenuItemHover.dijitMenuItemSelected,
 .flat .dijitMenuBar .dijitMenuItemActive.dijitMenuItemSelected {
   color: $menubar-item-selected-text-color;
-  background-color: #007ac2;
+  background-color: #f00;
+}
+.flat .dijitMenuBar .dijitMenuItemDisabled.dijitMenuItemSelected {
+  color: #f2f2f2;
+  background: #ff5959;
 }
 .flat .dijitMenuPopup {
   border-top-left-radius: 0;

@@ -62,7 +62,7 @@
 .flat .dijitTreeRowHover.dijitTreeRowSelected,
 .flat .dijitTreeRowActive.dijitTreeRowSelected {
   color: #fff;
-  background-color: #007ac2;
+  background-color: #f00;
   border-color: transparent;
 }
 .flat .dijitTreeRowSelected .dijitTreeExpando,
@@ -90,7 +90,7 @@
   text-align: center;
   margin-left: 4px;
   margin-right: 4px;
-  color: #007ac2;
+  color: #f00;
   vertical-align: middle;
 }
 .flat .dijitTreeExpandoOpened:before {

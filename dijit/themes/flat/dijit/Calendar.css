@@ -141,7 +141,7 @@
   color: #b3b3b3;
 }
 .flat .dijitCalendarCurrentDate .dijitCalendarDateLabel {
-  border-color: #007ac2;
+  border-color: #f00;
 }
 .flat .dijitCalendarHoveredDate .dijitCalendarDateLabel,
 .flat .dijitCalendarEnabledDate:hover .dijitCalendarDateLabel {
@@ -154,7 +154,7 @@
 .flat .dijitCalendarSelectedDate .dijitCalendarDateLabel,
 .flat .dijitCalendarSelectedDate.dijitCalendarHoveredDate .dijitCalendarDateLabel {
   color: #fff;
-  background-color: #007ac2;
+  background-color: #f00;
 }
 .flat .dijitCalendarDisabledDate .dijitCalendarDateLabel {
   opacity: 0.65;
@@ -178,11 +178,11 @@
   padding: 4px;
 }
 .flat .dijitCalendarSelectedYear {
-  color: #007ac2;
+  color: #f00;
 }
 .flat .dijitCalendarNextYear,
 .flat .dijitCalendarPreviousYear {
-  color: #007ac2;
+  color: #f00;
   font-size: 0.9em;
   line-height: 20px;
   border: 1px solid transparent;
@@ -201,5 +201,5 @@
 }
 .flat .dijitCalendarMonthMenu .dijitCalendarMonthLabelHover {
   color: #fff;
-  background-color: #007ac2;
+  background-color: #f00;
 }

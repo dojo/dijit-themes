@@ -75,7 +75,7 @@
   padding: 4px;
 }
 .flat .dijitTextBoxHover {
-  border-color: #007ac2;
+  border-color: #f00;
   -webkit-transition-duration: 0.25s;
   -moz-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
@@ -83,7 +83,7 @@
   transition-duration: 0.25s;
 }
 .flat .dijitTextBoxFocused {
-  border-color: #007ac2;
+  border-color: #f00;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
@@ -91,10 +91,159 @@
   transition-duration: 0.1s;
 }
 .flat .dijitTextBoxDisabled {
+  color: #999;
   background-color: #f5f5f5;
-  opacity: 0.65;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
-  filter: alpha(opacity=65);
+  border-color: #d5d5d5;
+}
+.flat .dijitComboBoxDisabled.btn-primary,
+.flat .dijitSpinnerDisabled.btn-primary {
+  background: #f5f5f5;
+  color: #999;
+  border: 1px solid #32b3ff;
+}
+.flat .dijitComboBoxDisabled.btn-primary .dijitButtonNode,
+.flat .dijitSpinnerDisabled.btn-primary .dijitButtonNode {
+  background: #32b3ff;
+  color: #f2f2f2;
+}
+.flat .dijitSpinnerDisabled.btn-primary .dijitSpinnerButtonContainer {
+  border-left-color: #32b3ff;
+}
+.flat .dijitSpinnerRtlDisabled.btn-primary .dijitSpinnerButtonContainer {
+  border-right-color: #32b3ff;
+}
+.flat .dijitSelectDisabled.btn-primary {
+  border-color: #32b3ff;
+}
+.flat .dijitSelectDisabled.btn-primary .dijitStretch,
+.flat .dijitSelectDisabled.btn-primary .dijitButtonNode {
+  background: #32b3ff;
+  color: #f2f2f2;
+}
+.flat .dijitComboBoxDisabled.btn-success,
+.flat .dijitSpinnerDisabled.btn-success {
+  background: #f5f5f5;
+  color: #999;
+  border: 1px solid #71d37f;
+}
+.flat .dijitComboBoxDisabled.btn-success .dijitButtonNode,
+.flat .dijitSpinnerDisabled.btn-success .dijitButtonNode {
+  background: #71d37f;
+  color: #f2f2f2;
+}
+.flat .dijitSpinnerDisabled.btn-success .dijitSpinnerButtonContainer {
+  border-left-color: #71d37f;
+}
+.flat .dijitSpinnerRtlDisabled.btn-success .dijitSpinnerButtonContainer {
+  border-right-color: #71d37f;
+}
+.flat .dijitSelectDisabled.btn-success {
+  border-color: #71d37f;
+}
+.flat .dijitSelectDisabled.btn-success .dijitStretch,
+.flat .dijitSelectDisabled.btn-success .dijitButtonNode {
+  background: #71d37f;
+  color: #f2f2f2;
+}
+.flat .dijitComboBoxDisabled.btn-info,
+.flat .dijitSpinnerDisabled.btn-info {
+  background: #f5f5f5;
+  color: #999;
+  border: 1px solid #51d6ff;
+}
+.flat .dijitComboBoxDisabled.btn-info .dijitButtonNode,
+.flat .dijitSpinnerDisabled.btn-info .dijitButtonNode {
+  background: #51d6ff;
+  color: #f2f2f2;
+}
+.flat .dijitSpinnerDisabled.btn-info .dijitSpinnerButtonContainer {
+  border-left-color: #51d6ff;
+}
+.flat .dijitSpinnerRtlDisabled.btn-info .dijitSpinnerButtonContainer {
+  border-right-color: #51d6ff;
+}
+.flat .dijitSelectDisabled.btn-info {
+  border-color: #51d6ff;
+}
+.flat .dijitSelectDisabled.btn-info .dijitStretch,
+.flat .dijitSelectDisabled.btn-info .dijitButtonNode {
+  background: #51d6ff;
+  color: #f2f2f2;
+}
+.flat .dijitComboBoxDisabled.btn-warning,
+.flat .dijitSpinnerDisabled.btn-warning {
+  background: #f5f5f5;
+  color: #999;
+  border: 1px solid #fabd73;
+}
+.flat .dijitComboBoxDisabled.btn-warning .dijitButtonNode,
+.flat .dijitSpinnerDisabled.btn-warning .dijitButtonNode {
+  background: #fabd73;
+  color: #f2f2f2;
+}
+.flat .dijitSpinnerDisabled.btn-warning .dijitSpinnerButtonContainer {
+  border-left-color: #fabd73;
+}
+.flat .dijitSpinnerRtlDisabled.btn-warning .dijitSpinnerButtonContainer {
+  border-right-color: #fabd73;
+}
+.flat .dijitSelectDisabled.btn-warning {
+  border-color: #fabd73;
+}
+.flat .dijitSelectDisabled.btn-warning .dijitStretch,
+.flat .dijitSelectDisabled.btn-warning .dijitButtonNode {
+  background: #fabd73;
+  color: #f2f2f2;
+}
+.flat .dijitComboBoxDisabled.btn-danger,
+.flat .dijitSpinnerDisabled.btn-danger {
+  background: #f5f5f5;
+  color: #999;
+  border: 1px solid #ea8a69;
+}
+.flat .dijitComboBoxDisabled.btn-danger .dijitButtonNode,
+.flat .dijitSpinnerDisabled.btn-danger .dijitButtonNode {
+  background: #ea8a69;
+  color: #f2f2f2;
+}
+.flat .dijitSpinnerDisabled.btn-danger .dijitSpinnerButtonContainer {
+  border-left-color: #ea8a69;
+}
+.flat .dijitSpinnerRtlDisabled.btn-danger .dijitSpinnerButtonContainer {
+  border-right-color: #ea8a69;
+}
+.flat .dijitSelectDisabled.btn-danger {
+  border-color: #ea8a69;
+}
+.flat .dijitSelectDisabled.btn-danger .dijitStretch,
+.flat .dijitSelectDisabled.btn-danger .dijitButtonNode {
+  background: #ea8a69;
+  color: #f2f2f2;
+}
+.flat .dijitComboBoxDisabled.btn-inverse,
+.flat .dijitSpinnerDisabled.btn-inverse {
+  background: #f5f5f5;
+  color: #999;
+  border: 1px solid #7a7a7a;
+}
+.flat .dijitComboBoxDisabled.btn-inverse .dijitButtonNode,
+.flat .dijitSpinnerDisabled.btn-inverse .dijitButtonNode {
+  background: #7a7a7a;
+  color: #f2f2f2;
+}
+.flat .dijitSpinnerDisabled.btn-inverse .dijitSpinnerButtonContainer {
+  border-left-color: #7a7a7a;
+}
+.flat .dijitSpinnerRtlDisabled.btn-inverse .dijitSpinnerButtonContainer {
+  border-right-color: #7a7a7a;
+}
+.flat .dijitSelectDisabled.btn-inverse {
+  border-color: #7a7a7a;
+}
+.flat .dijitSelectDisabled.btn-inverse .dijitStretch,
+.flat .dijitSelectDisabled.btn-inverse .dijitButtonNode {
+  background: #7a7a7a;
+  color: #f2f2f2;
 }
 .flat .dijitTextBoxError,
 .flat .dijitTextBoxError .dijitButtonNode {

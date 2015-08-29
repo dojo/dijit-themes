@@ -32,13 +32,13 @@
 }
 .flat .dijitEditorHover .dijitEditorIFrameContainer,
 .flat .dijitEditorHover .dijitEditorIFrameContainer .dijitEditorIFrame {
-  border: 1px solid #007ac2;
+  border: 1px solid #f00;
 }
 .flat .dijitEditorFocused .dijitEditorIFrameContainer {
-  border: 1px solid #007ac2;
+  border: 1px solid #f00;
 }
 .flat .dijitEditorFocused .dijitEditorIFrameContainer .dijitEditorIFrame {
-  border: 1px solid #007ac2;
+  border: 1px solid #f00;
 }
 .flat .dijitEditorDisabled {
   border: 1px solid #d0d0d0;

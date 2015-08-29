@@ -57,7 +57,7 @@
 }
 .flat .dijitColorPalette .dijitPaletteCell:active .dijitPaletteImg,
 .flat .dijitColorPalette .dijitPaletteTable .dijitPaletteCellSelected .dijitPaletteImg {
-  border: 1px solid #007ac2;
+  border: 1px solid #f00;
   -webkit-box-shadow: 0 1px 0.5px rgba(0,0,0,0.3), 0 2px 2px rgba(0,0,0,0.2);
   box-shadow: 0 1px 0.5px rgba(0,0,0,0.3), 0 2px 2px rgba(0,0,0,0.2);
   -webkit-border-radius: 2px;

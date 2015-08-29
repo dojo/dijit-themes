@@ -47,7 +47,7 @@
 		&:before {
 			_icon-core-style();
 			content: "\e606";
-			color:$checkbox-checked-icon-color;
+			color: $checkbox-checked-icon-color;
 		}
 	}
 
@@ -98,9 +98,16 @@
 
 	/* disabled */
 
-	.dijitCheckBoxDisabled,
+	.dijitCheckBoxDisabled {
+		color: $checkbox-disabled-color;
+		background-color: $checkbox-disabled-background-color;
+		border-color: $checkbox-disabled-border-color;
+	}
+	
 	.dijitCheckBoxCheckedDisabled {
-		opacity: $disabled-opacity;
+		color: $checkbox-checked-disabled-color;
+		background-color: $checkbox-checked-disabled-background-color;
+		border-color: $checkbox-checked-disabled-border-color;
 	}
 	
 	/* Checkbox within a menu item */
@@ -123,7 +130,7 @@
 		&:before {
 			_icon-core-style();
 			content: "\e606";
-			color: $blue;
+			color: $theme-color;
 		}
 	}
 	

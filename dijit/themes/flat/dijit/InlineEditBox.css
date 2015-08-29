@@ -16,7 +16,7 @@
 }
 .flat .dijitInlineEditBoxDisplayModeHover {
   background-color: transparent;
-  border: 1px dashed #007ac2;
+  border: 1px dashed #f00;
 }
 .flat .dijitInlineEditBoxDisplayModeDisabled {
   opacity: 0.65;

@@ -60,7 +60,7 @@
   padding: 0;
 }
 .flat .dijitCheckBoxIcon:before {
-  color: #007ac2;
+  color: #f00;
 }
 .flat .btn-primary .dijitCheckBoxIcon:before {
   color: #fff;
@@ -81,22 +81,26 @@
   color: #fff;
 }
 .flat .dijitCheckBoxChecked {
-  background-color: #007ac2;
-  border-color: #007ac2;
+  background-color: #f00;
+  border-color: #f00;
 }
 .flat .dijitCheckBoxHover {
   background-color: #fff;
-  border: 1px solid #007ac2;
+  border: 1px solid #f00;
 }
 .flat .dijitCheckBoxCheckedHover {
-  background-color: #0098f1;
-  border: 1px solid #007ac2;
+  background-color: #ff2626;
+  border: 1px solid #f00;
 }
-.flat .dijitCheckBoxDisabled,
+.flat .dijitCheckBoxDisabled {
+  color: #999;
+  background-color: #f5f5f5;
+  border-color: #d5d5d5;
+}
 .flat .dijitCheckBoxCheckedDisabled {
-  opacity: 0.65;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
-  filter: alpha(opacity=65);
+  color: #a6a6a6;
+  background-color: #ff5959;
+  border-color: #ff5959;
 }
 .flat .dijitCheckedMenuItem .dijitCheckedMenuItemIcon {
   background-color: #fff;
@@ -131,5 +135,5 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\e606";
-  color: #007ac2;
+  color: #f00;
 }
