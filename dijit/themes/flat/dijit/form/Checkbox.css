@@ -62,22 +62,22 @@
 .flat .dijitCheckBoxIcon:before {
   color: #2196f3;
 }
-.flat .btn-primary .dijitCheckBoxIcon:before {
+.flat .alt-primary .dijitCheckBoxIcon:before {
   color: #fafafa;
 }
-.flat .btn-success .dijitCheckBoxIcon:before {
+.flat .alt-success .dijitCheckBoxIcon:before {
   color: #fafafa;
 }
-.flat .btn-info .dijitCheckBoxIcon:before {
+.flat .alt-info .dijitCheckBoxIcon:before {
   color: #fafafa;
 }
-.flat .btn-warning .dijitCheckBoxIcon:before {
+.flat .alt-warning .dijitCheckBoxIcon:before {
   color: #fafafa;
 }
-.flat .btn-danger .dijitCheckBoxIcon:before {
+.flat .alt-danger .dijitCheckBoxIcon:before {
   color: #fafafa;
 }
-.flat .btn-inverse .dijitCheckBoxIcon:before {
+.flat .alt-inverse .dijitCheckBoxIcon:before {
   color: #fafafa;
 }
 .flat .dijitCheckBoxChecked {

@@ -103,21 +103,21 @@
   background-color: #fafafa;
   border-color: #e3e3e3;
 }
-.flat .btn-primary .dijitSpinnerButtonContainer {
+.flat .alt-primary .dijitSpinnerButtonContainer {
   border-color: #1976d2;
 }
-.flat .btn-success .dijitSpinnerButtonContainer {
+.flat .alt-success .dijitSpinnerButtonContainer {
   border-color: #388e3c;
 }
-.flat .btn-info .dijitSpinnerButtonContainer {
+.flat .alt-info .dijitSpinnerButtonContainer {
   border-color: #29b6f6;
 }
-.flat .btn-warning .dijitSpinnerButtonContainer {
+.flat .alt-warning .dijitSpinnerButtonContainer {
   border-color: #f57c00;
 }
-.flat .btn-danger .dijitSpinnerButtonContainer {
+.flat .alt-danger .dijitSpinnerButtonContainer {
   border-color: #f44336;
 }
-.flat .btn-inverse .dijitSpinnerButtonContainer {
+.flat .alt-inverse .dijitSpinnerButtonContainer {
   border-color: #212121;
 }

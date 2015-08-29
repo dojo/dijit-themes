@@ -17,4 +17,3 @@
 **Improvements**
 
 1. Consider typography, styling for tables, etc; and some components like Bootstrap.
-2. For alternate colors switch to a standardized class name like `alt-primary`, etc.

@@ -67,40 +67,40 @@
   -ms-filter: none;
   filter: none;
 }
-.flat .btn-primary .dijitRadioIcon {
+.flat .alt-primary .dijitRadioIcon {
   border-color: #fff;
 }
-.flat .btn-primary .dijitRadioIcon:after {
+.flat .alt-primary .dijitRadioIcon:after {
   background-color: #fff;
 }
-.flat .btn-success .dijitRadioIcon {
+.flat .alt-success .dijitRadioIcon {
   border-color: #fff;
 }
-.flat .btn-success .dijitRadioIcon:after {
+.flat .alt-success .dijitRadioIcon:after {
   background-color: #fff;
 }
-.flat .btn-info .dijitRadioIcon {
+.flat .alt-info .dijitRadioIcon {
   border-color: #fff;
 }
-.flat .btn-info .dijitRadioIcon:after {
+.flat .alt-info .dijitRadioIcon:after {
   background-color: #fff;
 }
-.flat .btn-warning .dijitRadioIcon {
+.flat .alt-warning .dijitRadioIcon {
   border-color: #fff;
 }
-.flat .btn-warning .dijitRadioIcon:after {
+.flat .alt-warning .dijitRadioIcon:after {
   background-color: #fff;
 }
-.flat .btn-danger .dijitRadioIcon {
+.flat .alt-danger .dijitRadioIcon {
   border-color: #fff;
 }
-.flat .btn-danger .dijitRadioIcon:after {
+.flat .alt-danger .dijitRadioIcon:after {
   background-color: #fff;
 }
-.flat .btn-inverse .dijitRadioIcon {
+.flat .alt-inverse .dijitRadioIcon {
   border-color: #fff;
 }
-.flat .btn-inverse .dijitRadioIcon:after {
+.flat .alt-inverse .dijitRadioIcon:after {
   background-color: #fff;
 }
 .flat .dijitRadioDisabled {

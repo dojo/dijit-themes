@@ -39,34 +39,34 @@
   padding: 0 4px;
   margin: 0 2px;
 }
-.flat .dijitSelect.btn-primary,
-.flat .dijitComboBox.btn-primary,
-.flat .dijitSpinner.btn-primary {
+.flat .dijitSelect.alt-primary,
+.flat .dijitComboBox.alt-primary,
+.flat .dijitSpinner.alt-primary {
   border-color: #1976d2;
 }
-.flat .dijitSelect.btn-success,
-.flat .dijitComboBox.btn-success,
-.flat .dijitSpinner.btn-success {
+.flat .dijitSelect.alt-success,
+.flat .dijitComboBox.alt-success,
+.flat .dijitSpinner.alt-success {
   border-color: #388e3c;
 }
-.flat .dijitSelect.btn-info,
-.flat .dijitComboBox.btn-info,
-.flat .dijitSpinner.btn-info {
+.flat .dijitSelect.alt-info,
+.flat .dijitComboBox.alt-info,
+.flat .dijitSpinner.alt-info {
   border-color: #29b6f6;
 }
-.flat .dijitSelect.btn-warning,
-.flat .dijitComboBox.btn-warning,
-.flat .dijitSpinner.btn-warning {
+.flat .dijitSelect.alt-warning,
+.flat .dijitComboBox.alt-warning,
+.flat .dijitSpinner.alt-warning {
   border-color: #f57c00;
 }
-.flat .dijitSelect.btn-danger,
-.flat .dijitComboBox.btn-danger,
-.flat .dijitSpinner.btn-danger {
+.flat .dijitSelect.alt-danger,
+.flat .dijitComboBox.alt-danger,
+.flat .dijitSpinner.alt-danger {
   border-color: #f44336;
 }
-.flat .dijitSelect.btn-inverse,
-.flat .dijitComboBox.btn-inverse,
-.flat .dijitSpinner.btn-inverse {
+.flat .dijitSelect.alt-inverse,
+.flat .dijitComboBox.alt-inverse,
+.flat .dijitSpinner.alt-inverse {
   border-color: #212121;
 }
 .flat .dijitTextBox .dijitInputInner,
@@ -95,153 +95,153 @@
   background-color: #fafafa;
   border-color: #e3e3e3;
 }
-.flat .dijitComboBoxDisabled.btn-primary,
-.flat .dijitSpinnerDisabled.btn-primary {
+.flat .dijitComboBoxDisabled.alt-primary,
+.flat .dijitSpinnerDisabled.alt-primary {
   background: #fafafa;
   color: #9e9e9e;
   border: 1px solid #5fa6ec;
 }
-.flat .dijitComboBoxDisabled.btn-primary .dijitButtonNode,
-.flat .dijitSpinnerDisabled.btn-primary .dijitButtonNode {
+.flat .dijitComboBoxDisabled.alt-primary .dijitButtonNode,
+.flat .dijitSpinnerDisabled.alt-primary .dijitButtonNode {
   background: #5fa6ec;
   color: #ededed;
 }
-.flat .dijitSpinnerDisabled.btn-primary .dijitSpinnerButtonContainer {
+.flat .dijitSpinnerDisabled.alt-primary .dijitSpinnerButtonContainer {
   border-left-color: #5fa6ec;
 }
-.flat .dijitSpinnerRtlDisabled.btn-primary .dijitSpinnerButtonContainer {
+.flat .dijitSpinnerRtlDisabled.alt-primary .dijitSpinnerButtonContainer {
   border-right-color: #5fa6ec;
 }
-.flat .dijitSelectDisabled.btn-primary {
+.flat .dijitSelectDisabled.alt-primary {
   border-color: #5fa6ec;
 }
-.flat .dijitSelectDisabled.btn-primary .dijitStretch,
-.flat .dijitSelectDisabled.btn-primary .dijitButtonNode {
+.flat .dijitSelectDisabled.alt-primary .dijitStretch,
+.flat .dijitSelectDisabled.alt-primary .dijitButtonNode {
   background: #5fa6ec;
   color: #ededed;
 }
-.flat .dijitComboBoxDisabled.btn-success,
-.flat .dijitSpinnerDisabled.btn-success {
+.flat .dijitComboBoxDisabled.alt-success,
+.flat .dijitSpinnerDisabled.alt-success {
   background: #fafafa;
   color: #9e9e9e;
   border: 1px solid #6ec672;
 }
-.flat .dijitComboBoxDisabled.btn-success .dijitButtonNode,
-.flat .dijitSpinnerDisabled.btn-success .dijitButtonNode {
+.flat .dijitComboBoxDisabled.alt-success .dijitButtonNode,
+.flat .dijitSpinnerDisabled.alt-success .dijitButtonNode {
   background: #6ec672;
   color: #ededed;
 }
-.flat .dijitSpinnerDisabled.btn-success .dijitSpinnerButtonContainer {
+.flat .dijitSpinnerDisabled.alt-success .dijitSpinnerButtonContainer {
   border-left-color: #6ec672;
 }
-.flat .dijitSpinnerRtlDisabled.btn-success .dijitSpinnerButtonContainer {
+.flat .dijitSpinnerRtlDisabled.alt-success .dijitSpinnerButtonContainer {
   border-right-color: #6ec672;
 }
-.flat .dijitSelectDisabled.btn-success {
+.flat .dijitSelectDisabled.alt-success {
   border-color: #6ec672;
 }
-.flat .dijitSelectDisabled.btn-success .dijitStretch,
-.flat .dijitSelectDisabled.btn-success .dijitButtonNode {
+.flat .dijitSelectDisabled.alt-success .dijitStretch,
+.flat .dijitSelectDisabled.alt-success .dijitButtonNode {
   background: #6ec672;
   color: #ededed;
 }
-.flat .dijitComboBoxDisabled.btn-info,
-.flat .dijitSpinnerDisabled.btn-info {
+.flat .dijitComboBoxDisabled.alt-info,
+.flat .dijitSpinnerDisabled.alt-info {
   background: #fafafa;
   color: #9e9e9e;
   border: 1px solid #74d0f9;
 }
-.flat .dijitComboBoxDisabled.btn-info .dijitButtonNode,
-.flat .dijitSpinnerDisabled.btn-info .dijitButtonNode {
+.flat .dijitComboBoxDisabled.alt-info .dijitButtonNode,
+.flat .dijitSpinnerDisabled.alt-info .dijitButtonNode {
   background: #74d0f9;
   color: #ededed;
 }
-.flat .dijitSpinnerDisabled.btn-info .dijitSpinnerButtonContainer {
+.flat .dijitSpinnerDisabled.alt-info .dijitSpinnerButtonContainer {
   border-left-color: #74d0f9;
 }
-.flat .dijitSpinnerRtlDisabled.btn-info .dijitSpinnerButtonContainer {
+.flat .dijitSpinnerRtlDisabled.alt-info .dijitSpinnerButtonContainer {
   border-right-color: #74d0f9;
 }
-.flat .dijitSelectDisabled.btn-info {
+.flat .dijitSelectDisabled.alt-info {
   border-color: #74d0f9;
 }
-.flat .dijitSelectDisabled.btn-info .dijitStretch,
-.flat .dijitSelectDisabled.btn-info .dijitButtonNode {
+.flat .dijitSelectDisabled.alt-info .dijitStretch,
+.flat .dijitSelectDisabled.alt-info .dijitButtonNode {
   background: #74d0f9;
   color: #ededed;
 }
-.flat .dijitComboBoxDisabled.btn-warning,
-.flat .dijitSpinnerDisabled.btn-warning {
+.flat .dijitComboBoxDisabled.alt-warning,
+.flat .dijitSpinnerDisabled.alt-warning {
   background: #fafafa;
   color: #9e9e9e;
   border: 1px solid #ffaa53;
 }
-.flat .dijitComboBoxDisabled.btn-warning .dijitButtonNode,
-.flat .dijitSpinnerDisabled.btn-warning .dijitButtonNode {
+.flat .dijitComboBoxDisabled.alt-warning .dijitButtonNode,
+.flat .dijitSpinnerDisabled.alt-warning .dijitButtonNode {
   background: #ffaa53;
   color: #ededed;
 }
-.flat .dijitSpinnerDisabled.btn-warning .dijitSpinnerButtonContainer {
+.flat .dijitSpinnerDisabled.alt-warning .dijitSpinnerButtonContainer {
   border-left-color: #ffaa53;
 }
-.flat .dijitSpinnerRtlDisabled.btn-warning .dijitSpinnerButtonContainer {
+.flat .dijitSpinnerRtlDisabled.alt-warning .dijitSpinnerButtonContainer {
   border-right-color: #ffaa53;
 }
-.flat .dijitSelectDisabled.btn-warning {
+.flat .dijitSelectDisabled.alt-warning {
   border-color: #ffaa53;
 }
-.flat .dijitSelectDisabled.btn-warning .dijitStretch,
-.flat .dijitSelectDisabled.btn-warning .dijitButtonNode {
+.flat .dijitSelectDisabled.alt-warning .dijitStretch,
+.flat .dijitSelectDisabled.alt-warning .dijitButtonNode {
   background: #ffaa53;
   color: #ededed;
 }
-.flat .dijitComboBoxDisabled.btn-danger,
-.flat .dijitSpinnerDisabled.btn-danger {
+.flat .dijitComboBoxDisabled.alt-danger,
+.flat .dijitSpinnerDisabled.alt-danger {
   background: #fafafa;
   color: #9e9e9e;
   border: 1px solid #f8857c;
 }
-.flat .dijitComboBoxDisabled.btn-danger .dijitButtonNode,
-.flat .dijitSpinnerDisabled.btn-danger .dijitButtonNode {
+.flat .dijitComboBoxDisabled.alt-danger .dijitButtonNode,
+.flat .dijitSpinnerDisabled.alt-danger .dijitButtonNode {
   background: #f8857c;
   color: #ededed;
 }
-.flat .dijitSpinnerDisabled.btn-danger .dijitSpinnerButtonContainer {
+.flat .dijitSpinnerDisabled.alt-danger .dijitSpinnerButtonContainer {
   border-left-color: #f8857c;
 }
-.flat .dijitSpinnerRtlDisabled.btn-danger .dijitSpinnerButtonContainer {
+.flat .dijitSpinnerRtlDisabled.alt-danger .dijitSpinnerButtonContainer {
   border-right-color: #f8857c;
 }
-.flat .dijitSelectDisabled.btn-danger {
+.flat .dijitSelectDisabled.alt-danger {
   border-color: #f8857c;
 }
-.flat .dijitSelectDisabled.btn-danger .dijitStretch,
-.flat .dijitSelectDisabled.btn-danger .dijitButtonNode {
+.flat .dijitSelectDisabled.alt-danger .dijitStretch,
+.flat .dijitSelectDisabled.alt-danger .dijitButtonNode {
   background: #f8857c;
   color: #ededed;
 }
-.flat .dijitComboBoxDisabled.btn-inverse,
-.flat .dijitSpinnerDisabled.btn-inverse {
+.flat .dijitComboBoxDisabled.alt-inverse,
+.flat .dijitSpinnerDisabled.alt-inverse {
   background: #fafafa;
   color: #9e9e9e;
   border: 1px solid #6f6f6f;
 }
-.flat .dijitComboBoxDisabled.btn-inverse .dijitButtonNode,
-.flat .dijitSpinnerDisabled.btn-inverse .dijitButtonNode {
+.flat .dijitComboBoxDisabled.alt-inverse .dijitButtonNode,
+.flat .dijitSpinnerDisabled.alt-inverse .dijitButtonNode {
   background: #6f6f6f;
   color: #ededed;
 }
-.flat .dijitSpinnerDisabled.btn-inverse .dijitSpinnerButtonContainer {
+.flat .dijitSpinnerDisabled.alt-inverse .dijitSpinnerButtonContainer {
   border-left-color: #6f6f6f;
 }
-.flat .dijitSpinnerRtlDisabled.btn-inverse .dijitSpinnerButtonContainer {
+.flat .dijitSpinnerRtlDisabled.alt-inverse .dijitSpinnerButtonContainer {
   border-right-color: #6f6f6f;
 }
-.flat .dijitSelectDisabled.btn-inverse {
+.flat .dijitSelectDisabled.alt-inverse {
   border-color: #6f6f6f;
 }
-.flat .dijitSelectDisabled.btn-inverse .dijitStretch,
-.flat .dijitSelectDisabled.btn-inverse .dijitButtonNode {
+.flat .dijitSelectDisabled.alt-inverse .dijitStretch,
+.flat .dijitSelectDisabled.alt-inverse .dijitButtonNode {
   background: #6f6f6f;
   color: #ededed;
 }
