@@ -11,8 +11,8 @@
 .flat .dijitInlineEditBoxDisplayMode {
   border: 1px dashed transparent;
   padding: 4px 6px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }
 .flat .dijitInlineEditBoxDisplayModeHover {
   background-color: transparent;

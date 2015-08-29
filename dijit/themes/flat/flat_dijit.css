@@ -1122,7 +1122,7 @@ div.dijitTabDisabled, .dj_ie div.dijitTabDisabled {
 	display:none;
 }
 .dijitTab .tabLabel {
-	min-height: 16px;
+	/*min-height: 16px;*/
 	display: inline-block;
 }
 .dijitNoIcon {

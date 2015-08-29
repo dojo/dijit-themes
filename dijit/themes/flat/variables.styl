@@ -48,7 +48,7 @@ $line-height = 20px;
 
 // box 
 $border-color = #BDBDBD; // grey 400
-$border-radius = 4px;
+$border-radius = 3px;
 $padding = 4px;
 $margin = 4px;
 
@@ -307,11 +307,11 @@ $splitter-dragged-background-color = darken(#fff, 5%);
  ****************************************************************************************/
 
 $contentpane-padding = $padding * 2;
-$contentpane-background-color = transparent;
+$contentpane-background-color = $theme-base-color;
 
 // contentpane in other layout widgets (accordion and tab container)
 $contentpane-nested-padding = $padding * 2;
-$contentpane-nested-background-color = transparent;
+$contentpane-nested-background-color = $theme-base-color;
 
 /****************************************************************************************
  * TabContainer
@@ -365,10 +365,8 @@ $tab-strip-button-active-background-color = $tab-active-background-color;
 // arrow
 $tab-strip-button-arrow-color = $theme-base;
 
-// !! tabs have a 1px transparent "gap" which needs resolved here
-
 // tabs: top
-$tab-top-padding = $tab-padding $tab-padding * 4;
+$tab-top-padding = $tab-padding * 1.5 $tab-padding * 4;
 
 // tabs: bottom
 $tab-bottom-padding = $tab-top-padding;
@@ -405,7 +403,7 @@ $nestedtab-checked-text-color = $theme-base-color;
 $accordion-spacing = 0; // space between accordion panes; minimum value is 0
 $accordion-border-color = $border-color;
 $accordion-border-radius = $border-radius;
-$accordion-background-color = transparent;
+$accordion-background-color = $theme-base-color;
 
 // accordion title bar 
 

@@ -54,8 +54,8 @@
   border-color: transparent;
   padding: 4px;
   background-color: transparent;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
   -webkit-transition-property: background-color;
   -moz-transition-property: background-color;
   -o-transition-property: background-color;
@@ -69,13 +69,13 @@
 }
 .flat .dijitToolbar .dijitComboButton .dijitStretch {
 /* no rounded border on side adjacent to arrow */
-  -webkit-border-radius: 4px 0 0 4px;
-  border-radius: 4px 0 0 4px;
+  -webkit-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
 }
 .flat .dijitToolbar .dijitComboButton .dijitArrowButton {
 /* no rounded border on side adjacent to button */
-  -webkit-border-radius: 0 4px 4px 0;
-  border-radius: 0 4px 4px 0;
+  -webkit-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
 }
 .flat .dijitToolbar .dijitComboBox .dijitButtonNode {
   padding: 0 8px;
