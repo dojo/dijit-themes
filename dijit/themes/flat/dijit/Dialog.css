@@ -31,15 +31,15 @@
 .flat .dijitDialog {
   background-color: #fff;
   border: 1px solid #d0d0d0;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
   -webkit-box-shadow: 0 7px 3px -4px rgba(0,0,0,0.3), 0 8px 8px rgba(0,0,0,0.2);
   box-shadow: 0 7px 3px -4px rgba(0,0,0,0.3), 0 8px 8px rgba(0,0,0,0.2);
 }
 .flat .dijitDialogPaneContent {
   background-color: #fff;
-  -webkit-border-radius: 0 0 2px 2px;
-  border-radius: 0 0 2px 2px;
+  -webkit-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
   padding: 8px;
   position: relative;
 }
@@ -53,8 +53,8 @@
   float: none;
 }
 .flat .dijitTooltipDialog .dijitDialogPaneActionBar {
-  -webkit-border-radius: 0 0 2px 2px;
-  border-radius: 0 0 2px 2px;
+  -webkit-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
   margin: 8px 0 0;
 }
 .flat .dijitDialogTitleBar {
@@ -62,8 +62,8 @@
   line-height: 20px;
   border-bottom: 1px solid #d0d0d0;
   padding: 8px 12px;
-  -webkit-border-radius: 2px 2px 0 0;
-  border-radius: 2px 2px 0 0;
+  -webkit-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
 }
 .flat .dijitDialogTitle {
 /* typography and styling of the dialog title */
@@ -126,8 +126,8 @@
   -ms-filter: none;
   filter: none;
   padding: 4px 8px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
 }
 .flat .dijitTooltip .dijitTooltipContainer {
   color: #fff;
@@ -198,8 +198,8 @@
 .flat .dijitTooltipDialog .dijitTooltipContainer {
   background: #fff;
   border: 1px solid #d0d0d0;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
   -webkit-box-shadow: 0 7px 3px -4px rgba(0,0,0,0.3), 0 8px 8px rgba(0,0,0,0.2);
   box-shadow: 0 7px 3px -4px rgba(0,0,0,0.3), 0 8px 8px rgba(0,0,0,0.2);
   opacity: 1;

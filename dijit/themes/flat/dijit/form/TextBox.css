@@ -24,8 +24,8 @@
 .flat .dijitTextBox {
   background: #fff;
   border: 1px solid #d0d0d0;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
   -webkit-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
   -moz-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
   -o-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;

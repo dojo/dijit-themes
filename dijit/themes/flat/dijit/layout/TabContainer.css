@@ -47,16 +47,16 @@
  * 		.dijitTabContainerTabListNested - tab list container for nested tabs
  */
 .flat .dijitTabContainer {
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
 }
 .flat .dijitTabPaneWrapper {
   background: #fff;
   border: 1px solid #d0d0d0;
   margin: 0;
   padding: 0;
-  -webkit-border-radius: 0 0 2px 2px;
-  border-radius: 0 0 2px 2px;
+  -webkit-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
 }
 .flat .dijitTabContainerTop-tabs,
 .flat .dijitTabContainerBottom-tabs,
@@ -172,8 +172,8 @@
   top: 0;
 }
 .flat .dijitTabPaneWrapper.dijitTabContainerBottom-container {
-  -webkit-border-radius: 2px 2px 0 0;
-  border-radius: 2px 2px 0 0;
+  -webkit-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
 }
 .flat .dijitTabContainerBottom-tabs .dijitTab {
   margin-right: 0;
@@ -197,8 +197,8 @@
   top: 0;
 }
 .flat .dijitTabPaneWrapper.dijitTabContainerLeft-container {
-  -webkit-border-radius: 0 2px 2px 0;
-  border-radius: 0 2px 2px 0;
+  -webkit-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
 }
 .flat .dijitTabContainerLeft-tabs .dijitTab {
   margin-bottom: 0;
@@ -216,8 +216,8 @@
   top: -1px;
 }
 .flat .dijitTabPaneWrapper.dijitTabContainerRight-container {
-  -webkit-border-radius: 2px 0 0 2px;
-  border-radius: 2px 0 0 2px;
+  -webkit-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
 }
 .flat .dijitTabContainerRight-tabs .dijitTab {
   margin-bottom: 0;
@@ -301,8 +301,8 @@
   margin: 4px;
   padding: 4px 8px;
   border: 1px solid transparent;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
   -webkit-transition-property: background-color, border-color;
   -moz-transition-property: background-color, border-color;
   -o-transition-property: background-color, border-color;

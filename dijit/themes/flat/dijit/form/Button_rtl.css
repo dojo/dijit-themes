@@ -1,10 +1,10 @@
 .flat table.dijitComboButtonRtl .dijitStretch {
-  -webkit-border-radius: 0 2px 2px 0;
-  border-radius: 0 2px 2px 0;
+  -webkit-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
 }
 .flat table.dijitComboButtonRtl .dijitArrowButton {
-  -webkit-border-radius: 2px 0 0 2px;
-  border-radius: 2px 0 0 2px;
+  -webkit-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
   border-left-width: 1px;
   border-right-width: 0;
 }

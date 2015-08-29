@@ -29,14 +29,14 @@
  */
 .flat .dijitAccordionContainer {
   border: 0 none;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
 }
 .flat .dijitAccordionInnerContainer {
   background-color: transparent;
   border: 1px solid #d0d0d0;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
   -webkit-transition-property: background-color, border;
   -moz-transition-property: background-color, border;
   -o-transition-property: background-color, border;
@@ -62,8 +62,8 @@
   border-width: 1px;
   border-color: #d0d0d0;
   padding: 4px 12px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
   line-height: 20px;
   cursor: pointer;
   -webkit-transition: all 0.05s linear;
@@ -73,8 +73,8 @@
   transition: all 0.05s linear;
   background: #fff;
   border: 0 none;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
 }
 .flat .dijitAccordionTitle .arrowTextUp,
 .flat .dijitAccordionTitle .arrowTextDown {
@@ -130,8 +130,8 @@
 .flat .dijitAccordionInnerContainerSelected .dijitAccordionTitle {
   color: #fff;
   background-color: #007ac2;
-  -webkit-border-radius: 2px 2px 0 0;
-  border-radius: 2px 2px 0 0;
+  -webkit-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
 }
 .flat .dijitAccordionInnerContainerSelected .dijitAccordionTitle .arrowTextUp {
   display: none;
@@ -146,8 +146,8 @@
   position: relative;
   z-index: 1;
   clear: both;
-  -webkit-border-radius: 0 0 2px 2px;
-  border-radius: 0 0 2px 2px;
+  -webkit-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
 }
 .flat .dijitAccordionInnerContainer {
   -webkit-border-radius: 0;
@@ -170,11 +170,11 @@
 }
 .flat .dijitAccordionInnerContainer:first-child,
 .flat .dijitAccordionInnerContainer:first-child .dijitAccordionTitle {
-  -webkit-border-radius: 2px 2px 0 0;
-  border-radius: 2px 2px 0 0;
+  -webkit-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
 }
 .flat .dijitAccordionInnerContainer:last-child,
 .flat .dijitAccordionInnerContainer:last-child .dijitAccordionTitle {
-  -webkit-border-radius: 0 0 2px 2px;
-  border-radius: 0 0 2px 2px;
+  -webkit-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
 }

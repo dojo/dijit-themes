@@ -29,7 +29,7 @@ $line-height = 20px;
 
 // box 
 $border-color = $gray-light;
-$border-radius = 2px;
+$border-radius = 4px;
 $padding = 4px;
 $margin = 4px;
 
@@ -110,7 +110,7 @@ $input-error-icon-background-color = $red;
 $checkbox-height = 16px;
 $checkbox-width = 16px;
 $checkbox-padding = 0;
-$checkbox-border-radius = $border-radius;
+$checkbox-border-radius = 2px;
 $checkbox-icon-size = $icon-size;
 
 ////  normal
@@ -161,6 +161,7 @@ $radio-hover-border-color = lighten($radio-checked-color, 25%);
  ****************************************************************************************/
 
 $select-border = 1px solid $border-color;
+$select-button-border-radius = $border-radius * (2/3);
 
 // Select's normal, hover, active and disabled styles are the same as "form/Button"
 
@@ -236,6 +237,7 @@ $numberspinner-button-inner-padding = $padding;
 $numberspinner-button-width = ($line-height + $numberspinner-button-inner-padding * 2) + 2px; // 30px
 $numberspinner-button-padding = 0;
 $numberspinner-arrow-padding = $padding;
+$numberspinner-button-border-radius = $border-radius * (2/3);
 
 // number spinner button's normal, active and disabled status styles are the same as "form/Button"
 // and the styles of the text input field are the same as "form/TextBox", which is defined in "form/Common.styl"

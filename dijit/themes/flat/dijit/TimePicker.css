@@ -27,8 +27,8 @@
   background-color: #fff;
   padding: 4px 0;
   border: 1px solid #d0d0d0;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
 }
 .dijitTimePickerItem {
   margin: 0;

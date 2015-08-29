@@ -1,6 +1,6 @@
 .dijitPopup {
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
 }
 /* ----- Drag and Drop ----- */
 .dojoDndItem {
@@ -20,14 +20,14 @@
 /* hover */
 .dojoDndItemOver {
   background-color: #f5f5f5;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
 }
 .dojoDndItemAnchor {
   background-color: transparent;
   border: 1px dashed #007ac2;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
 }
 /* selected */
 .dojoDndItemBefore {
@@ -82,8 +82,8 @@ table.dojoDndAvatar {
   content: "\e60f";
 }
 .dojoDndAvatarItem {
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
 }
 .dojoDndAvatarItem td > * {
   padding: 4px 8px;

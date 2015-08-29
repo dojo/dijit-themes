@@ -36,8 +36,8 @@
   border-width: 1px;
   border-color: #d0d0d0;
   padding: 4px 12px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
   line-height: 20px;
   cursor: pointer;
   -webkit-transition: all 0.05s linear;
@@ -59,10 +59,10 @@
   content: none;
 }
 .flat .dijitSpinner .dijitUpArrowButton {
-  border-top-right-radius: 2px;
+  border-top-right-radius: 2.666666666666668px;
 }
 .flat .dijitSpinner .dijitDownArrowButton {
-  border-bottom-right-radius: 2px;
+  border-bottom-right-radius: 2.666666666666668px;
 }
 .flat .dijitSpinner .dijitUpArrowButtonHover,
 .flat .dijitSpinner .dijitDownArrowButtonHover {

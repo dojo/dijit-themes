@@ -37,8 +37,8 @@
   padding: 4px;
   border: 1px solid #d0d0d0;
   border-collapse: separate;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
   -webkit-box-shadow: 0 7px 3px -4px rgba(0,0,0,0.3), 0 8px 8px rgba(0,0,0,0.2);
   box-shadow: 0 7px 3px -4px rgba(0,0,0,0.3), 0 8px 8px rgba(0,0,0,0.2);
 }
@@ -81,8 +81,8 @@
   border-width: 1px;
   border-color: #d0d0d0;
   padding: 4px 12px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
   line-height: 20px;
   cursor: pointer;
   -webkit-transition: all 0.05s linear;

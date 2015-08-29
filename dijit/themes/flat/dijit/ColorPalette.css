@@ -23,8 +23,8 @@
 .flat .dijitColorPalette {
   border: 1px solid #d0d0d0;
   background-color: #fff;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
 /* swatch */
 }
 .flat .dijitColorPalette .dijitPaletteTable {
