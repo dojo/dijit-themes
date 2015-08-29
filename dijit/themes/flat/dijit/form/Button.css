@@ -164,7 +164,7 @@
   -o-transition: all 0.1s;
   -ms-transition: all 0.1s;
   transition: all 0.1s;
-  background: #e6e6e6;
+  background: #f2f2f2;
 }
 .flat .dijitComboButton .dijitButtonNodeHover,
 .flat .dijitComboButton .dijitDownArrowButtonHover {
@@ -173,7 +173,7 @@
   -o-transition: all 0.1s;
   -ms-transition: all 0.1s;
   transition: all 0.1s;
-  background: #e6e6e6;
+  background: #f2f2f2;
 }
 .flat .dijitButtonHover.btn-primary .dijitButtonNode,
 .flat .dijitDropDownButtonHover.btn-primary .dijitButtonNode,
@@ -187,7 +187,7 @@
 .flat .dijitSelect.dijitSelectOpened.btn-primary .dijitArrowButton,
 .flat .dijitSpinner.btn-primary .dijitUpArrowButtonHover,
 .flat .dijitSpinner.btn-primary .dijitDownArrowButtonHover {
-  background: #006eaf;
+  background: #0074b8;
 }
 .flat .dijitButtonHover.btn-success .dijitButtonNode,
 .flat .dijitDropDownButtonHover.btn-success .dijitButtonNode,
@@ -201,7 +201,7 @@
 .flat .dijitSelect.dijitSelectOpened.btn-success .dijitArrowButton,
 .flat .dijitSpinner.btn-success .dijitUpArrowButtonHover,
 .flat .dijitSpinner.btn-success .dijitDownArrowButtonHover {
-  background: #309b3f;
+  background: #32a343;
 }
 .flat .dijitButtonHover.btn-info .dijitButtonNode,
 .flat .dijitDropDownButtonHover.btn-info .dijitButtonNode,
@@ -215,7 +215,7 @@
 .flat .dijitSelect.dijitSelectOpened.btn-info .dijitArrowButton,
 .flat .dijitSpinner.btn-info .dijitUpArrowButtonHover,
 .flat .dijitSpinner.btn-info .dijitDownArrowButtonHover {
-  background: #00a6da;
+  background: #00b0e6;
 }
 .flat .dijitButtonHover.btn-warning .dijitButtonNode,
 .flat .dijitDropDownButtonHover.btn-warning .dijitButtonNode,
@@ -229,7 +229,7 @@
 .flat .dijitSelect.dijitSelectOpened.btn-warning .dijitArrowButton,
 .flat .dijitSpinner.btn-warning .dijitUpArrowButtonHover,
 .flat .dijitSpinner.btn-warning .dijitDownArrowButtonHover {
-  background: #f78c0b;
+  background: #f89219;
 }
 .flat .dijitButtonHover.btn-danger .dijitButtonNode,
 .flat .dijitDropDownButtonHover.btn-danger .dijitButtonNode,
@@ -243,7 +243,7 @@
 .flat .dijitSelect.dijitSelectOpened.btn-danger .dijitArrowButton,
 .flat .dijitSpinner.btn-danger .dijitUpArrowButtonHover,
 .flat .dijitSpinner.btn-danger .dijitDownArrowButtonHover {
-  background: #c4451b;
+  background: #cf491c;
 }
 .flat .dijitButtonHover.btn-inverse .dijitButtonNode,
 .flat .dijitDropDownButtonHover.btn-inverse .dijitButtonNode,
@@ -257,7 +257,7 @@
 .flat .dijitSelect.dijitSelectOpened.btn-inverse .dijitArrowButton,
 .flat .dijitSpinner.btn-inverse .dijitUpArrowButtonHover,
 .flat .dijitSpinner.btn-inverse .dijitDownArrowButtonHover {
-  background: #2e2e2e;
+  background: #303030;
 }
 .flat .dijitButtonActive .dijitButtonNode,
 .flat .dijitDropDownButtonActive .dijitButtonNode,
@@ -269,7 +269,7 @@
   -ms-transition: none;
   transition: none;
   outline: none;
-  background: #ccc;
+  background: #e6e6e6;
 }
 .flat .dijitComboButton .dijitButtonNodeActive,
 .flat .dijitComboButton .dijitDownArrowButtonActive {
@@ -279,7 +279,7 @@
   -ms-transition: none;
   transition: none;
   outline: none;
-  background: #ccc;
+  background: #e6e6e6;
 }
 .flat .dijitButtonActive.btn-primary .dijitButtonNode,
 .flat .dijitDropDownButtonActive.btn-primary .dijitButtonNode,
@@ -293,7 +293,7 @@
 .flat .dijitComboBox.btn-primary .dijitButtonNode.dijitHasDropDownOpen,
 .flat .dijitSpinner.btn-primary .dijitUpArrowButtonActive,
 .flat .dijitSpinner.btn-primary .dijitDownArrowButtonActive {
-  background: #00629b;
+  background: #006eaf;
 }
 .flat .dijitButtonActive.btn-success .dijitButtonNode,
 .flat .dijitDropDownButtonActive.btn-success .dijitButtonNode,
@@ -307,7 +307,7 @@
 .flat .dijitComboBox.btn-success .dijitButtonNode.dijitHasDropDownOpen,
 .flat .dijitSpinner.btn-success .dijitUpArrowButtonActive,
 .flat .dijitSpinner.btn-success .dijitDownArrowButtonActive {
-  background: #2a8a38;
+  background: #309b3f;
 }
 .flat .dijitButtonActive.btn-info .dijitButtonNode,
 .flat .dijitDropDownButtonActive.btn-info .dijitButtonNode,
@@ -321,7 +321,7 @@
 .flat .dijitComboBox.btn-info .dijitButtonNode.dijitHasDropDownOpen,
 .flat .dijitSpinner.btn-info .dijitUpArrowButtonActive,
 .flat .dijitSpinner.btn-info .dijitDownArrowButtonActive {
-  background: #0094c2;
+  background: #00a6da;
 }
 .flat .dijitButtonActive.btn-warning .dijitButtonNode,
 .flat .dijitDropDownButtonActive.btn-warning .dijitButtonNode,
@@ -335,7 +335,7 @@
 .flat .dijitComboBox.btn-warning .dijitButtonNode.dijitHasDropDownOpen,
 .flat .dijitSpinner.btn-warning .dijitUpArrowButtonActive,
 .flat .dijitSpinner.btn-warning .dijitDownArrowButtonActive {
-  background: #de7d07;
+  background: #f78c0b;
 }
 .flat .dijitButtonActive.btn-danger .dijitButtonNode,
 .flat .dijitDropDownButtonActive.btn-danger .dijitButtonNode,
@@ -349,7 +349,7 @@
 .flat .dijitComboBox.btn-danger .dijitButtonNode.dijitHasDropDownOpen,
 .flat .dijitSpinner.btn-danger .dijitUpArrowButtonActive,
 .flat .dijitSpinner.btn-danger .dijitDownArrowButtonActive {
-  background: #ae3e18;
+  background: #c4451b;
 }
 .flat .dijitButtonActive.btn-inverse .dijitButtonNode,
 .flat .dijitDropDownButtonActive.btn-inverse .dijitButtonNode,
@@ -363,7 +363,7 @@
 .flat .dijitComboBox.btn-inverse .dijitButtonNode.dijitHasDropDownOpen,
 .flat .dijitSpinner.btn-inverse .dijitUpArrowButtonActive,
 .flat .dijitSpinner.btn-inverse .dijitDownArrowButtonActive {
-  background: #292929;
+  background: #2e2e2e;
 }
 .flat .dijitButtonDisabled,
 .flat .dijitDropDownButtonDisabled,
