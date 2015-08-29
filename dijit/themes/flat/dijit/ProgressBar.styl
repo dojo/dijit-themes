@@ -44,10 +44,10 @@
 		_progress-bar-color-properties($progress-bar-color);
 		transition-property: width;
 		transition-duration: .25s;
+		height: 100%;
 	}
 
-	/* Create alternative progress bar colors */
-
+	// alternative colors
 	for class in $progress-bar-alternative-colors {
 		.dijitProgressBar.{class} .dijitProgressBarFull {
 			_progress-bar-color-properties($progress-bar-alternative-colors[class]);
@@ -55,12 +55,15 @@
 	}
 
 	.dijitProgressBarLabel {
+		margin-top: 0.2em;
+		margin-bottom: 0.2em;
 		color: $progress-bar-text-color;
 		font-size: $progress-bar-font-size;
+		text-shadow: $progress-bar-text-shadow;
 	}
 }
 
-/* Progress Animation */
+// animation
 @keyframes progress-bar-stripes {
   from { background-position: 75px 0; }
   to { background-position: 0 0; }

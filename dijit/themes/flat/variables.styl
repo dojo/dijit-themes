@@ -628,12 +628,14 @@ $editor-iframe-disabled-background-color = $input-disabled-background-color;
  * Progress Bar
  ****************************************************************************************/
 // Colors
-$progress-bar-color = $primary;
+$progress-bar-color = $theme-base;
 $progress-bar-alternative-colors = {
-	progress-bar-success: $success,
-	progress-bar-info: $info,
-	progress-bar-warning: $warning,
-	progress-bar-danger: $red
+	alt-primary: $primary,
+	alt-success: $success,
+	alt-info: $info,
+	alt-warning: $warning,
+	alt-danger: $danger,
+	alt-inverse: $inverse
 };
 
 $progress-bar-empty-color = $grey-light;
@@ -642,7 +644,8 @@ $progress-bar-strips-image-url = "images/progressBarStrips.png";
 
 // Label
 $progress-bar-text-color = $theme-base-color;
-$progress-bar-font-size = smaller;
+$progress-bar-font-size = 1em;
+$progress-bar-text-shadow = (1em / 10) (1em / 10) 1px $grey-dark;
 
 /****************************************************************************************
  * Toolbar
