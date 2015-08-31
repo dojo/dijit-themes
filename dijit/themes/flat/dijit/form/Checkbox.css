@@ -16,8 +16,8 @@
  *		.dijitCheckBoxCheckedDisabled
  */
 .flat .dijitCheckBox {
-  background-color: #fff;
-  border: 1px solid #d0d0d0;
+  background-color: #fafafa;
+  border: 1px solid #bdbdbd;
   width: 16px;
   height: 16px;
   line-height: 1;
@@ -54,53 +54,57 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\e606";
-  color: #fff;
+  color: #fafafa;
 }
 .flat .dijitCheckBoxIcon {
   padding: 0;
 }
 .flat .dijitCheckBoxIcon:before {
-  color: #007ac2;
+  color: #2196f3;
 }
-.flat .btn-primary .dijitCheckBoxIcon:before {
-  color: #fff;
+.flat .alt-primary .dijitCheckBoxIcon:before {
+  color: #fafafa;
 }
-.flat .btn-success .dijitCheckBoxIcon:before {
-  color: #fff;
+.flat .alt-success .dijitCheckBoxIcon:before {
+  color: #fafafa;
 }
-.flat .btn-info .dijitCheckBoxIcon:before {
-  color: #fff;
+.flat .alt-info .dijitCheckBoxIcon:before {
+  color: #fafafa;
 }
-.flat .btn-warning .dijitCheckBoxIcon:before {
-  color: #fff;
+.flat .alt-warning .dijitCheckBoxIcon:before {
+  color: #fafafa;
 }
-.flat .btn-danger .dijitCheckBoxIcon:before {
-  color: #fff;
+.flat .alt-danger .dijitCheckBoxIcon:before {
+  color: #fafafa;
 }
-.flat .btn-inverse .dijitCheckBoxIcon:before {
-  color: #fff;
+.flat .alt-inverse .dijitCheckBoxIcon:before {
+  color: #fafafa;
 }
 .flat .dijitCheckBoxChecked {
-  background-color: #007ac2;
-  border-color: #007ac2;
+  background-color: #2196f3;
+  border-color: #2196f3;
 }
 .flat .dijitCheckBoxHover {
-  background-color: #fff;
-  border: 1px solid #007ac2;
+  background-color: #fafafa;
+  border: 1px solid #2196f3;
 }
 .flat .dijitCheckBoxCheckedHover {
-  background-color: #0098f1;
-  border: 1px solid #007ac2;
+  background-color: #42a6f5;
+  border: 1px solid #2196f3;
 }
-.flat .dijitCheckBoxDisabled,
+.flat .dijitCheckBoxDisabled {
+  color: #9e9e9e;
+  background-color: #fafafa;
+  border-color: #e3e3e3;
+}
 .flat .dijitCheckBoxCheckedDisabled {
-  opacity: 0.65;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
-  filter: alpha(opacity=65);
+  color: #a3a3a3;
+  background-color: #6fbbf7;
+  border-color: #6fbbf7;
 }
 .flat .dijitCheckedMenuItem .dijitCheckedMenuItemIcon {
-  background-color: #fff;
-  border: 1px solid #d0d0d0;
+  background-color: #fafafa;
+  border: 1px solid #bdbdbd;
   width: 16px;
   height: 16px;
   line-height: 1;
@@ -131,5 +135,5 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\e606";
-  color: #007ac2;
+  color: #2196f3;
 }

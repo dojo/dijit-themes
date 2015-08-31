@@ -942,7 +942,8 @@ body .dijitAlignClient { position: absolute; }
 	background-repeat: no-repeat;
 }
 .dijitMenuItemDisabled * {
-	opacity:0.5;
+	/* flat theme styles disabled menu items */
+	/*opacity:0.5;*/
 	cursor:default;
 }
 .dj_ie .dj_a11y .dijitMenuItemDisabled,
@@ -1121,7 +1122,7 @@ div.dijitTabDisabled, .dj_ie div.dijitTabDisabled {
 	display:none;
 }
 .dijitTab .tabLabel {
-	min-height: 16px;
+	/*min-height: 16px;*/
 	display: inline-block;
 }
 .dijitNoIcon {

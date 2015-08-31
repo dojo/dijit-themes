@@ -18,7 +18,7 @@
  * 			.dijitToolbar .dijitButtonNodeActive  - mouse down on Button widget
  */
 .flat .dijitToolbar {
-  background-color: #f5f5f5;
+  background-color: #fafafa;
   padding: 4px;
   zoom: 1;
 /* Override default button styles */
@@ -54,8 +54,8 @@
   border-color: transparent;
   padding: 4px;
   background-color: transparent;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
   -webkit-transition-property: background-color;
   -moz-transition-property: background-color;
   -o-transition-property: background-color;
@@ -69,13 +69,13 @@
 }
 .flat .dijitToolbar .dijitComboButton .dijitStretch {
 /* no rounded border on side adjacent to arrow */
-  -webkit-border-radius: 2px 0 0 2px;
-  border-radius: 2px 0 0 2px;
+  -webkit-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
 }
 .flat .dijitToolbar .dijitComboButton .dijitArrowButton {
 /* no rounded border on side adjacent to button */
-  -webkit-border-radius: 0 2px 2px 0;
-  border-radius: 0 2px 2px 0;
+  -webkit-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
 }
 .flat .dijitToolbar .dijitComboBox .dijitButtonNode {
   padding: 0 8px;
@@ -95,8 +95,8 @@
   -o-transition: all 0.1s;
   -ms-transition: all 0.1s;
   transition: all 0.1s;
-  background: #f2f2f2;
-  border: 1px solid #d0d0d0;
+  background: #ededed;
+  border: 1px solid #bdbdbd;
 }
 .flat .dijitToolbar .dijitButtonActive .dijitButtonNode,
 .flat .dijitToolbar .dijitDropDownButtonActive .dijitButtonNode,
@@ -107,8 +107,8 @@
   -ms-transition: none;
   transition: none;
   outline: none;
-  background: #e6e6e6;
-  border: 1px solid #d0d0d0;
+  background: #e1e1e1;
+  border: 1px solid #bdbdbd;
 }
 .flat .dijitToolbar .dijitToggleButtonChecked .dijitButtonNode {
   -webkit-transition: none;
@@ -117,17 +117,17 @@
   -ms-transition: none;
   transition: none;
   outline: none;
-  background: #e6e6e6;
-  border: 1px solid #d0d0d0;
+  background: #e1e1e1;
+  border: 1px solid #bdbdbd;
 }
 .flat .dijitToolbarSeparator {
   width: 1px;
   height: 20px;
-  background-color: #d0d0d0;
+  background-color: #bdbdbd;
   padding: 0;
   margin: 0 4px;
 }
 .flat .dijitDisabled .dijitToolbar {
-  background-color: #f5f5f5;
-  border-bottom: 1px solid #d0d0d0;
+  background-color: #fafafa;
+  border-bottom: 1px solid #bdbdbd;
 }

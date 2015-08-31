@@ -25,10 +25,10 @@
  * 		sets animated gif for the progress bar in 'indeterminate' mode
  */
 .flat .dijitProgressBar {
-  background-color: #d0d0d0;
+  background-color: #e0e0e0;
   border: 0 none;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }
 .flat .dijitProgressBarTile {
   background: url("images/progressBarStrips.png") repeat-x top;
@@ -39,7 +39,7 @@
   animation: progress-bar-stripes 2s linear infinite;
 }
 .flat .dijitProgressBarFull {
-  background-color: #007ac2;
+  background-color: #2196f3;
   -webkit-transition-property: width;
   -moz-transition-property: width;
   -o-transition-property: width;
@@ -50,24 +50,33 @@
   -o-transition-duration: 0.25s;
   -ms-transition-duration: 0.25s;
   transition-duration: 0.25s;
+  height: 100%;
 }
-.flat .dijitProgressBar.progress-bar-success .dijitProgressBarFull {
-  background-color: #35ac46;
+.flat .dijitProgressBar.alt-primary .dijitProgressBarFull {
+  background-color: #1976d2;
 }
-.flat .dijitProgressBar.progress-bar-info .dijitProgressBarFull {
-  background-color: #00b9f2;
+.flat .dijitProgressBar.alt-success .dijitProgressBarFull {
+  background-color: #388e3c;
 }
-.flat .dijitProgressBar.progress-bar-warning .dijitProgressBarFull {
-  background-color: #f89927;
+.flat .dijitProgressBar.alt-info .dijitProgressBarFull {
+  background-color: #29b6f6;
 }
-.flat .dijitProgressBar.progress-bar-danger .dijitProgressBarFull {
-  background-color: #da4d1e;
+.flat .dijitProgressBar.alt-warning .dijitProgressBarFull {
+  background-color: #f57c00;
+}
+.flat .dijitProgressBar.alt-danger .dijitProgressBarFull {
+  background-color: #f44336;
+}
+.flat .dijitProgressBar.alt-inverse .dijitProgressBarFull {
+  background-color: #212121;
 }
 .flat .dijitProgressBarLabel {
-  color: #fff;
-  font-size: smaller;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  color: #fafafa;
+  font-size: 1em;
+  text-shadow: 0.1em 0.1em 1px #424242;
 }
-/* Progress Animation */
 @-moz-keyframes progress-bar-stripes {
   from {
     background-position: 75px 0;

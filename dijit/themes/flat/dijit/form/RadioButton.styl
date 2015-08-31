@@ -24,7 +24,7 @@
 .{$theme-name} {
 	
 	.dijitRadio,
-	.dijitRadioIcon	{		/* inside a toggle button */
+	.dijitRadioIcon	{ /* inside a toggle button */
 		width: $radio-width;
 		height: $radio-height;
 		background: $radio-background-color;
@@ -49,14 +49,12 @@
 		}
 	}
 
-	/* hover status */
-		
+	// hover
 	.dijitRadioHover {
 		border-color: $radio-hover-border-color;
 	}
 
-	/* checked status */
-		
+	// checked
 	.dijitRadioChecked,
 	.dijitChecked .dijitRadioIcon {
 		&:after {
@@ -72,28 +70,35 @@
 		for class in $button-alternative-colors {
 			.{class} {
 				.dijitRadioIcon {
-					border-color: #fff;
+					border-color: $white;
 					&:after {
-						background-color: #fff;
+						background-color: $white;
 					}
 				}
 			}
 		}
 	}
 
-	/* disabled status */
-		
+	// disabled
 	.dijitRadioDisabled {
-		opacity: $disabled-opacity;
+		background-color: $radio-disabled-background-color;
+		border-color: $radio-disabled-border-color;
+	}
+	
+	.dijitRadioCheckedDisabled {
+		background-color: $radio-disabled-background-color;
+		border-color: $radio-checked-disabled-color;
+		&:after {
+			background-color: $radio-checked-disabled-color;
+		}
 	}
 
-	/* Radio button within a menu item */
-	
+	/* ---- RadioMenuItem ---- */
 	.dijitRadioMenuItem {
 		.dijitCheckedMenuItemIcon {
 			width: $radio-width;
 			height: $radio-height;
-			background:none;
+			background: $radio-background-color;
 			border: 1px solid $border-color;
 			border-radius: 50%;
 			position: relative;

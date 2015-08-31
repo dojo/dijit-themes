@@ -33,9 +33,7 @@ There are three areas of styling for the Menu:
 @import "../variables";
 
 .{$theme-name} {
-			
 	/* ----- Menu (Common) ----- */
-	
 	.dijitMenu {
 		background: $menu-background-color;
 		border: 1px solid $menu-border-color;
@@ -56,12 +54,11 @@ There are three areas of styling for the Menu:
 
 	.dijitMenuTable {
 		/* this prevents jiggling upon hover of a menu item */
-		border-collapse:separate;
-		border-spacing:0 0;
+		border-collapse: separate;
+		border-spacing: 0 0;
 	}
 
-	/* Menu Item */
-
+	/* ---- MenuItem ---- */
 	.dijitMenuItem,
 	.dijitMenuItem td {
 		line-height: $line-height;
@@ -69,32 +66,39 @@ There are three areas of styling for the Menu:
 		white-space: nowrap;
 	}
 
-	/* Menu Item: Hover */
-
+	// hover
 	.dijitMenuItemHover td,
 	.dijitMenuItemHover {
 		color: $menu-item-hovered-text-color;
 		background-color: $menu-item-hovered-background-color;
 	}
 
-	/* Menu Item: Active */
-
+	// active
 	.dijitMenuItemActive td,
 	.dijitMenuItemActive {
 		color: $menu-item-active-text-color;
 		background-color: $menu-item-active-background-color;
 	}
 
-	/* Menu Item: Selected */
-
+	// selected
 	.dijitMenuItemSelected td,
 	.dijitMenuItemSelected {
 		color: $menu-item-selected-text-color;
 		background-color: $menu-item-selected-background-color;
 	}
+	
+	// disabled
+	.dijitMenuItemDisabled {
+		color: $menu-item-disabled-text-color;
+	}
+	
+	.dijitMenuItemDisabled.dijitMenuItemSelected td,
+	.dijitMenuItemDisabled.dijitMenuItemSelected {
+		color: $menu-item-disabled-hovered-text-color;
+		background: $menu-item-disabled-hovered-background-color;
+	}
 
-	/* Menu Item Separator */
-
+	/* ---- MenuItemSeparator ---- */
 	.dijitMenuSeparatorTop {
 		height: auto
 		margin-top: 1px; /* prevents spacing above/below separator */
@@ -104,19 +108,17 @@ There are three areas of styling for the Menu:
 	.dijitMenuSeparatorBottom {
 		height: auto;
 		margin-bottom:1px;
-		border-top: 1px solid $menu-item-separator-Bottom-color;
+		border-top: 1px solid $menu-item-separator-bottom-color;
 	}
 
-	/* Menu Item Icon */
-
+	/* ---- MenuItem icons ---- */
 	td.dijitMenuItemIconCell {
 		padding: $menu-item-icon-padding;
 		margin: 0 0 0 $menu-item-icon-margin;
 		text-align: center;
 	}
 
-	/* expando icon */
-	
+	// popup menu icon
 	.dijitMenuExpand {
 		_icon-core-style();
 		&:before {
@@ -124,8 +126,7 @@ There are three areas of styling for the Menu:
 		}
 	}
 
-	/* checked icon */
-
+	// checked icon
 	.dijitCheckedMenuItemIconChar {
 		display: none;
 	}
@@ -135,7 +136,6 @@ There are three areas of styling for the Menu:
 	}
 
 	/* ----- Menu Bar ----- */
-
 	.dijitMenuBar {
 		margin: 0;
 		padding: 0;
@@ -146,30 +146,35 @@ There are three areas of styling for the Menu:
 			margin: 0;	
 		}
 		
-		/* hovered status */
-			
+		// hover
 		.dijitMenuItemHover {
+			color: $menubar-item-hover-color;
 			background-color: $menubar-item-hover-background-color;
 		}
 
-		/* active status */
-
+		// active
 		.dijitMenuItemActive {
+			color: $menubar-item-active-color;
 			background-color: $menubar-item-active-background-color;
 		}
 		
-		/* selected status */
-		
+		// selected
 		.dijitMenuItemSelected,
 		.dijitMenuItemHover.dijitMenuItemSelected,
 		.dijitMenuItemActive.dijitMenuItemSelected {
 			color: $menubar-item-selected-text-color;
 			background-color: $menubar-item-selected-background-color;
 		}
+		
+		// disabled
+		.dijitMenuItemDisabled.dijitMenuItemSelected,
+		.dijitMenuItemDisabled.dijitMenuItemSelected {
+			color: $menu-item-disabled-hovered-text-color;
+			background: $menu-item-disabled-hovered-background-color;
+		}
 	}
 
-	/* MenuBar Dropdown */
-
+	/* ---- MenuBar Dropdown ---- */
 	.dijitMenuPopup {
 		border-top-left-radius: 0;
 		border-top-right-radius: 0;
@@ -183,5 +188,4 @@ There are three areas of styling for the Menu:
 			padding: $menubar-popup-item-padding;
 		}
 	}
-	
 }

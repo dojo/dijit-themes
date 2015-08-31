@@ -2,23 +2,22 @@
 
 **To Do:**
 
-1. Add editor icons.
-2. Add a grid of icons to demo.
+1. Icons!
+  * Is this is the icon set we want to go with?
+  * Do we want a robust set of icons to come with the theme?
+  * Editor icons are missing.
+  * Add a grid of icons to demo.
+2. Fix any outlying dijits using opacity for disabled.
+3. As this is a "flat" theme, discuss whether calendar and and popups should have a box-shadow.
 
 **Issues:**
 
-1. Disabled dijits use transparency. This is an issue with background colors other than white. http://imgur.com/tWOK7cK
-2. Toggle button doesn't maintain width when unchecked.
-3. Tab padding needs to be applied to top/bottom/left/right tab classes independently to avoid 1px transparent gap in container border between each tab.
-4. On lower quality displays the hover color (light gray) of menu items, selected Select options, MenuBar hover, etc are almost indistinguishable (Esri flat theme uses blue w/ white text).
-5. Need to switch to a "opened" folder icon for `.dijitIconFolderOpen` and `.dijitFolderOpened`.
-6. For input dijits with alternate color and required/validate, the border should also change via `.dijitTextBoxError` and equivalents. Alternate color styles are overriding.
+1. Toggle button doesn't maintain width when unchecked.
+2. For input dijits with alternate color and required/validate, the border should also change via `.dijitTextBoxError` and equivalents. Alternate color styles are overriding.
+3. Hover and selected calendar days with background 50% border radius looks a bit off.
+4. `.dijitValidationTextBoxError .dijitValidationContainer` line-height is being overridden by the default icon line-height causing the icon not to be vertically aligned properly. The line-height of `td.dijitMenuItemIconCell` is causing the icon to be shifted down.
 
-**Updates to Yiweima's flat theme:**
+**Improvements**
 
-1. Add default padding to ContentPane.
-2. Increase padding for ContentPane in Tab/AccordionContainer.
-3. Change Tooltip opacity to 1 (hard to read content when over other elements).
-4. Add background color to RadioButton.
-5. Fix `.dijitTab .tabLabel` minimum height to match icon size (caused border issue with top tabs).
-6. Add padding to `.dijitSpinnerButtonInner` to fix up/down buttons (there may be a better way).
+1. Consider typography, complimentary styling for native elements, helper classes, etc; and some components like Bootstrap.
+2. Alternate colors for text input dijits, checkboxes, radio buttons, sliders, title pane, tooltips.

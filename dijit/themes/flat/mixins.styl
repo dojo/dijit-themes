@@ -1,9 +1,10 @@
-/*****************
- * Mixins
-******************/
+/*
+ * Includes icon and alternate color mixin functions.
+*/
 
+/* helpers */
+// to calculate when the value is an even number or not
 isEven($value) {
-	// to calculate when the value is an even number or not
 	if ($value % 2 == 0) {
  		true;
 	} else { 
@@ -11,20 +12,15 @@ isEven($value) {
 	}
 }
 
+// to take half of the given value
 half($value) {
-	// to take half of the given value
 	$value / 2;
 }
 
-/*****************
- * Icon
-******************/
-
+/* icons */
 _icon-core-style() {
-	
 	font-variant: normal;
 	text-transform: none;
-	
 	font-family: $icon-font-family;
 	font-style: normal;
 	font-weight: normal;
@@ -39,10 +35,7 @@ _icon-core-style() {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-/*****************
- * button
-******************/
-
+/* Button */
 _button-bg-color(color) {
 	background: color;
 }
@@ -55,8 +48,13 @@ _button-bg-color-active(color) {
 	background: darken(color, 10%);
 }
 
+_button-bg-color-disabled(color) {
+	background: lighten(color, 35%);
+	color: darken($button-alternative-text-color, 5%);
+}
+
+// common button style properties
 button-style() {
-	// Common button style properties
 	border-style: solid;
 	border-width: 1px;
 	border-color: $button-default-border-color;
@@ -81,14 +79,14 @@ button-active-style() {
 
 button-disabled-style() {
 	cursor: default;
-	opacity:$disabled-opacity;
+	color: $button-disabled-color;
+	background-color: $button-disabled-background-color;
+	border-color: $button-disabled-border-color;
 }
 
-// Alternative colors
-
+// alternative colors
 create-alternative-buttons(colors) {
 	colors = arguments if length(arguments) >= 1;
-	
 	for class in colors {
 		.dijitButton.{class} .dijitButtonNode,
 		.dijitDropDownButton.{class} .dijitButtonNode,
@@ -102,11 +100,10 @@ create-alternative-buttons(colors) {
 			color: $button-alternative-text-color;
 			border-color: transparent;
 		}
-		
+		// combo button border
 		.dijitComboButton.{class} .dijitStretch {
 			border-right-color: darken(colors[class], 18.5%);
 		}
-		
 		.dijitComboButtonRtl.{class} .dijitStretch {
 			border-left-color: darken(colors[class], 18.5%);;
 		}
@@ -150,16 +147,31 @@ create-alternative-buttons-active(colors) {
 	}
 }
 
+create-alternative-buttons-disabled(colors) {
+	colors = arguments if length(arguments) >= 1;
+	for class in colors {
+		.dijitButtonDisabled.{class},
+		.dijitDropDownButtonDisabled.{class},
+		.dijitComboButtonDisabled.{class},
+		.dijitToggleButtonDisabled.{class} { 
+			.dijitButtonNode {
+				_button-bg-color-disabled(colors[class]);
+			}
+		}
+		// combo button border
+		.dijitComboButtonDisabled.{class} .dijitStretch {
+			border-right-color: lighten(colors[class], 22%);
+		}
+		.dijitComboButtonRtlDisabled.{class} .dijitStretch {
+			border-left-color: lighten(colors[class], 22%);;
+		}
+	}
+}
 
-/*****************
- * TextBox
-******************/
-
-// Alternative colors (Textboxes in Select, ComboBox, NumberSpinner, TimeTextBox and DateTextBox)
-
+/* TextBox */
+// alternative colors (Textboxes in Select, ComboBox, NumberSpinner, TimeTextBox and DateTextBox)
 create-alternative-textboxes(colors) {
 	colors = arguments if length(arguments) >= 1;
-	
 	for class in colors {
 		.dijitSelect.{class},
 		.dijitComboBox.{class},
@@ -169,10 +181,40 @@ create-alternative-textboxes(colors) {
 	}
 }
 
-/*****************
- * Progress bar 
- ****************/
+create-alternative-textboxes-disabled(colors) {
+	colors = arguments if length(arguments) >= 1;
+	for class in colors {
+		.dijitComboBoxDisabled.{class},
+		.dijitSpinnerDisabled.{class} {
+			background: $disabled-background-color;
+			color: $disabled-color;
+			border: lighten(colors[class], 35%);
+		}
+		.dijitComboBoxDisabled.{class} .dijitButtonNode,
+		.dijitSpinnerDisabled.{class} .dijitButtonNode {
+			background: lighten(colors[class], 35%);
+			color: darken($button-alternative-text-color, 5%);
+		}
+		// number spinner border
+		.dijitSpinnerDisabled.{class} .dijitSpinnerButtonContainer {
+			border-left-color: lighten(colors[class], 35%);
+		}
+		.dijitSpinnerRtlDisabled.{class} .dijitSpinnerButtonContainer {
+			border-right-color: lighten(colors[class], 35%);;
+		}
+		// select
+		.dijitSelectDisabled.{class} {
+			border-color: lighten(colors[class], 35%);
+		}
+		.dijitSelectDisabled.{class} .dijitStretch,
+		.dijitSelectDisabled.{class} .dijitButtonNode {
+			background: lighten(colors[class], 35%);
+			color: darken($button-alternative-text-color, 5%);
+		}
+	}
+}
 
+/* ProgressBar alternate colors */
 _progress-bar-color-properties(color) {
 	background-color: color;
 }

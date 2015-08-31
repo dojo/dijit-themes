@@ -21,8 +21,6 @@
 @import "../../variables";
 
 .{$theme-name} {
-		
-	/* Text Box */
 
 	.dijitTextBox,
 	.dijitInputInner {
@@ -55,41 +53,40 @@
 		padding: $input-padding;
 	}
 
-	/* hover */
-
+	// hover
 	.dijitTextBoxHover {
 		border-color: $input-hover-border-color;
 		transition-duration: .25s;
 	}
 
-	/* focused */
-
+	// focused
 	.dijitTextBoxFocused {
 		border-color: $input-focused-border-color;
 		transition-duration: .1s;
 	}
 
-	/* disabled */
+	// disabled
 	.dijitTextBoxDisabled {
+		color: $input-disabled-color;
 		background-color: $input-disabled-background-color;
-		opacity: $disabled-opacity;
+		border-color: $input-disabled-border-color;
 	}
+	
+	create-alternative-textboxes-disabled($button-alternative-colors);
 
-	/* error */
-
+	// error
 	.dijitTextBoxError,
 	.dijitTextBoxError .dijitButtonNode {
 		border-color: $input-error-border-color;
 	}
 
-	/* error: focused */
+	// error: focused
 	.dijitTextBoxErrorFocused,
 	.dijitTextBoxErrorFocused .dijitButtonNode {
 		border: $input-focused-error-border;
 	}
 
-	/* error: icon */
-
+	// error: icon
 	.dijitValidationTextBoxError {
 		.dijitValidationContainer {
 			color: $input-error-icon-background-color;

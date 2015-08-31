@@ -29,13 +29,11 @@
 @import "../../variables";
 
 .{$theme-name} {
-
+	/* ----- Button ----- */
 	.dijitButtonText {
 		padding: 0 $padding;
 		text-align: center;
 	}
-
-	/* -----  Default button ----- */
 
 	.dijitButton,
 	.dijitDropDownButton,
@@ -46,12 +44,9 @@
 		}
 	}
 
-	// Create alternative button styles
-
 	create-alternative-buttons($button-alternative-colors);
 
-	/* hovered status */
-
+	// hover
 	.dijitButtonHover,
 	.dijitDropDownButtonHover,
 	.dijitToggleButtonHover {
@@ -66,12 +61,9 @@
 		}
 	}
 
-	// Create alternative button hovered styles
-
 	create-alternative-buttons-hover($button-alternative-colors);
 
-	/* active, checked status */
-
+	// active and checked
 	.dijitButtonActive, 
 	.dijitDropDownButtonActive,
 	.dijitToggleButtonActive,
@@ -87,12 +79,9 @@
 		}
 	}
 
-	//Create alternative button active, checked styles
-
 	create-alternative-buttons-active($button-alternative-colors);
 
-	/* disabled status */
-
+	// disabled
 	.dijitButtonDisabled,
 	.dijitDropDownButtonDisabled,
 	.dijitComboButtonDisabled,
@@ -108,19 +97,19 @@
 			button-disabled-style();
 		}
 	}
+	
+	create-alternative-buttons-disabled($button-alternative-colors);
 
 	.dijitComboButtonDisabled .dijitArrowButton { 
 		border-left-width: 0;
 	}
 
-	/* -----  DropDownButton ----- */
-	
+	/* ----- DropDownButton ----- */
 	.dijitDropDownButton .dijitButtonNode {
-		padding-right: $padding*2;
+		padding-right: $padding * 2;
 	}
 	
-	/* -----  ComboButton ----- */
-
+	/* ----- ComboButton ----- */
 	table.dijitComboButton {
 		border-collapse: separate;	/* override dijit.css so that ComboBox rounded corners work */
 		.dijitStretch {
@@ -134,8 +123,7 @@
 		}
 	}
 
-	/* -----  ToggleButton ----- */
-
+	/* ----- ToggleButton ----- */
 	.dijitToggleButton {
 		.dijitCheckBoxIcon {
 			display: none;
@@ -148,8 +136,7 @@
 		}
 	}
 
-	/* arrow styles for down/up/left/right directions */
-
+	// arrow styles for down/up/left/right directions
 	.dijitDropDownButton .dijitArrowButtonInner{
 		margin-left: $padding * 3;
 	}
@@ -175,5 +162,4 @@
 	.dijitUpArrowButton:before {
 		content: "\e603";
 	}
-
 }

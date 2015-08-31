@@ -20,10 +20,10 @@
 .flat .dijitTitlePaneTitle {
   border-style: solid;
   border-width: 1px;
-  border-color: #d0d0d0;
+  border-color: #bdbdbd;
   padding: 4px 12px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
   line-height: 20px;
   cursor: pointer;
   -webkit-transition: all 0.05s linear;
@@ -31,9 +31,9 @@
   -o-transition: all 0.05s linear;
   -ms-transition: all 0.05s linear;
   transition: all 0.05s linear;
-  background: #fff;
-  -webkit-border-radius: 2px 2px 0 0;
-  border-radius: 2px 2px 0 0;
+  background: #fafafa;
+  -webkit-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
 }
 .flat .dijitTitlePaneTitleHover {
   -webkit-transition: all 0.1s;
@@ -41,7 +41,7 @@
   -o-transition: all 0.1s;
   -ms-transition: all 0.1s;
   transition: all 0.1s;
-  background: #f2f2f2;
+  background: #ededed;
 }
 .flat .dijitTitlePaneTitleActive {
   -webkit-transition: none;
@@ -50,7 +50,7 @@
   -ms-transition: none;
   transition: none;
   outline: none;
-  background: #e6e6e6;
+  background: #e1e1e1;
 }
 .flat .dijitTitlePane .dijitArrowNode {
   font-variant: normal;
@@ -72,18 +72,18 @@
   content: "\e60d";
 }
 .flat .dijitTitlePane .dijitClosed {
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }
 .flat .dijitTitlePane .dijitClosed .dijitArrowNode:before {
   content: "\e60a";
 }
 .flat .dijitTitlePaneContentOuter {
-  background-color: #fff;
-  border: 1px solid #d0d0d0;
+  background-color: #fafafa;
+  border: 1px solid #bdbdbd;
   border-top: none;
-  -webkit-border-radius: 0 0 2px 2px;
-  border-radius: 0 0 2px 2px;
+  -webkit-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
 }
 .flat .dijitTitlePaneContentInner {
   padding: 8px;

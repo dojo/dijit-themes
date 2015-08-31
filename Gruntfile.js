@@ -43,6 +43,13 @@ module.exports = function (grunt) {
           hostname: '*'
         }
       },
+      flat: {
+        options: {
+          port: 3000,
+          base: './',
+          hostname: '*'
+        }
+      }
     },
 
     open: {
@@ -55,9 +62,26 @@ module.exports = function (grunt) {
     },
 
     watch: {
+      tester: {
+        files: ['*'],
+        tasks: []
+      },
       flat: {
-        files: ['dijit/themes/flat/**/*.styl'],
+        files: ['dijit/themes/flat/**/*.styl', '!dijit/themes/flat/variables.styl', '!dijit/themes/flat/mixins.styl'],
         tasks: ['newer:stylus:flat']
+      },
+      'flat-vars': {
+        files: ['dijit/themes/flat/variables.styl', 'dijit/themes/flat/mixins.styl'],
+        tasks: ['stylus:flat']
+      }
+    },
+
+    concurrent: {
+      flat: {
+        tasks: ['watch:flat', 'watch:flat-vars'],
+        options: {
+          logConcurrentOutput: true
+        }
       }
     }
   });
@@ -68,12 +92,21 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-open');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-concurrent');
   grunt.loadNpmTasks('grunt-newer');
 
+  // flat theme
   grunt.registerTask('flat', [
     'stylus:flat',
-    'connect:tester',
+    'connect:flat',
     'open:flat',
-    'watch:flat'
+    'concurrent:flat'
+  ]);
+
+  // default run dijit theme tester
+  grunt.registerTask('default', [
+    'connect:tester',
+    'open:tester',
+    'watch:tester'
   ]);
 };

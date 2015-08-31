@@ -11,12 +11,12 @@
 .flat .dijitInlineEditBoxDisplayMode {
   border: 1px dashed transparent;
   padding: 4px 6px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }
 .flat .dijitInlineEditBoxDisplayModeHover {
   background-color: transparent;
-  border: 1px dashed #007ac2;
+  border: 1px dashed #2196f3;
 }
 .flat .dijitInlineEditBoxDisplayModeDisabled {
   opacity: 0.65;
