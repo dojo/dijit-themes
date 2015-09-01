@@ -58,8 +58,17 @@ $shadow-depth2 = 0 7px 3px -4px rgba(0,0,0,0.3), 0 8px 8px rgba(0,0,0,.2);
 $shadow-depth3 = 0 12px 8px -4px rgba(0,0,0,0.3), 0 15px 20px rgba(0,0,0,.2);
 
 // icons
-$icon-font-family = "dojo-flat-icon";
+$icon-font-family = "flat-icon";
 $icon-size = 16px;
+// common icon vars
+$icon-drop-down = "\f002"; // drop down icons
+$icon-drop-up = "\f003";
+$icon-drop-right = "\f001";
+$icon-drop-left = "\f000";
+$icon-expand = "\f006"; // accordion and title panes
+$icon-collapse = "\f007";
+$icon-expand-collapse-size = 18px;
+$icon-error = "\f017"; // validation error
 
 /****************************************************************************************
  ***************************************** Form *****************************************
@@ -126,7 +135,7 @@ $input-error-border-color = $error;
 $input-focused-error-border = 1px solid darken($error, 15%);
 
 // error icon
-$input-error-icon-width = 16px; // the width of the error icon container
+$input-error-icon-width = 18px; // the width of the error icon container and icon height
 $input-error-icon-background-color = $error;
 
 /****************************************************************************************
@@ -138,6 +147,7 @@ $checkbox-width = 16px;
 $checkbox-padding = 0;
 $checkbox-border-radius = 2px;
 $checkbox-icon-size = $icon-size;
+$checkbox-icon = "\f00c";
 
 // normal
 $checkbox-background-color = $theme-base-color;
@@ -149,7 +159,6 @@ $checkbox-checked-background-color = $theme-base;
 $checkbox-checked-border-color = $theme-base;
 
 // hover
-
 // hover unchecked
 $checkbox-hover-unchecked-background-color = $checkbox-background-color;
 $checkbox-hover-unchecked-border-color = 1px solid $theme-base;
@@ -206,6 +215,10 @@ $select-button-border-radius = $border-radius * (2/3);
 
 // focus 
 $select-focus-border = $select-border;
+
+// icons
+$select-date-icon = "\f01e";
+$select-time-icon = "\f01f";
 
 /****************************************************************************************
  * Slider
@@ -266,6 +279,8 @@ $slider-ruler-padding = $padding * 0.5;
 $slider-button-text-color = $theme-base;
 $slider-button-width = 20px;
 $slider-button-height = $slider-button-width;
+$slider-icon-increment = "\f011";
+$slider-icon-decrement = "\f012";
 
 /****************************************************************************************
  * Number Spinner
@@ -277,6 +292,10 @@ $numberspinner-button-width = ($line-height + $numberspinner-button-inner-paddin
 $numberspinner-button-padding = 0;
 $numberspinner-arrow-padding = $padding;
 $numberspinner-button-border-radius = $border-radius * (2/3);
+
+// icons
+$numberspinner-icon-up = $icon-drop-up;
+$numberspinner-icon-down = $icon-drop-down;
 
 // number spinner button's normal, active and disabled status styles are the same as "form/Button"
 // and the styles of the text input field are the same as "form/TextBox", which is defined in "form/Common.styl"
@@ -343,7 +362,13 @@ $tab-checked-border-color = $tab-wrapper-border-color;
 $tab-checked-background-color = $tab-wrapper-background-color;
 $tab-checked-text-color = $grey-dark;
 
+// icons
+$tab-left-icon = "\f004";
+$tab-right-icon = "\f005";
+$tab-menu-icon = "\f006";
+
 // close button
+$tab-close-button-icon = "\f00e";
 $tab-close-button-opacity = .35;
 
 // hover
@@ -417,6 +442,9 @@ $accordion-title-bar-checked-text-color = $theme-base-color;
 $accordion-content-border-color = $accordion-border-color;
 $accordion-content-background-color = $theme-base-color;
 
+// icons
+// uses common vars directly
+
 /****************************************************************************************
  ************************************ Common Dijits *************************************
  ****************************************************************************************/
@@ -449,6 +477,7 @@ $dialog-titlebar-border-color = $grey-light;
 $dialog-titlebar-font-size = 1.1em;
 
 // close icon
+$dialog-close-icon = "\f00e";
 $dialog-close-icon-size = 20px;
 
 // underlay
@@ -510,6 +539,8 @@ $menu-item-separator-bottom-color = transparent;
 // icon
 $menu-item-icon-padding = $padding;
 $menu-item-icon-margin = $margin;
+$menu-item-icon = $icon-drop-right;
+$menu-item-icon-rtl = $icon-drop-left;
 
 // Menubar
 $menubar-background-color = $grey-lighter;
@@ -575,6 +606,11 @@ $calendar-month-dropdown-menu-item-padding = $padding;
 // hover
 $calendar-month-dropdown-menu-item-hovered-text-color = $menu-item-hovered-text-color;
 $calendar-month-dropdown-menu-item-hovered-background-color = $menu-item-hovered-background-color;
+
+// icons (swapped for rtl)
+$calendar-icon-decrease = $icon-drop-left;
+$calendar-icon-increase = $icon-drop-right;
+$calendar-icon-size = 24px;
 
 /****************************************************************************************
  * Color Palette
@@ -752,6 +788,9 @@ $titlepane-content-background-color = $theme-base-color;
 $titlepane-content-border-color = $border-color;
 $titlepane-content-padding = $padding * 2;
 
+// icons
+// uses common vars directly
+
 /****************************************************************************************
  * Inline Edit Box
  ****************************************************************************************/
@@ -789,3 +828,7 @@ $dnd-avatar-item-background-color = $theme-base-color;
 $dnd-avatar-item-padding = $padding $padding * 2;
 $dnd-avatar-item-border-radius = $border-radius;
 $dnd-avatar-item-box-shadow = $shadow-depth2;
+
+// icons
+$dnd-icon-drop = "\f008";
+$dnd-icon-no-drop = "\f01c";

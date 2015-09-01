@@ -80,17 +80,14 @@
 .flat .dijitAccordionTitle .arrowTextDown {
   display: none;
   float: right;
-  font-variant: normal;
-  text-transform: none;
-  font-family: "dojo-flat-icon";
+  font-family: "flat-icon";
+  speak: none;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
   font-variant: normal;
   text-transform: none;
-  text-decoration: inherit;
-  speak: none;
   line-height: 1;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -98,14 +95,14 @@
 }
 .flat .dijitAccordionTitle .arrowTextUp:before,
 .flat .dijitAccordionTitle .arrowTextDown:before {
-  content: "\e60c";
-  font-size: 16px;
+  content: "\f007";
+  font-size: 18px;
 }
 .flat .dijitAccordionTitle .arrowTextUp {
   display: block;
 }
 .flat .dijitAccordionTitle .arrowTextUp:before {
-  content: "\e60d";
+  content: "\f006";
 }
 .flat .dijitAccordionInnerContainerHover .dijitAccordionTitle {
   -webkit-transition: all 0.1s;

@@ -43,9 +43,10 @@
 	.dijitTitlePane {
 		.dijitArrowNode {
 			_icon-core-style();
+			font-size: $icon-expand-collapse-size;
 			text-align: center;
 			&:before {
-				content:"\e60d";
+				content: $icon-collapse;
 			}
 		}
 
@@ -56,7 +57,7 @@
 				border-radius: 0;
 			}
 			.dijitArrowNode:before {
-				content: "\e60a";
+				content: $icon-expand;
 			}
 		}
 	}

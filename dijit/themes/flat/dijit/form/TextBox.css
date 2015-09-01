@@ -255,23 +255,21 @@
 }
 .flat .dijitValidationTextBoxError .dijitValidationContainer {
   color: #dd2c00;
-  width: 16px;
-  font-variant: normal;
-  text-transform: none;
-  font-family: "dojo-flat-icon";
+  width: 18px;
+  font-family: "flat-icon";
+  speak: none;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
   font-variant: normal;
   text-transform: none;
-  text-decoration: inherit;
-  speak: none;
   line-height: 1;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
 }
 .flat .dijitValidationTextBoxError .dijitValidationContainer:before {
-  content: "\e607";
+  content: "\f017";
 }
 .flat .dijitValidationTextBoxError .dijitValidationIcon {
   display: none;

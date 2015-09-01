@@ -44,6 +44,25 @@ body {
 .dnd {
 	width: 160px;
 }
+.icon {
+	display: inline-block;
+	margin: 8px;
+	padding: 8px;
+	color: #424242;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.icon:hover {
+	background-color: #9E9E9E;
+	color: #FAFAFA;
+}
+.icon.selected {
+	background-color: #424242;
+	color: #FAFAFA;
+}
+.icon i {
+	font-size: 24px;
+}
 </style>
 </head>
 <body class="flat">
@@ -389,7 +408,22 @@ body {
 				</div>
 			</div>
 			<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="title:'Icons'">
-				<h4>A grid of included icons here...</h4>
+				<h4>Flat Theme Icons</h4>
+				<p>
+					<b>Name:</b> <span id="icon-name"></span><br>
+					<b>Dijit Alias:</b> <span id="icon-alias"></span><br>
+					<b>Code:</b> <span id="icon-code"></span>
+				</p>
+				<div id="icons"></div>
+				<h4>dijitIconLoading and Animation Test</h4>
+				<p>
+					<i class="dijitIcon dijitIconLoading"></i>
+				</p>
+				<p>
+					Just spinning away... <i class="flat-arrow-up icon-spin"></i>
+				</p>
+				<h4>Dijit Icon Alias Test</h4>
+				<div id="dijit-icons"></div>
 			</div>
 		</div>
 	</div>
@@ -399,6 +433,8 @@ body {
 var continentStore, continentModel, menu, showDialog;
 require([
 	'dojo/io-query', 'dijit/registry', 'dojo/parser', 'dojo/store/Memory', 'dijit/tree/ObjectStoreModel', 'dojo/dnd/Source', 'dojo/aspect',
+
+	'dojo/request/xhr', 'dojo/_base/array', 'dojo/dom-construct', 'dojo/dom-class', 'dojo/dom-attr', 'dojo/dom', 'dojo/on',
 
 	'dijit/Menu', 'dijit/MenuItem', 'dijit/CheckedMenuItem', 'dijit/RadioMenuItem', 'dijit/PopupMenuItem', 'dijit/MenuSeparator',
 
@@ -431,6 +467,7 @@ require([
 	'dojo/domReady!'
 ], function (
 	ioQuery, registry, parser, Memory, ObjectStoreModel, Source, aspect,
+	xhr, array, domConst, domClass, domAttr, dom, on,
 	Menu, MenuItem, CheckedMenuItem, RadioMenuItem, PopupMenuItem, MenuSeparator,
 	Tooltip, ColorPalette, Dialog, Editor, CheckBox,
 	HorizontalSlider, VerticalSlider, HorizontalRule, HorizontalRuleLabels, VerticalRule, VerticalRuleLabels
@@ -700,6 +737,85 @@ require([
 	]);
 
 	parser.parse();
+
+	// icons
+	var selectedIcon,
+		iconsDiv = dom.byId('icons'),
+		aliasDiv = dom.byId('dijit-icons'),
+		iconName = dom.byId('icon-name'),
+		iconAlias = dom.byId('icon-alias'),
+		iconCode = dom.byId('icon-code');
+	function makeIcons (result) {
+		array.forEach(result.icons, function (icon) {
+			var name = icon.properties.name,
+				iconClass = 'flat-' + name,
+				decCode = icon.properties.code;
+			var div = domConst.create('div', {
+				'class': 'icon',
+				'title': iconClass + ' (\\' + decCode.toString(16) + ')',
+				'data-name': iconClass,
+				'data-alias': icon.icon.tags.join() || 'n/a',
+				'data-code': '\\' + decCode.toString(16)
+			}, iconsDiv, 'last');
+			domConst.create('i', {
+				'class': iconClass
+			}, div);
+			on(div, 'click', function (evt) {
+				var el = (evt.target.tagName !== 'I') ? evt.target : evt.target.parentNode;
+				if (selectedIcon) {
+					domClass.remove(selectedIcon, 'selected');
+				}
+				selectedIcon = el;
+				domClass.add(el, 'selected');
+				iconName.innerHTML = domAttr.get(el, 'data-name');
+				iconAlias.innerHTML = domAttr.get(el, 'data-alias');
+				iconCode.innerHTML = domAttr.get(el, 'data-code');
+			});
+			if (icon.icon.tags.length && (icon.icon.tags.length >= 1 && icon.icon.tags[0])) {
+				array.forEach(icon.icon.tags, function (tag) {
+					var div = domConst.create('div', {}, aliasDiv, 'last');
+					domConst.create('i', {
+						'class': 'dijitIcon ' + tag,
+						'style': 'font-size: 2em; color: #424242;'
+					}, div);
+					domConst.create('span', {
+						'innerHTML': '&nbsp;&nbsp;' + tag
+					}, div, 'last');
+				});
+			}
+		});
+		iconsDiv.firstChild.click();
+	}
+	xhr('icons/selection.json', {
+		handleAs: 'json'
+	}).then(makeIcons);
+
+	// helper to create the icon classes from selection.json
+	window.createIconClasses = function () {
+		xhr('icons/selection.json', {
+			handleAs: 'json'
+		}).then(function (result) {
+			var a = '';
+			array.forEach(result.icons, function (icon) {
+				if (icon.icon.tags.length && (icon.icon.tags.length >= 1 && icon.icon.tags[0])) {
+					array.forEach(icon.icon.tags, function (tag) {
+						a += '.' + tag + ':before,\r\n';
+					});
+				}
+				a += '.flat-' + icon.properties.name + ':before {\r\n\tcontent: "\\' + icon.properties.code.toString(16) + '";\r\n}\r\n';
+			});
+			var blob = new window.Blob([a], {
+				type: 'octet/stream'
+			});
+			var url = window.URL.createObjectURL(blob);
+			var link = domConst.create('a', {
+				'href': url,
+				'download': 'icon-styles.txt'
+			});
+			link.click();
+			window.URL.revokeObjectURL(url);
+		});
+	};
 });
 </script>
 </body>

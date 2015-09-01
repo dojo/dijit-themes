@@ -18,19 +18,16 @@ half($value) {
 }
 
 /* icons */
+// line-height and font-size can be overridden after calling _icon-core-style()
 _icon-core-style() {
-	font-variant: normal;
-	text-transform: none;
 	font-family: $icon-font-family;
+	speak: none;
 	font-style: normal;
 	font-weight: normal;
-	font-size: $icon-size;
 	font-variant: normal;
 	text-transform: none;
-	text-decoration: inherit;
-	speak: none;
-	// vertical-align: bottom;
 	line-height: 1;
+	font-size: $icon-size;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }

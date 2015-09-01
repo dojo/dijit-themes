@@ -31,8 +31,7 @@
 @import url("dijit/form/TextBox.css");
 
 /* icons */
-@import url("icons/commonIcons.css");
-@import url("icons/editorIcons.css");
+@import url("icons/flat-icons.css");
 
 /* rtl */
 @import url("flat_rtl.css");
