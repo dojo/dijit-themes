@@ -120,17 +120,14 @@
   border: none;
 }
 .flat .dijitTabCloseButton {
-  font-variant: normal;
-  text-transform: none;
-  font-family: "dojo-flat-icon";
+  font-family: "flat-icon";
+  speak: none;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
   font-variant: normal;
   text-transform: none;
-  text-decoration: inherit;
-  speak: none;
   line-height: 1;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1;
@@ -142,7 +139,7 @@
   filter: alpha(opacity=35);
 }
 .flat .dijitTabCloseButton:before {
-  content: "\e605";
+  content: "\f00e";
 }
 .flat .dijitTabCloseButtonHover {
   opacity: 0.75;
@@ -282,30 +279,27 @@
   background-color: #e1e1e1;
 }
 .flat .dijitTabStripIcon {
-  font-variant: normal;
-  text-transform: none;
-  font-family: "dojo-flat-icon";
+  font-family: "flat-icon";
+  speak: none;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
   font-variant: normal;
   text-transform: none;
-  text-decoration: inherit;
-  speak: none;
   line-height: 1;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2196f3;
   vertical-align: middle;
 }
 .flat .dijitTabStripIcon:before {
-  content: "\e60b";
+  content: "\f004";
 }
 .flat .dijitTabStripSlideRightIcon:before {
-  content: "\e60a";
+  content: "\f005";
 }
 .flat .dijitTabStripMenuIcon:before {
-  content: "\e600";
+  content: "\f006";
 }
 .flat .dijitTabListContainer-top .tabStripButtonDisabled,
 .flat .dijitTabListContainer-bottom .tabStripButtonDisabled {

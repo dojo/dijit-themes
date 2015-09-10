@@ -255,17 +255,14 @@
 .flat .dijitSliderIncrementIconV,
 .flat .dijitSliderDecrementIconH,
 .flat .dijitSliderDecrementIconV {
-  font-variant: normal;
-  text-transform: none;
-  font-family: "dojo-flat-icon";
+  font-family: "flat-icon";
+  speak: none;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
   font-variant: normal;
   text-transform: none;
-  text-decoration: inherit;
-  speak: none;
   line-height: 1;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -273,7 +270,7 @@
 .flat .dijitSliderIncrementIconV:before,
 .flat .dijitSliderDecrementIconH:before,
 .flat .dijitSliderDecrementIconV:before {
-  content: "\e609";
+  content: "\f011";
   top: 0;
   line-height: 20px;
 }
@@ -285,7 +282,7 @@
 }
 .flat .dijitSliderDecrementIconH:before,
 .flat .dijitSliderDecrementIconV:before {
-  content: "\e608";
+  content: "\f012";
 }
 .flat .dijitRuleMark {
   border: 0 none;

@@ -48,17 +48,14 @@ table.dojoDndAvatar {
   display: none;
 }
 .dojoDndAvatarHeader:before {
-  font-variant: normal;
-  text-transform: none;
-  font-family: "dojo-flat-icon";
+  font-family: "flat-icon";
+  speak: none;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
   font-variant: normal;
   text-transform: none;
-  text-decoration: inherit;
-  speak: none;
   line-height: 1;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: table-cell;
@@ -66,20 +63,20 @@ table.dojoDndAvatar {
 /* cannot drop */
 .dojoDndMove .dojoDndAvatarHeader:before {
   color: #dd2c00;
-  content: "\e610";
+  content: "\f01c";
 }
 .dojoDndCopy .dojoDndAvatarHeader:before {
   color: #dd2c00;
-  content: "\e610";
+  content: "\f01c";
 }
 /* can drop */
 .dojoDndMove .dojoDndAvatarCanDrop .dojoDndAvatarHeader:before {
   color: #388e3c;
-  content: "\e60f";
+  content: "\f008";
 }
 .dojoDndCopy .dojoDndAvatarCanDrop .dojoDndAvatarHeader:before {
   color: #388e3c;
-  content: "\e60f";
+  content: "\f008";
 }
 .dojoDndAvatarItem {
   -webkit-border-radius: 3px;

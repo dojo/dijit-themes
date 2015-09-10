@@ -1,23 +1,31 @@
 ### Flat Theme
 
+A flat theme for Dojo Dijit.
+
 **To Do:**
 
-1. Icons!
-  * Is this is the icon set we want to go with?
-  * Do we want a robust set of icons to come with the theme?
-  * Editor icons are missing.
-  * Add a grid of icons to demo.
-2. Fix any outlying dijits using opacity for disabled.
-3. As this is a "flat" theme, discuss whether calendar and and popups should have a box-shadow.
+1. Fix any outlying dijits using opacity for disabled.
+2. Add dijit/Toolbar to test and test.
+
+**Icons:**
+
+All icons are Material Design icons by Google ([LICENSE](https://github.com/google/material-design-icons/blob/master/LICENSE)), and were generated using the [IcoMoon App](https://icomoon.io/app).
+
+Icons, along with class names, `.dijitIcon*` aliases and hex codes, can be viewed in Flat Theme Test app.
+
+This theme includes the `selection.json` file, which can be loaded into an IcoMoon App for editing. This icon font includes all the icons needed for icons used in dijits (close in Dialog, etc) and all aliased `.dijitIcon*` and `.dijitEditorIcon*` classes. The hex codes should be maintained as is.
+
+The test app uses the `selection.json` to create the icons tests. The test app includes a globally exposed method `createIconClasses()`, which will create and download a text file containing the icon classes and dijit aliases, which can then be added to `flat-icons.sty` when changes are made to the icon set.
+
+NOTE: This icon set is incomplete. Many of the `.dijitIcon*` and `.dijitEditorIcon*` icons do not have suitable icons in the Google icon set. These icons have a placeholder and have been assigned hex codes. Instead of using icons which do not quite fit the use, or from different icon sets, SVGs for these icons need to be created and added to the font. The SVGs need to be created on a 24 x 24 grid and generally be of the same design as the other icons.
 
 **Issues:**
 
 1. Toggle button doesn't maintain width when unchecked.
 2. For input dijits with alternate color and required/validate, the border should also change via `.dijitTextBoxError` and equivalents. Alternate color styles are overriding.
-3. Hover and selected calendar days with background 50% border radius looks a bit off.
-4. `.dijitValidationTextBoxError .dijitValidationContainer` line-height is being overridden by the default icon line-height causing the icon not to be vertically aligned properly. The line-height of `td.dijitMenuItemIconCell` is causing the icon to be shifted down.
+3. Hover and selected calendar days with background 50% border radius looks a bit off on some days.
 
-**Improvements**
+**Improvements:**
 
 1. Consider typography, complimentary styling for native elements, helper classes, etc; and some components like Bootstrap.
 2. Alternate colors for text input dijits, checkboxes, radio buttons, sliders, title pane, tooltips.

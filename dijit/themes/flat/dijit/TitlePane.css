@@ -53,30 +53,28 @@
   background: #e1e1e1;
 }
 .flat .dijitTitlePane .dijitArrowNode {
-  font-variant: normal;
-  text-transform: none;
-  font-family: "dojo-flat-icon";
+  font-family: "flat-icon";
+  speak: none;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
   font-variant: normal;
   text-transform: none;
-  text-decoration: inherit;
-  speak: none;
   line-height: 1;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
   text-align: center;
 }
 .flat .dijitTitlePane .dijitArrowNode:before {
-  content: "\e60d";
+  content: "\f007";
 }
 .flat .dijitTitlePane .dijitClosed {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 .flat .dijitTitlePane .dijitClosed .dijitArrowNode:before {
-  content: "\e60a";
+  content: "\f006";
 }
 .flat .dijitTitlePaneContentOuter {
   background-color: #fafafa;

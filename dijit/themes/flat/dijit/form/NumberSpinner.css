@@ -91,10 +91,10 @@
   padding: 0;
 }
 .flat .dijitSpinner .dijitArrowButtonInner:before {
-  content: "\e603";
+  content: "\f003";
 }
 .flat .dijitSpinner .dijitDownArrowButton .dijitArrowButtonInner:before {
-  content: "\e600";
+  content: "\f002";
 }
 .flat .dijitSpinnerDisabled .dijitDownArrowButton,
 .flat .dijitSpinnerDisabled .dijitUpArrowButton {

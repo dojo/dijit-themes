@@ -5,5 +5,5 @@
   text-align: right;
 }
 .flat .dijitMenuItemRtl .dijitMenuExpand:before {
-  content: "\e601";
+  content: "\f000";
 }

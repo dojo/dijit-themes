@@ -489,30 +489,27 @@
 }
 .flat .dijitDropDownButton .dijitArrowButtonInner,
 .flat .dijitArrowButton {
-  font-variant: normal;
-  text-transform: none;
-  font-family: "dojo-flat-icon";
+  font-family: "flat-icon";
+  speak: none;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
   font-variant: normal;
   text-transform: none;
-  text-decoration: inherit;
-  speak: none;
   line-height: 1;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .flat .dijitDropDownButton .dijitArrowButtonInner:before,
 .flat .dijitArrowButton:before {
-  content: "\e600";
+  content: "\f002";
 }
 .flat .dijitLeftArrowButton:before {
-  content: "\e601";
+  content: "\f000";
 }
 .flat .dijitRightArrowButton:before {
-  content: "\e602";
+  content: "\f001";
 }
 .flat .dijitUpArrowButton:before {
-  content: "\e603";
+  content: "\f003";
 }

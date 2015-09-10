@@ -28,8 +28,10 @@ Helpful information:
 
 ### Flat Theme
 
-A _flat_ theme for Dijit based on [dijit-claro-stylus](https://github.com/kfranqueiro/dijit-claro-stylus) and loosely on [dojo-theme-flat](https://github.com/Esri/dojo-theme-flat). A complimentary [dgrid skin](https://github.com/SitePen/dgrid/pull/1174) is also being developed.
+A flat theme for Dojo Dijit. A complimentary [dgrid skin](https://github.com/SitePen/dgrid/pull/1174) is also being developed.
 
 This theme is currently in **development**. Contributions welcome.
 
-Run `grunt flat` to compile CSS and open Flat Theme's test application.
+Run `grunt flat` to compile CSS and open Flat Theme's test application for development. The Flat Theme Test app does not require the dependencies and can be run as is with any web server.
+
+To use Flat Theme right away simply copy the `flat` directory and its contents to a location in your app, add/import `flat.css` and add `class="flat"` to the body tag.
