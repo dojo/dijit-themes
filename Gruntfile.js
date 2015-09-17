@@ -21,8 +21,8 @@ module.exports = function (grunt) {
     stylus: {
       flat: {
         files: [{
-          cwd: 'themes/flat',
-          dest: 'themes/flat',
+          cwd: 'flat',
+          dest: 'flat',
           expand: true,
           ext: '.css',
           src: ['**/*.styl', '!**/mixins.styl', '!**/variables.styl', '!**/**variables.styl']
@@ -57,7 +57,7 @@ module.exports = function (grunt) {
         path: 'http://localhost:3000/dijit/themes/themeTester.html'
       },
       flat: {
-        path: 'http://localhost:3000/themes/flat/tests/flat.html'
+        path: 'http://localhost:3000/flat/tests/flat.html'
       }
     },
 
@@ -67,11 +67,11 @@ module.exports = function (grunt) {
         tasks: []
       },
       flat: {
-        files: ['themes/flat/**/*.styl', '!themes/flat/variables.styl', '!themes/flat/mixins.styl'],
+        files: ['flat/**/*.styl', '!flat/variables.styl', '!flat/mixins.styl'],
         tasks: ['newer:stylus:flat']
       },
       'flat-vars': {
-        files: ['themes/flat/**/variables.styl', 'themes/flat/**/**variables.styl', 'themes/flat/mixins.styl'],
+        files: ['flat/**/variables.styl', 'flat/**/**variables.styl', 'flat/mixins.styl'],
         tasks: ['stylus:flat']
       }
     },

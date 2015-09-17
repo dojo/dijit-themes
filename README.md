@@ -13,7 +13,7 @@ For general contributing guidelines see [Dojo's Contributing Guildlines](https:/
 
 Adding a new theme:
 
-1. Create a uniquely named directory in `themes`, also being the name of the theme.
+1. Create a uniquely named directory, also being the name of the theme.
 2. Add [Grunt](http://gruntjs.com/) tasks for the theme to `Gruntfile.js`.
 
 Helpful information:
