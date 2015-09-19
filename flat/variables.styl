@@ -1,0 +1,71 @@
+// http://tj.github.io/nib/
+@import 'nib';
+
+// theme mixins and functions
+@import 'mixins';
+
+// theme name
+// easily copy flat theme, adjust variables and compile new theme
+$theme-name = flat;
+
+// colors
+// https://www.google.com/design/spec/style/color.html
+// base color of the theme
+// default TextBox & CheckBox borders, Menu hover, AccordionPane/TtilePane header, etc 
+$theme-base = #2196F3; // blue 500 - color of the theme
+// base color for default Button, text on $theme-base, etc
+$theme-base-color = #FAFAFA; // grey 50
+
+// gray colors
+$white = #fff;
+$black = #000;
+$grey-dark = #424242; // gray 800
+$grey = #9E9E9E; // gray 500
+$grey-light = #E0E0E0; // gray 300
+$grey-lighter = #FAFAFA; // grey 100
+
+// misc colors
+$error = #DD2C00; // depp orange A700
+
+// alternate colors
+$primary = #1976D2; // blue 700
+$success = #388E3C; // green 700
+$info = #29B6F6; // light blue 400
+$warning = #F57C00; // orange 700
+$danger = #F44336; // red 500
+$inverse = #212121; // gray 900
+
+// !! should not be using transparency for disabled !!
+$disabled-opacity = 0.65;
+
+// default disabled colors
+$disabled-color = $grey;
+$disabled-background-color = $grey-lighter;
+$disabled-border-color = lighten($grey-light, 10%);
+
+// typography
+$line-height = 20px;
+
+// box 
+$border-color = #BDBDBD; // grey 400
+$border-radius = 3px;
+$padding = 4px;
+$margin = 4px;
+
+$shadow-depth1 = 0 1px .5px rgba(0,0,0,0.3), 0 2px 2px rgba(0,0,0,.2);
+$shadow-depth1_5 = 0 4px 2px -2px rgba(0,0,0,0.3), 0 4px 6px rgba(0,0,0,0.2);
+$shadow-depth2 = 0 7px 3px -4px rgba(0,0,0,0.3), 0 8px 8px rgba(0,0,0,.2);
+$shadow-depth3 = 0 12px 8px -4px rgba(0,0,0,0.3), 0 15px 20px rgba(0,0,0,.2);
+
+// icons
+$icon-font-family = "flat-icon";
+$icon-size = 16px;
+// common icon vars
+$icon-drop-down = "\f002"; // drop down icons
+$icon-drop-up = "\f003";
+$icon-drop-right = "\f001";
+$icon-drop-left = "\f000";
+$icon-expand = "\f006"; // accordion and title panes
+$icon-collapse = "\f007";
+$icon-expand-collapse-size = 18px;
+$icon-error = "\f017"; // validation error

@@ -1,12 +1,15 @@
 # Folders to ignore
 dojo
-!/dijit
-/dijit/*
-!/dijit/themes/
-/dijit/themes/*
+dijit
+dojox
+dgrid
+xstyle
+put-selector
 
-# add themes here
-!dijit/themes/flat
+# flat theme
+!flat/**/dijit
+!flat/**/dojox
+!flat/**/dgrid
 
 # Dependency directory
 # Commenting this out is preferred by some people, see

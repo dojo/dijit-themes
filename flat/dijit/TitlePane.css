@@ -1,0 +1,93 @@
+/* TitlePane 
+ * 
+ * Styling TitlePane means styling the TitlePane title and its content container  (dijitTitlePane)
+ * 
+ * TitlePane title:
+ * 1. TitlePane title (default styling): 
+ * 		.dijitTitlePaneTitle - TitlePane's title div style: background-color, border
+ *
+ * 2. hovered TitlePane title (ie, mouse hover on a title bar)
+ * 		.dijitTitlePaneTitleHover - styles when mouse hover on the title div
+ * 
+ * 3. active TitlePane title (ie, mouse down on a title bar)
+ * 		.dijitTitlePaneTitleActive - styles when mouse down on the title div
+ * 
+ * 
+ * TitlePane Content Container:
+ * 1. outer/inner container: 
+ * 		.dijitTitlePaneContentOuter / dijitTitlePaneContentInner - styles for the content outer div
+ */
+.flat .dijitTitlePaneTitle {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #bdbdbd;
+  padding: 4px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  line-height: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.05s linear;
+  -moz-transition: all 0.05s linear;
+  -o-transition: all 0.05s linear;
+  -ms-transition: all 0.05s linear;
+  transition: all 0.05s linear;
+  background: #fafafa;
+  -webkit-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+.flat .dijitTitlePaneTitleHover {
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  -ms-transition: all 0.1s;
+  transition: all 0.1s;
+  background: #ededed;
+}
+.flat .dijitTitlePaneTitleActive {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+  outline: none;
+  background: #e1e1e1;
+}
+.flat .dijitTitlePane .dijitArrowNode {
+  font-family: "flat-icon";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+  text-align: center;
+}
+.flat .dijitTitlePane .dijitArrowNode:before {
+  content: "\f007";
+}
+.flat .dijitTitlePane .dijitClosed {
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.flat .dijitTitlePane .dijitClosed .dijitArrowNode:before {
+  content: "\f006";
+}
+.flat .dijitTitlePaneContentOuter {
+  background-color: #fafafa;
+  border: 1px solid #bdbdbd;
+  border-top: none;
+  -webkit-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+}
+.flat .dijitTitlePaneContentInner {
+  padding: 8px;
+}
+.flat .dijitTitlePaneTextNode {
+  margin-left: 8px;
+  margin-right: 8px;
+  vertical-align: text-top;
+}

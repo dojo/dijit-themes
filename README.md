@@ -13,9 +13,8 @@ For general contributing guidelines see [Dojo's Contributing Guildlines](https:/
 
 Adding a new theme:
 
-1. Create a uniquely named directory in `dijit/themes`, also being the name of the theme.
-2. Add the directory to `.gitignore`.
-3. Add [Grunt](http://gruntjs.com/) tasks for the theme to `Gruntfile.js`.
+1. Create a uniquely named directory, also being the name of the theme.
+2. Add [Grunt](http://gruntjs.com/) tasks for the theme to `Gruntfile.js`.
 
 Helpful information:
 
@@ -28,7 +27,7 @@ Helpful information:
 
 ### Flat Theme
 
-A flat theme for Dojo Dijit. A complimentary [dgrid skin](https://github.com/SitePen/dgrid/pull/1174) is also being developed.
+A flat theme for Dojo Dijit, Dojox and dgrid.
 
 This theme is currently in **development**. Contributions welcome.
 
