@@ -53,27 +53,27 @@
   height: 100%;
 }
 .flat .dijitProgressBar.alt-primary .dijitProgressBarFull {
-  background-color: #1976d2;
+  background-color: #1e88e5;
 }
 .flat .dijitProgressBar.alt-success .dijitProgressBarFull {
-  background-color: #388e3c;
+  background-color: #43a047;
 }
 .flat .dijitProgressBar.alt-info .dijitProgressBarFull {
-  background-color: #29b6f6;
+  background-color: #03a9f4;
 }
 .flat .dijitProgressBar.alt-warning .dijitProgressBarFull {
-  background-color: #f57c00;
+  background-color: #fb8c00;
 }
 .flat .dijitProgressBar.alt-danger .dijitProgressBarFull {
-  background-color: #f44336;
+  background-color: #e53935;
 }
 .flat .dijitProgressBar.alt-inverse .dijitProgressBarFull {
-  background-color: #212121;
+  background-color: #424242;
 }
 .flat .dijitProgressBarLabel {
   margin-top: 0.2em;
   margin-bottom: 0.2em;
-  color: #fafafa;
+  color: #fff;
   font-size: 1em;
   text-shadow: 0.1em 0.1em 1px #424242;
 }

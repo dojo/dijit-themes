@@ -46,7 +46,7 @@
   transition-timing-function: ease-out;
 }
 .flat .dijitTreeRowHover {
-  background-color: #ededed;
+  background-color: #f2f2f2;
   border-color: transparent;
   -webkit-transition-duration: 0.15s;
   -moz-transition-duration: 0.15s;
@@ -55,20 +55,20 @@
   transition-duration: 0.15s;
 }
 .flat .dijitTreeRowActive {
-  background-color: #ededed;
+  background-color: #f2f2f2;
   border-color: transparent;
 }
 .flat .dijitTreeRowSelected,
 .flat .dijitTreeRowHover.dijitTreeRowSelected,
 .flat .dijitTreeRowActive.dijitTreeRowSelected {
-  color: #fafafa;
+  color: #fff;
   background-color: #2196f3;
   border-color: transparent;
 }
 .flat .dijitTreeRowSelected .dijitTreeExpando,
 .flat .dijitTreeRowHover.dijitTreeRowSelected .dijitTreeExpando,
 .flat .dijitTreeRowActive.dijitTreeRowSelected .dijitTreeExpando {
-  color: #fafafa;
+  color: #fff;
 }
 .flat .dijitTreeExpando {
   font-family: "flat-icon";
