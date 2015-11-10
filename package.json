@@ -19,7 +19,6 @@
 	"dojoBuild": "themes.profile.js",
 	"dependencies": {
 		"grunt": "^0.4",
-		"grunt-bower-install-simple": "^1.1",
 		"grunt-contrib-watch": "^0",
 		"grunt-concurrent": "^2",
 		"grunt-contrib-connect": "^0",
