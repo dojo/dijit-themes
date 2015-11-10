@@ -2,20 +2,6 @@
 module.exports = function (grunt) {
 
   grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
-
-    // install dojo deps
-    'bower-install-simple': {
-      options: {
-        color: true,
-        directory: './'
-      },
-      main: {
-        options: {
-          production: false
-        }
-      }
-    },
 
     // compile css
     stylus: {
@@ -25,7 +11,7 @@ module.exports = function (grunt) {
           dest: 'flat',
           expand: true,
           ext: '.css',
-          src: ['**/*.styl', '!**/mixins.styl', '!**/variables.styl', '!**/**variables.styl']
+          src: ['**/*.styl', '!**/**mixins**.styl', '!**/**variables**.styl']
         }],
         options: {
           compress: false,
@@ -34,15 +20,7 @@ module.exports = function (grunt) {
       }
     },
 
-    // connect and open dev app and watch for .styl changes
     connect: {
-      tester: {
-        options: {
-          port: 3000,
-          base: './',
-          hostname: '*'
-        }
-      },
       flat: {
         options: {
           port: 3000,
@@ -53,25 +31,18 @@ module.exports = function (grunt) {
     },
 
     open: {
-      tester: {
-        path: 'http://localhost:3000/dijit/themes/themeTester.html'
-      },
       flat: {
         path: 'http://localhost:3000/flat/tests/flat.html'
       }
     },
 
     watch: {
-      tester: {
-        files: ['*'],
-        tasks: []
-      },
       flat: {
-        files: ['flat/**/*.styl', '!flat/variables.styl', '!flat/mixins.styl'],
+        files: ['flat/**/*.styl', '!flat/**/**variables.styl', '!flat/**/**mixins**.styl'],
         tasks: ['newer:stylus:flat']
       },
       'flat-vars': {
-        files: ['flat/**/variables.styl', 'flat/**/**variables.styl', 'flat/mixins.styl'],
+        files: ['flat/**/**variables**.styl', 'flat/**/**mixins**.styl'],
         tasks: ['stylus:flat']
       }
     },
@@ -87,7 +58,6 @@ module.exports = function (grunt) {
   });
 
   // load tasks
-  grunt.loadNpmTasks('grunt-bower-install-simple');
   grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-open');
@@ -103,10 +73,4 @@ module.exports = function (grunt) {
     'concurrent:flat'
   ]);
 
-  // default run dijit theme tester
-  grunt.registerTask('default', [
-    'connect:tester',
-    'open:tester',
-    'watch:tester'
-  ]);
 };
