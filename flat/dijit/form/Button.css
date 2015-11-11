@@ -58,7 +58,7 @@
 .flat .dijitSpinner.alt-primary .dijitArrowButton {
   background: #1e88e5;
   color: #fff;
-  border-color: transparent;
+  border-color: #166fbd;
 }
 .flat .dijitComboButton.alt-primary .dijitStretch {
   border-right-color: #166fbd;
@@ -76,7 +76,7 @@
 .flat .dijitSpinner.alt-success .dijitArrowButton {
   background: #43a047;
   color: #fff;
-  border-color: transparent;
+  border-color: #37823a;
 }
 .flat .dijitComboButton.alt-success .dijitStretch {
   border-right-color: #37823a;
@@ -94,7 +94,7 @@
 .flat .dijitSpinner.alt-info .dijitArrowButton {
   background: #03a9f4;
   color: #fff;
-  border-color: transparent;
+  border-color: #028ac7;
 }
 .flat .dijitComboButton.alt-info .dijitStretch {
   border-right-color: #028ac7;
@@ -112,7 +112,7 @@
 .flat .dijitSpinner.alt-warning .dijitArrowButton {
   background: #fb8c00;
   color: #fff;
-  border-color: transparent;
+  border-color: #cd7200;
 }
 .flat .dijitComboButton.alt-warning .dijitStretch {
   border-right-color: #cd7200;
@@ -130,7 +130,7 @@
 .flat .dijitSpinner.alt-danger .dijitArrowButton {
   background: #e53935;
   color: #fff;
-  border-color: transparent;
+  border-color: #cc1e1a;
 }
 .flat .dijitComboButton.alt-danger .dijitStretch {
   border-right-color: #cc1e1a;
@@ -146,15 +146,15 @@
 .flat .dijitSelect.alt-inverse .dijitButtonContents,
 .flat .dijitSelect.alt-inverse .dijitButtonNode,
 .flat .dijitSpinner.alt-inverse .dijitArrowButton {
-  background: #424242;
+  background: #616161;
   color: #fff;
-  border-color: transparent;
+  border-color: #4f4f4f;
 }
 .flat .dijitComboButton.alt-inverse .dijitStretch {
-  border-right-color: #363636;
+  border-right-color: #4f4f4f;
 }
 .flat .dijitComboButtonRtl.alt-inverse .dijitStretch {
-  border-left-color: #363636;
+  border-left-color: #4f4f4f;
 }
 .flat .dijitButtonHover .dijitButtonNode,
 .flat .dijitDropDownButtonHover .dijitButtonNode,
@@ -165,6 +165,7 @@
   -ms-transition: all 0.1s;
   transition: all 0.1s;
   background: #f2f2f2;
+  border-color: #d9d9d9;
 }
 .flat .dijitComboButton .dijitButtonNodeHover,
 .flat .dijitComboButton .dijitDownArrowButtonHover {
@@ -174,6 +175,7 @@
   -ms-transition: all 0.1s;
   transition: all 0.1s;
   background: #f2f2f2;
+  border-color: #d9d9d9;
 }
 .flat .dijitButtonHover.alt-primary .dijitButtonNode,
 .flat .dijitDropDownButtonHover.alt-primary .dijitButtonNode,
@@ -188,6 +190,7 @@
 .flat .dijitSpinner.alt-primary .dijitUpArrowButtonHover,
 .flat .dijitSpinner.alt-primary .dijitDownArrowButtonHover {
   background: #1981dd;
+  border-color: #1774c5;
 }
 .flat .dijitButtonHover.alt-success .dijitButtonNode,
 .flat .dijitDropDownButtonHover.alt-success .dijitButtonNode,
@@ -202,6 +205,7 @@
 .flat .dijitSpinner.alt-success .dijitUpArrowButtonHover,
 .flat .dijitSpinner.alt-success .dijitDownArrowButtonHover {
   background: #409843;
+  border-color: #39883c;
 }
 .flat .dijitButtonHover.alt-info .dijitButtonNode,
 .flat .dijitDropDownButtonHover.alt-info .dijitButtonNode,
@@ -216,6 +220,7 @@
 .flat .dijitSpinner.alt-info .dijitUpArrowButtonHover,
 .flat .dijitSpinner.alt-info .dijitDownArrowButtonHover {
   background: #03a1e8;
+  border-color: #0390cf;
 }
 .flat .dijitButtonHover.alt-warning .dijitButtonNode,
 .flat .dijitDropDownButtonHover.alt-warning .dijitButtonNode,
@@ -230,6 +235,7 @@
 .flat .dijitSpinner.alt-warning .dijitUpArrowButtonHover,
 .flat .dijitSpinner.alt-warning .dijitDownArrowButtonHover {
   background: #ee8500;
+  border-color: #d57700;
 }
 .flat .dijitButtonHover.alt-danger .dijitButtonNode,
 .flat .dijitDropDownButtonHover.alt-danger .dijitButtonNode,
@@ -244,6 +250,7 @@
 .flat .dijitSpinner.alt-danger .dijitUpArrowButtonHover,
 .flat .dijitSpinner.alt-danger .dijitDownArrowButtonHover {
   background: #e32d29;
+  border-color: #d4201b;
 }
 .flat .dijitButtonHover.alt-inverse .dijitButtonNode,
 .flat .dijitDropDownButtonHover.alt-inverse .dijitButtonNode,
@@ -257,7 +264,8 @@
 .flat .dijitSelect.dijitSelectOpened.alt-inverse .dijitArrowButton,
 .flat .dijitSpinner.alt-inverse .dijitUpArrowButtonHover,
 .flat .dijitSpinner.alt-inverse .dijitDownArrowButtonHover {
-  background: #3f3f3f;
+  background: #5c5c5c;
+  border-color: #525252;
 }
 .flat .dijitButtonActive .dijitButtonNode,
 .flat .dijitDropDownButtonActive .dijitButtonNode,
@@ -269,7 +277,10 @@
   -ms-transition: none;
   transition: none;
   outline: none;
-  background: #e6e6e6;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,0.05);
+  box-shadow: inset 0 3px 5px rgba(0,0,0,0.05);
+  background: #e0e0e0;
+  border-color: #b3b3b3;
 }
 .flat .dijitComboButton .dijitButtonNodeActive,
 .flat .dijitComboButton .dijitDownArrowButtonActive {
@@ -279,7 +290,10 @@
   -ms-transition: none;
   transition: none;
   outline: none;
-  background: #e6e6e6;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,0.05);
+  box-shadow: inset 0 3px 5px rgba(0,0,0,0.05);
+  background: #e0e0e0;
+  border-color: #b3b3b3;
 }
 .flat .dijitButtonActive.alt-primary .dijitButtonNode,
 .flat .dijitDropDownButtonActive.alt-primary .dijitButtonNode,
@@ -293,7 +307,8 @@
 .flat .dijitComboBox.alt-primary .dijitButtonNode.dijitHasDropDownOpen,
 .flat .dijitSpinner.alt-primary .dijitUpArrowButtonActive,
 .flat .dijitSpinner.alt-primary .dijitDownArrowButtonActive {
-  background: #187bd1;
+  background: #1878cc;
+  border-color: #135fa3;
 }
 .flat .dijitButtonActive.alt-success .dijitButtonNode,
 .flat .dijitDropDownButtonActive.alt-success .dijitButtonNode,
@@ -307,7 +322,8 @@
 .flat .dijitComboBox.alt-success .dijitButtonNode.dijitHasDropDownOpen,
 .flat .dijitSpinner.alt-success .dijitUpArrowButtonActive,
 .flat .dijitSpinner.alt-success .dijitDownArrowButtonActive {
-  background: #3c9040;
+  background: #3b8d3e;
+  border-color: #2f7032;
 }
 .flat .dijitButtonActive.alt-info .dijitButtonNode,
 .flat .dijitDropDownButtonActive.alt-info .dijitButtonNode,
@@ -321,7 +337,8 @@
 .flat .dijitComboBox.alt-info .dijitButtonNode.dijitHasDropDownOpen,
 .flat .dijitSpinner.alt-info .dijitUpArrowButtonActive,
 .flat .dijitSpinner.alt-info .dijitDownArrowButtonActive {
-  background: #0398dc;
+  background: #0395d7;
+  border-color: #0276ab;
 }
 .flat .dijitButtonActive.alt-warning .dijitButtonNode,
 .flat .dijitDropDownButtonActive.alt-warning .dijitButtonNode,
@@ -335,7 +352,8 @@
 .flat .dijitComboBox.alt-warning .dijitButtonNode.dijitHasDropDownOpen,
 .flat .dijitSpinner.alt-warning .dijitUpArrowButtonActive,
 .flat .dijitSpinner.alt-warning .dijitDownArrowButtonActive {
-  background: #e27e00;
+  background: #dd7b00;
+  border-color: #b06200;
 }
 .flat .dijitButtonActive.alt-danger .dijitButtonNode,
 .flat .dijitDropDownButtonActive.alt-danger .dijitButtonNode,
@@ -349,7 +367,8 @@
 .flat .dijitComboBox.alt-danger .dijitButtonNode.dijitHasDropDownOpen,
 .flat .dijitSpinner.alt-danger .dijitUpArrowButtonActive,
 .flat .dijitSpinner.alt-danger .dijitDownArrowButtonActive {
-  background: #e1211d;
+  background: #dc211c;
+  border-color: #af1a17;
 }
 .flat .dijitButtonActive.alt-inverse .dijitButtonNode,
 .flat .dijitDropDownButtonActive.alt-inverse .dijitButtonNode,
@@ -363,7 +382,8 @@
 .flat .dijitComboBox.alt-inverse .dijitButtonNode.dijitHasDropDownOpen,
 .flat .dijitSpinner.alt-inverse .dijitUpArrowButtonActive,
 .flat .dijitSpinner.alt-inverse .dijitDownArrowButtonActive {
-  background: #3b3b3b;
+  background: #555;
+  border-color: #444;
 }
 .flat .dijitButtonDisabled,
 .flat .dijitDropDownButtonDisabled,
@@ -385,6 +405,7 @@
 .flat .dijitComboButtonDisabled.alt-primary .dijitButtonNode,
 .flat .dijitToggleButtonDisabled.alt-primary .dijitButtonNode {
   background: #6db2ee;
+  border-color: #50a2eb;
   color: #f2f2f2;
 }
 .flat .dijitComboButtonDisabled.alt-primary .dijitStretch {
@@ -398,6 +419,7 @@
 .flat .dijitComboButtonDisabled.alt-success .dijitButtonNode,
 .flat .dijitToggleButtonDisabled.alt-success .dijitButtonNode {
   background: #7dc981;
+  border-color: #63be67;
   color: #f2f2f2;
 }
 .flat .dijitComboButtonDisabled.alt-success .dijitStretch {
@@ -411,6 +433,7 @@
 .flat .dijitComboButtonDisabled.alt-info .dijitButtonNode,
 .flat .dijitToggleButtonDisabled.alt-info .dijitButtonNode {
   background: #56c9fd;
+  border-color: #34befd;
   color: #f2f2f2;
 }
 .flat .dijitComboButtonDisabled.alt-info .dijitStretch {
@@ -424,6 +447,7 @@
 .flat .dijitComboButtonDisabled.alt-warning .dijitButtonNode,
 .flat .dijitToggleButtonDisabled.alt-warning .dijitButtonNode {
   background: #ffb557;
+  border-color: #ffa635;
   color: #f2f2f2;
 }
 .flat .dijitComboButtonDisabled.alt-warning .dijitStretch {
@@ -437,6 +461,7 @@
 .flat .dijitComboButtonDisabled.alt-danger .dijitButtonNode,
 .flat .dijitToggleButtonDisabled.alt-danger .dijitButtonNode {
   background: #ee7e7c;
+  border-color: #eb6561;
   color: #f2f2f2;
 }
 .flat .dijitComboButtonDisabled.alt-danger .dijitStretch {
@@ -449,14 +474,15 @@
 .flat .dijitDropDownButtonDisabled.alt-inverse .dijitButtonNode,
 .flat .dijitComboButtonDisabled.alt-inverse .dijitButtonNode,
 .flat .dijitToggleButtonDisabled.alt-inverse .dijitButtonNode {
-  background: #848484;
+  background: #989898;
+  border-color: #848484;
   color: #f2f2f2;
 }
 .flat .dijitComboButtonDisabled.alt-inverse .dijitStretch {
-  border-right-color: #6c6c6c;
+  border-right-color: #848484;
 }
 .flat .dijitComboButtonRtlDisabled.alt-inverse .dijitStretch {
-  border-left-color: #6c6c6c;
+  border-left-color: #848484;
 }
 .flat .dijitComboButtonDisabled .dijitArrowButton {
   border-left-width: 0;
@@ -485,7 +511,7 @@
   display: inline-block;
 }
 .flat .dijitDropDownButton .dijitArrowButtonInner {
-  margin-left: 12px;
+  margin-left: 3px;
 }
 .flat .dijitDropDownButton .dijitArrowButtonInner,
 .flat .dijitArrowButton {

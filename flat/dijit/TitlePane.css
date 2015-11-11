@@ -42,6 +42,7 @@
   -ms-transition: all 0.1s;
   transition: all 0.1s;
   background: #f2f2f2;
+  border-color: #d9d9d9;
 }
 .flat .dijitTitlePaneTitleActive {
   -webkit-transition: none;
@@ -50,7 +51,10 @@
   -ms-transition: none;
   transition: none;
   outline: none;
-  background: #e6e6e6;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,0.05);
+  box-shadow: inset 0 3px 5px rgba(0,0,0,0.05);
+  background: #e0e0e0;
+  border-color: #b3b3b3;
 }
 .flat .dijitTitlePane .dijitArrowNode {
   font-family: "flat-icon";

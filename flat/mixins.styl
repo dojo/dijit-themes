@@ -33,20 +33,19 @@ _icon-core-style() {
 }
 
 /* Button */
-_button-bg-color(color) {
-	background: color;
-}
-
-_button-bg-color-hover(color) {
+_button-hover(color) {
 	background: darken(color, 5%);
+	border-color: darken(color, 15%);
 }
 
-_button-bg-color-active(color) {
-	background: darken(color, 10%);
+_button-active(color) {
+	background: darken(color, 12%);
+	border-color: darken(color, 30%);
 }
 
-_button-bg-color-disabled(color) {
+_button-disabled(color) {
 	background: lighten(color, 35%);
+	border-color: lighten(color, 22%)
 	color: darken($button-alternative-text-color, 5%);
 }
 
@@ -60,18 +59,19 @@ button-style() {
 	line-height: $line-height;
 	cursor: pointer;
 	transition: all 0.05s linear;
-	_button-bg-color($theme-base-color);
+	background: $theme-base-color;
 }
 
 button-hover-style() {
 	transition: all 0.1s;
-	_button-bg-color-hover($theme-base-color);
+	_button-hover($theme-base-color);
 }
 
 button-active-style() {
 	transition: none;
 	outline: none;
-	_button-bg-color-active($theme-base-color);
+	box-shadow: $shadow-inset;
+	_button-active($theme-base-color);
 }
 
 button-disabled-style() {
@@ -93,9 +93,9 @@ create-alternative-buttons(colors) {
 		.dijitSelect.{class} .dijitButtonContents, 
 		.dijitSelect.{class} .dijitButtonNode,
 		.dijitSpinner.{class} .dijitArrowButton {
-			_button-bg-color(colors[class]);
+			background: colors[class];
 			color: $button-alternative-text-color;
-			border-color: transparent;
+			border-color: darken(colors[class], 18.5%);
 		}
 		// combo button border
 		.dijitComboButton.{class} .dijitStretch {
@@ -122,7 +122,7 @@ create-alternative-buttons-hover(colors) {
 		.dijitSelect.dijitSelectOpened.{class} .dijitArrowButton,
 		.dijitSpinner.{class} .dijitUpArrowButtonHover, 
 		.dijitSpinner.{class} .dijitDownArrowButtonHover {
-			_button-bg-color-hover(colors[class]);
+			_button-hover(colors[class]);
 		}
 	}
 }
@@ -139,7 +139,7 @@ create-alternative-buttons-active(colors) {
 		.dijitSelect.dijitSelectOpened.{class} .dijitButtonContents, .dijitSelect.dijitSelectOpened.{class} .dijitArrowButton ,
 		.dijitComboBox.{class} .dijitButtonNode.dijitHasDropDownOpen,
 		.dijitSpinner.{class} .dijitUpArrowButtonActive, .dijitSpinner.{class} .dijitDownArrowButtonActive {
-			_button-bg-color-active(colors[class]);
+			_button-active(colors[class]);
 		}
 	}
 }
@@ -152,7 +152,7 @@ create-alternative-buttons-disabled(colors) {
 		.dijitComboButtonDisabled.{class},
 		.dijitToggleButtonDisabled.{class} { 
 			.dijitButtonNode {
-				_button-bg-color-disabled(colors[class]);
+				_button-disabled(colors[class]);
 			}
 		}
 		// combo button border
