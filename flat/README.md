@@ -5,7 +5,10 @@ A flat theme for Dojo Dijit.
 **To Do:**
 
 1. Fix any outlying dijits using opacity for disabled.
-2. Add dijit/Toolbar to test and test.
+2. TitlePane and Accordion headers should have a separate mixin function from buttons.
+3. Alternate color classes TitlePane headers.
+4. Alternate color classes for AccordionContainer (active pane header).
+5. Alternate color classes for Sliders; and remove transparency for disabled.
 
 **Icons:**
 
