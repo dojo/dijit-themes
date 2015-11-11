@@ -414,6 +414,24 @@
 .flat .dijitComboButtonRtlDisabled.alt-primary .dijitStretch {
   border-left-color: #50a2eb;
 }
+.flat .dijitComboBoxDisabled.alt-primary .dijitButtonNode {
+  border-left-color: #50a2eb;
+}
+.flat .dijitComboBoxRtlDisabled.alt-primary .dijitButtonNode {
+  border-right-color: #50a2eb;
+}
+.flat .dijitTimeTextBoxDisabled.alt-primary .dijitButtonNode {
+  border-left-color: #50a2eb;
+}
+.flat .dijitTimeTextBoxRtlDisabled.alt-primary .dijitButtonNode {
+  border-right-color: #50a2eb;
+}
+.flat .dijitDateTextBoxDisabled.alt-primary .dijitButtonNode {
+  border-left-color: #50a2eb;
+}
+.flat .dijitDateTextBoxRtlDisabled.alt-primary .dijitButtonNode {
+  border-right-color: #50a2eb;
+}
 .flat .dijitButtonDisabled.alt-success .dijitButtonNode,
 .flat .dijitDropDownButtonDisabled.alt-success .dijitButtonNode,
 .flat .dijitComboButtonDisabled.alt-success .dijitButtonNode,
@@ -427,6 +445,24 @@
 }
 .flat .dijitComboButtonRtlDisabled.alt-success .dijitStretch {
   border-left-color: #63be67;
+}
+.flat .dijitComboBoxDisabled.alt-success .dijitButtonNode {
+  border-left-color: #63be67;
+}
+.flat .dijitComboBoxRtlDisabled.alt-success .dijitButtonNode {
+  border-right-color: #63be67;
+}
+.flat .dijitTimeTextBoxDisabled.alt-success .dijitButtonNode {
+  border-left-color: #63be67;
+}
+.flat .dijitTimeTextBoxRtlDisabled.alt-success .dijitButtonNode {
+  border-right-color: #63be67;
+}
+.flat .dijitDateTextBoxDisabled.alt-success .dijitButtonNode {
+  border-left-color: #63be67;
+}
+.flat .dijitDateTextBoxRtlDisabled.alt-success .dijitButtonNode {
+  border-right-color: #63be67;
 }
 .flat .dijitButtonDisabled.alt-info .dijitButtonNode,
 .flat .dijitDropDownButtonDisabled.alt-info .dijitButtonNode,
@@ -442,6 +478,24 @@
 .flat .dijitComboButtonRtlDisabled.alt-info .dijitStretch {
   border-left-color: #34befd;
 }
+.flat .dijitComboBoxDisabled.alt-info .dijitButtonNode {
+  border-left-color: #34befd;
+}
+.flat .dijitComboBoxRtlDisabled.alt-info .dijitButtonNode {
+  border-right-color: #34befd;
+}
+.flat .dijitTimeTextBoxDisabled.alt-info .dijitButtonNode {
+  border-left-color: #34befd;
+}
+.flat .dijitTimeTextBoxRtlDisabled.alt-info .dijitButtonNode {
+  border-right-color: #34befd;
+}
+.flat .dijitDateTextBoxDisabled.alt-info .dijitButtonNode {
+  border-left-color: #34befd;
+}
+.flat .dijitDateTextBoxRtlDisabled.alt-info .dijitButtonNode {
+  border-right-color: #34befd;
+}
 .flat .dijitButtonDisabled.alt-warning .dijitButtonNode,
 .flat .dijitDropDownButtonDisabled.alt-warning .dijitButtonNode,
 .flat .dijitComboButtonDisabled.alt-warning .dijitButtonNode,
@@ -455,6 +509,24 @@
 }
 .flat .dijitComboButtonRtlDisabled.alt-warning .dijitStretch {
   border-left-color: #ffa635;
+}
+.flat .dijitComboBoxDisabled.alt-warning .dijitButtonNode {
+  border-left-color: #ffa635;
+}
+.flat .dijitComboBoxRtlDisabled.alt-warning .dijitButtonNode {
+  border-right-color: #ffa635;
+}
+.flat .dijitTimeTextBoxDisabled.alt-warning .dijitButtonNode {
+  border-left-color: #ffa635;
+}
+.flat .dijitTimeTextBoxRtlDisabled.alt-warning .dijitButtonNode {
+  border-right-color: #ffa635;
+}
+.flat .dijitDateTextBoxDisabled.alt-warning .dijitButtonNode {
+  border-left-color: #ffa635;
+}
+.flat .dijitDateTextBoxRtlDisabled.alt-warning .dijitButtonNode {
+  border-right-color: #ffa635;
 }
 .flat .dijitButtonDisabled.alt-danger .dijitButtonNode,
 .flat .dijitDropDownButtonDisabled.alt-danger .dijitButtonNode,
@@ -470,6 +542,24 @@
 .flat .dijitComboButtonRtlDisabled.alt-danger .dijitStretch {
   border-left-color: #eb6561;
 }
+.flat .dijitComboBoxDisabled.alt-danger .dijitButtonNode {
+  border-left-color: #eb6561;
+}
+.flat .dijitComboBoxRtlDisabled.alt-danger .dijitButtonNode {
+  border-right-color: #eb6561;
+}
+.flat .dijitTimeTextBoxDisabled.alt-danger .dijitButtonNode {
+  border-left-color: #eb6561;
+}
+.flat .dijitTimeTextBoxRtlDisabled.alt-danger .dijitButtonNode {
+  border-right-color: #eb6561;
+}
+.flat .dijitDateTextBoxDisabled.alt-danger .dijitButtonNode {
+  border-left-color: #eb6561;
+}
+.flat .dijitDateTextBoxRtlDisabled.alt-danger .dijitButtonNode {
+  border-right-color: #eb6561;
+}
 .flat .dijitButtonDisabled.alt-inverse .dijitButtonNode,
 .flat .dijitDropDownButtonDisabled.alt-inverse .dijitButtonNode,
 .flat .dijitComboButtonDisabled.alt-inverse .dijitButtonNode,
@@ -483,6 +573,24 @@
 }
 .flat .dijitComboButtonRtlDisabled.alt-inverse .dijitStretch {
   border-left-color: #848484;
+}
+.flat .dijitComboBoxDisabled.alt-inverse .dijitButtonNode {
+  border-left-color: #848484;
+}
+.flat .dijitComboBoxRtlDisabled.alt-inverse .dijitButtonNode {
+  border-right-color: #848484;
+}
+.flat .dijitTimeTextBoxDisabled.alt-inverse .dijitButtonNode {
+  border-left-color: #848484;
+}
+.flat .dijitTimeTextBoxRtlDisabled.alt-inverse .dijitButtonNode {
+  border-right-color: #848484;
+}
+.flat .dijitDateTextBoxDisabled.alt-inverse .dijitButtonNode {
+  border-left-color: #848484;
+}
+.flat .dijitDateTextBoxRtlDisabled.alt-inverse .dijitButtonNode {
+  border-right-color: #848484;
 }
 .flat .dijitComboButtonDisabled .dijitArrowButton {
   border-left-width: 0;
