@@ -24,7 +24,7 @@
   position: relative;
   width: auto;
   padding: 0;
-  border: 1px solid #bdbdbd;
+  border: 1px solid #9e9e9e;
 }
 .flat .dijitSpinner .dijitSpinnerButtonInner {
   width: 30px;
@@ -34,7 +34,7 @@
 .flat .dijitSpinner .dijitArrowButton {
   border-style: solid;
   border-width: 1px;
-  border-color: #bdbdbd;
+  border-color: #9e9e9e;
   padding: 4px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -45,7 +45,7 @@
   -o-transition: all 0.05s linear;
   -ms-transition: all 0.05s linear;
   transition: all 0.05s linear;
-  background: #fafafa;
+  background: #fff;
   -webkit-border-radius: 0;
   border-radius: 0;
   border: 0;
@@ -71,7 +71,8 @@
   -o-transition: all 0.1s;
   -ms-transition: all 0.1s;
   transition: all 0.1s;
-  background: #ededed;
+  background: #f2f2f2;
+  border-color: #d9d9d9;
 }
 .flat .dijitSpinner .dijitDownArrowButtonActive,
 .flat .dijitSpinner .dijitUpArrowButtonActive {
@@ -81,7 +82,10 @@
   -ms-transition: none;
   transition: none;
   outline: none;
-  background: #e1e1e1;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,0.05);
+  box-shadow: inset 0 3px 5px rgba(0,0,0,0.05);
+  background: #e0e0e0;
+  border-color: #b3b3b3;
 }
 .flat .dijitSpinner .dijitArrowButtonInner {
   line-height: 16px;
@@ -100,24 +104,24 @@
 .flat .dijitSpinnerDisabled .dijitUpArrowButton {
   cursor: default;
   color: #9e9e9e;
-  background-color: #fafafa;
+  background-color: #f5f5f5;
   border-color: #e3e3e3;
 }
 .flat .alt-primary .dijitSpinnerButtonContainer {
-  border-color: #1976d2;
+  border-color: #1e88e5;
 }
 .flat .alt-success .dijitSpinnerButtonContainer {
-  border-color: #388e3c;
+  border-color: #43a047;
 }
 .flat .alt-info .dijitSpinnerButtonContainer {
-  border-color: #29b6f6;
+  border-color: #03a9f4;
 }
 .flat .alt-warning .dijitSpinnerButtonContainer {
-  border-color: #f57c00;
+  border-color: #fb8c00;
 }
 .flat .alt-danger .dijitSpinnerButtonContainer {
-  border-color: #f44336;
+  border-color: #e53935;
 }
 .flat .alt-inverse .dijitSpinnerButtonContainer {
-  border-color: #212121;
+  border-color: #616161;
 }

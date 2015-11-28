@@ -29,15 +29,15 @@
  * 		.dijitTooltipConnector - tooltip anchor includes 4 direction(up, down, left, right)
  */
 .flat .dijitDialog {
-  background-color: #fafafa;
-  border: 1px solid #bdbdbd;
+  background-color: #fff;
+  border: 1px solid #9e9e9e;
   -webkit-border-radius: 3px;
   border-radius: 3px;
   -webkit-box-shadow: 0 7px 3px -4px rgba(0,0,0,0.3), 0 8px 8px rgba(0,0,0,0.2);
   box-shadow: 0 7px 3px -4px rgba(0,0,0,0.3), 0 8px 8px rgba(0,0,0,0.2);
 }
 .flat .dijitDialogPaneContent {
-  background-color: #fafafa;
+  background-color: #fff;
   -webkit-border-radius: 0 0 3px 3px;
   border-radius: 0 0 3px 3px;
   padding: 8px;
@@ -127,7 +127,7 @@
   border-radius: 3px;
 }
 .flat .dijitTooltip .dijitTooltipContainer {
-  color: #fafafa;
+  color: #fff;
   border: 0 none;
 }
 .flat .dijitTooltipConnector {
@@ -193,8 +193,8 @@
   border-right: 4px solid #424242;
 }
 .flat .dijitTooltipDialog .dijitTooltipContainer {
-  background: #fafafa;
-  border: 1px solid #bdbdbd;
+  background: #fff;
+  border: 1px solid #9e9e9e;
   -webkit-border-radius: 3px;
   border-radius: 3px;
   -webkit-box-shadow: 0 7px 3px -4px rgba(0,0,0,0.3), 0 8px 8px rgba(0,0,0,0.2);
@@ -231,48 +231,48 @@
   position: absolute;
 }
 .flat .dijitTooltipDialog.dijitTooltipAbove .dijitTooltipConnector {
-  border-color: #bdbdbd transparent transparent;
+  border-color: #9e9e9e transparent transparent;
   border-width: 7px 7px 0; /* one extra pixel is added as the border of the arrows */
   border-style: solid;
 }
 .flat .dijitTooltipDialog.dijitTooltipAbove .dijitTooltipConnector:after {
-  border-color: #fafafa transparent transparent;
+  border-color: #fff transparent transparent;
   border-width: 6px 6px 0;
   border-style: solid;
   left: -6px;
   top: -7px;
 }
 .flat .dijitTooltipDialog.dijitTooltipBelow .dijitTooltipConnector {
-  border-color: transparent transparent #bdbdbd;
+  border-color: transparent transparent #9e9e9e;
   border-width: 0 7px 7px;
   border-style: solid;
 }
 .flat .dijitTooltipDialog.dijitTooltipBelow .dijitTooltipConnector:after {
-  border-color: transparent transparent #fafafa;
+  border-color: transparent transparent #fff;
   border-width: 0 6px 6px;
   border-style: solid;
   left: -6px;
   bottom: -7px;
 }
 .flat .dijitTooltipDialog.dijitTooltipLeft .dijitTooltipConnector {
-  border-color: transparent transparent transparent #bdbdbd;
+  border-color: transparent transparent transparent #9e9e9e;
   border-width: 7px 0 7px 7px;
   border-style: solid;
 }
 .flat .dijitTooltipDialog.dijitTooltipLeft .dijitTooltipConnector:after {
-  border-color: transparent transparent transparent #fafafa;
+  border-color: transparent transparent transparent #fff;
   border-width: 6px 0 6px 6px;
   border-style: solid;
   top: -6px;
   left: -7px;
 }
 .flat .dijitTooltipDialog.dijitTooltipRight .dijitTooltipConnector {
-  border-color: transparent #bdbdbd transparent transparent;
+  border-color: transparent #9e9e9e transparent transparent;
   border-width: 7px 7px 7px 0;
   border-style: solid;
 }
 .flat .dijitTooltipDialog.dijitTooltipRight .dijitTooltipConnector:after {
-  border-color: transparent #fafafa transparent transparent;
+  border-color: transparent #fff transparent transparent;
   border-width: 6px 6px 6px 0;
   border-style: solid;
   top: -6px;

@@ -3,9 +3,10 @@ Dojo 1.x modern themes
 
 ### Getting Started
 
-1. Install globally with npm `stylus` and `grunt-cli`.
-2. Run `grunt bower-install-simple` to install Dojo and Dijit dependencies.
-3. Run `grunt` to open the Dijit theme tester.
+1. Install globally Stylus and GruntJS.
+ * `npm install -g stylus`
+ * `npm install -g grunt-cli`
+2. Run `grunt THEME_NAME` to compile css and open test application.
 
 ### Contributing New Themes
 
@@ -31,6 +32,6 @@ A flat theme for Dojo Dijit, Dojox and dgrid.
 
 This theme is currently in **development**. Contributions welcome.
 
-Run `grunt flat` to compile CSS and open Flat Theme's test application for development. The Flat Theme Test app does not require the dependencies and can be run as is with any web server.
+Run `grunt flat` to compile CSS and open Flat Theme's test application for development.
 
 To use Flat Theme right away simply copy the `flat` directory and its contents to a location in your app, add/import `flat.css` and add `class="flat"` to the body tag.
