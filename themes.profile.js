@@ -4,7 +4,8 @@ var profile = (function(){
 		copyOnly = function(filename, mid){
 			var list = {
 				"themes/themes.profile":1,
-				"themes/package.json":1
+				"themes/package.json":1,
+				"themes/Gruntfile":1
 			};
 			return (mid in list) || (/^dijit\/resources\//.test(mid) && !/\.css$/.test(filename)) || /(png|jpg|jpeg|gif|tiff)$/.test(filename);
 		};
