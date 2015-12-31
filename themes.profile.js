@@ -1,5 +1,6 @@
 var profile = (function(){
 	var testResourceRe = /^dijit\/tests\//,
+	nodeModulesRe = /\/node_modules\//,
 
 		copyOnly = function(filename, mid){
 			var list = {
@@ -7,7 +8,10 @@ var profile = (function(){
 				"themes/package.json":1,
 				"themes/Gruntfile":1
 			};
-			return (mid in list) || (/^dijit\/resources\//.test(mid) && !/\.css$/.test(filename)) || /(png|jpg|jpeg|gif|tiff)$/.test(filename);
+			return (mid in list) ||
+				(/^dijit\/resources\//.test(mid) && !/\.css$/.test(filename)) ||
+				/(png|jpg|jpeg|gif|tiff)$/.test(filename)
+				nodeModulesRe.test(mid);
 		};
 
 	return {
@@ -25,7 +29,10 @@ var profile = (function(){
 			},
 
 			miniExclude: function(filename, mid){
-				return /\.styl$/.test(filename) || /^dijit\/bench\//.test(mid) || /^dijit\/themes\/themeTest/.test(mid);
+				return /\.styl$/.test(filename) ||
+				/^dijit\/bench\//.test(mid) ||
+				/^dijit\/themes\/themeTest/.test(mid) ||
+				nodeModulesRe.test(mid);
 			}
 		}
 	};
