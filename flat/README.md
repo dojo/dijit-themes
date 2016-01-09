@@ -2,6 +2,8 @@
 
 A flat theme for Dojo Dijit.
 
+![Image of Dojo flat theme](https://cloud.githubusercontent.com/assets/4641297/9564775/6cae1f44-4e65-11e5-8415-5c8b5b68875a.png)
+
 **To Do:**
 
 1. Fix any outlying dijits using opacity for disabled.
