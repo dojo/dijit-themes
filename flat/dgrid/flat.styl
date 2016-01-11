@@ -1,6 +1,8 @@
 @require 'nib/gradients';
 @require 'nib/vendor';
 
+$flat_path_to_dgrid ?= '../../dgrid';
+
 $dgrid-background ?= #fff;
 $dgrid-border-color ?= #d0d0d0;
 $dgrid-cell-padding ?= 5px 10px;
@@ -26,8 +28,7 @@ $dgrid-selected-border ?= 1px solid #007ac2;
 $dgrid-selected-hover-background-color ?= #f2f2f2;
 
 .flat {
-	/* TODO: This path needs to work to reference dgrid/css/skins/skin.styl */
-	@import 'skin';
+	import $flat_path_to_dgrid + '/css/skins/skin';
 
 	.dgrid-cell-padding {
 		padding: $dgrid-cell-padding;
