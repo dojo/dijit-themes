@@ -12,8 +12,6 @@
 	},
 	"dojoBuild": "themes.profile.js",
 	"dependencies": {
-		"dojo": "1.11.0-pre",
-		"dijit": "1.11.0-pre",
 		"grunt": "^0.4",
 		"grunt-contrib-watch": "^0",
 		"grunt-concurrent": "^2",
