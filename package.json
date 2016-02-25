@@ -1,6 +1,6 @@
 {
 	"name": "dojo-themes",
-	"version": "1.11.0-pre",
+	"version": "1.11.0-rc2",
 	"description": "Dojo 1.x modern themes",
 	"license" : "BSD-3-Clause OR AFL-2.1",
 	"bugs": "http://bugs.dojotoolkit.org/",
