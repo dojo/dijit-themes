@@ -11,7 +11,7 @@
 		"url": "https://github.com/dojo/themes.git"
 	},
 	"dojoBuild": "themes.profile.js",
-	"dependencies": {
+	"devDependencies": {
 		"grunt": "^0.4",
 		"grunt-contrib-watch": "^0",
 		"grunt-concurrent": "^2",
