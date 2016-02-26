@@ -11,6 +11,10 @@
 		"url": "https://github.com/dojo/themes.git"
 	},
 	"dojoBuild": "themes.profile.js",
+	"peerDependencies": {
+		"dojo": "1.11.0-pre",
+		"dijit": "1.11.0-pre"
+	},
 	"devDependencies": {
 		"grunt": "^0.4",
 		"grunt-contrib-watch": "^0",
