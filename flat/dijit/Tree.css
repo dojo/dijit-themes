@@ -1,24 +1,24 @@
-/* Tree 
- * 
+/* Tree
+ *
  * Styling Tree mostly means styling the TreeRow (dijitTreeRow)
  * There are 4 basic states to style:
- * 
+ *
  * Tree Row:
- * 1. tree row (default styling): 
+ * 1. tree row (default styling):
  * 		.dijitTreeRow - styles for each row of the tree
  *
  * 2. hovered tree row (mouse hover on a tree row)
  * 		.dijitTreeRowHover - styles when mouse over on one row
- * 
+ *
  * 3. active tree row (mouse down on a tree row)
  * 		.dijitTreeRowActive - styles when mouse down on one row
- * 
+ *
  * 4. selected tree row
  * 		dijitTreeRowSelected - style when the row has been selected
- * 
+ *
  * Tree Expando:
  * 	    dijitTreeExpando - the expando at the left of the text of each tree row
- * 
+ *
  */
 .flat .dijitTreeIsRoot {
   background-color: transparent;
@@ -91,20 +91,21 @@
   vertical-align: middle;
 }
 .flat .dijitTreeExpandoOpened:before {
-  content: "\e60d";
+  content: "\f012";
   cursor: pointer;
 }
 .flat .dijitTreeExpandoClosed:before {
-  content: "\e60a";
-  cursor: pointer;
+  content: "\f011";
 }
-.flat .dijitTreeExpandoLoading:before {
-  content: "\e60e";
+.flat .dijitTreeExpandoLoading {
   -webkit-animation: spinning 2s linear infinite;
   -moz-animation: spinning 2s linear infinite;
   -o-animation: spinning 2s linear infinite;
   -ms-animation: spinning 2s linear infinite;
   animation: spinning 2s linear infinite;
+}
+.flat .dijitTreeExpandoLoading:before {
+  content: "\f01d";
 }
 .dj_ie8 .dijitTreeExpandoLoading,
 .dj_ie9 .dijitTreeExpandoLoading {
@@ -123,11 +124,11 @@
     transform: rotate(0);
   }
   to {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
 }
 @-webkit-keyframes spinning {
@@ -139,11 +140,11 @@
     transform: rotate(0);
   }
   to {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
 }
 @-o-keyframes spinning {
@@ -155,11 +156,11 @@
     transform: rotate(0);
   }
   to {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
 }
 @keyframes spinning {
@@ -171,10 +172,10 @@
     transform: rotate(0);
   }
   to {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
 }

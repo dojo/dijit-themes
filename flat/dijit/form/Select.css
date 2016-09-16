@@ -42,7 +42,6 @@
   border-width: 1px;
   border-color: #9e9e9e;
   padding: 4px;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   line-height: 20px;
   cursor: pointer;
@@ -59,7 +58,6 @@
   line-height: 20px;
   padding: 4px 12px;
   border: 0;
-  -webkit-border-radius: 0 2.000000000000001px 2.000000000000001px 0;
   border-radius: 0 2.000000000000001px 2.000000000000001px 0;
 }
 .flat .dijitSelect .dijitButtonContents {
@@ -67,7 +65,6 @@
   overflow: hidden;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  -webkit-border-radius: 2.000000000000001px 0 0 2.000000000000001px;
   border-radius: 2.000000000000001px 0 0 2.000000000000001px;
 }
 .flat .dijitSelect .dijitInputField {
@@ -112,7 +109,6 @@
   border-width: 1px;
   border-color: #9e9e9e;
   padding: 4px;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   line-height: 20px;
   cursor: pointer;
@@ -122,7 +118,6 @@
   -ms-transition: all 0.05s linear;
   transition: all 0.05s linear;
   background: #fff;
-  -webkit-border-radius: 0 2.000000000000001px 2.000000000000001px 0;
   border-radius: 0 2.000000000000001px 2.000000000000001px 0;
 }
 .flat .dijitComboBoxOpenHover .dijitButtonNode,
