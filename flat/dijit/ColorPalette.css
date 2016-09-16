@@ -23,7 +23,6 @@
 .flat .dijitColorPalette {
   border: 1px solid #9e9e9e;
   background-color: #fff;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 /* swatch */
 }
@@ -33,7 +32,6 @@
 .flat .dijitColorPalette .dijitColorPaletteSwatch {
   height: 15px;
   width: 15px;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
 }
 .flat .dijitColorPalette .dijitPaletteImg {
@@ -47,7 +45,6 @@
   border-color: #9e9e9e;
   -webkit-box-shadow: none;
   box-shadow: none;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
@@ -60,7 +57,6 @@
   border: 1px solid #2196f3;
   -webkit-box-shadow: 0 1px 0.5px rgba(0,0,0,0.3), 0 2px 2px rgba(0,0,0,0.2);
   box-shadow: 0 1px 0.5px rgba(0,0,0,0.3), 0 2px 2px rgba(0,0,0,0.2);
-  -webkit-border-radius: 2px;
   border-radius: 2px;
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
