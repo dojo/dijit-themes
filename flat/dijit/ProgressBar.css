@@ -27,7 +27,6 @@
 .flat .dijitProgressBar {
   background-color: #e0e0e0;
   border: 0 none;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 .flat .dijitProgressBarTile {
