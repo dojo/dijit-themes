@@ -69,14 +69,14 @@
 }
 .flat .dijitCalendarDecrementArrow {
   float: left;
-  padding-left: 4px/2;
+  padding-left: 2px;
 }
 .flat .dijitCalendarDecrementArrow:before {
   content: "\f000";
 }
 .flat .dijitCalendarIncrementArrow {
   float: right;
-  padding-right: 4px/2;
+  padding-right: 2px;
 }
 .flat .dijitCalendarIncrementArrow:before {
   content: "\f001";
