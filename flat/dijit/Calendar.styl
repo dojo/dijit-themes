@@ -1,17 +1,17 @@
 /* Calendar
- * 
+ *
  * Styling Calendar mainly includes:
- * 
+ *
  * 1. Calendar container
  * 		.dijitCalendar - main container
  * 		.dijitCalendarHover / .dijitCalendarActive - states e.g. hover,active
- * 
+ *
  * 2. Month
  * 		.dijitCalendarMonthContainer
  * 		.dijitCalendarMonthLabel
  *      .dijitCalendarDecrease / .dijitCalendarDecrease - icons for switching to previous/next month
  *      .dijitCalendarArrowActive .dijitCalendarDecrease - states e.g. hover,active
- * 
+ *
  * 3. Date
  * 		.dijitCalendarDayLabelTemplate - week day column header e.g. S M T W T F S
  * 		.dijitCalendarDateTemplate - date label wrapper
@@ -19,15 +19,15 @@
  *      .dijitCalendarSelectedDate .dijitCalendarDateLabel - styles for selected date
  * 		.dijitCalendarDisabledDate .dijitCalendarDateLabel - styles for disabled date
  * 		.dijitCalendarActiveDate .dijitCalendarDateLabel - states e.g. hover,active
- * 
+ *
  * 4. Year
  * 		.dijitCalendarYearContainer
  * 		.dijitCalendarYearLabel
  * 		.dijitCalendarPreviousYear /.dijitCalendarNextYear
  *      .dijitCalendarNextYearHover / .dijitCalendarPreviousYearHover - states e.g. hover,active
- *      
+ *
  * 5. Dropdown Month Menu
- * 		.dijitCalendarMonthMenu - menu container     
+ * 		.dijitCalendarMonthMenu - menu container
  * 		.dijitCalendarMonthMenu .dijitCalendarMonthLabel - month label in menu item
  * 		.dijitCalendarMonthMenu .dijitCalendarMonthLabelHover - menu item hover state
  */
@@ -55,20 +55,33 @@
 
 	/* next/previous month arrows */
 
-	.dijitCalendarIncrementControl {
+	.dijitCalendarArrow {
 		_icon-core-style();
+		cursor: pointer;
 		font-size: $calendar-icon-size;
 		border: 1px solid transparent;
 		padding: $padding;
 	}
 
-	.dijitCalendarDecrease {
+	// Since the arrow icons are pulled from the font, the `img` tags are not needed.
+	.dijitCalendarDecrease,
+	.dijitCalendarIncrease {
+		display: none;
+	}
+
+	.dijitCalendarDecrementArrow {
+		float: left;
+		padding-left: ($padding / 2);
+
 		&:before {
 			content: $calendar-icon-decrease;
 		}
 	}
 
-	.dijitCalendarIncrease {
+	.dijitCalendarIncrementArrow {
+		float: right;
+		padding-right: ($padding / 2);
+
 		&:before {
 			content: $calendar-icon-increase;
 		}
@@ -156,7 +169,7 @@
 	}
 
 	/* selected */
-		
+
 	.dijitCalendarSelectedDate,
 	.dijitCalendarSelectedDate.dijitCalendarHoveredDate {
 		 .dijitCalendarDateLabel {
@@ -166,7 +179,7 @@
 	}
 
 	/* disabled */
-	
+
 	.dijitCalendarDisabledDate .dijitCalendarDateLabel {
 		opacity: $disabled-opacity;
 	}
@@ -230,5 +243,5 @@
 			background-color: $calendar-month-dropdown-menu-item-hovered-background-color;
 		}
 	}
-	
+
 }
