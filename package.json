@@ -8,7 +8,7 @@
 	"homepage": "http://dojotoolkit.org/",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/dojo/themes.git"
+		"url": "https://github.com/dojo/dijit-themes.git"
 	},
 	"dojoBuild": "themes.profile.js",
 	"peerDependencies": {
