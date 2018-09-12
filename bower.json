@@ -1,5 +1,5 @@
 {
-	"name": "dojo-themes",
+	"name": "dijit-themes",
 	"licenses": [ "BSD-3-Clause", "AFL-2.1"],
 	"ignore": [
 		".*"
