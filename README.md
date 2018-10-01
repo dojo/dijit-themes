@@ -1,6 +1,10 @@
 # themes
 Dojo 1.x modern themes
 
+While still being maintained, new development is primarily focused on modern Dojo.
+
+Checkout the [Dojo framework website](https://dojo.io/) or if you want a more detailed technical status and overview, checkout the [`Dojo roadmap`](https://dojo.io/community/).
+
 ### Getting Started
 
 1. Install globally Stylus and GruntJS.
