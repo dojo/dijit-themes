@@ -1,6 +1,6 @@
 {
 	"name": "dijit-themes",
-	"version": "1.14.6",
+	"version": "1.14.7-pre",
 	"description": "Dojo 1.x modern themes",
 	"license" : "BSD-3-Clause OR AFL-2.1",
 	"bugs": "http://bugs.dojotoolkit.org/",
@@ -12,8 +12,8 @@
 	},
 	"dojoBuild": "themes.profile.js",
 	"peerDependencies": {
-		"dojo": "1.14.6",
-		"dijit": "1.14.6"
+		"dojo": "1.14.7-pre",
+		"dijit": "1.14.7-pre"
 	},
 	"devDependencies": {
 		"grunt": "^0.4",
